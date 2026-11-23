@@ -1,0 +1,1261 @@
+date,outlet,product,forecast,forecast_low,forecast_high,actual
+2026-05-25,Mall Kiosk,Chocolate Cake,12.85,7.01,17.54,13
+2026-05-25,Mall Kiosk,Vanilla Cake,10.62,5.88,15.88,4
+2026-05-25,Mall Kiosk,Cheese Pastry,26.3,16.68,35.93,36
+2026-05-25,Mall Kiosk,Date Cookies,19.19,9.96,26.19,21
+2026-05-25,Mall Kiosk,Butter Biscuits,24.17,13.18,34.26,12
+2026-05-25,Mall Kiosk,Mini Muffins,17.06,10.25,23.5,19
+2026-05-25,Supermarket,Chocolate Cake,18.05,10.88,22.62,24
+2026-05-25,Supermarket,Vanilla Cake,17.4,11.39,22.23,24
+2026-05-25,Supermarket,Cheese Pastry,45.44,33.39,56.97,56
+2026-05-25,Supermarket,Date Cookies,30.09,17.01,38.21,31
+2026-05-25,Supermarket,Butter Biscuits,39.56,30.59,47.86,47
+2026-05-25,Supermarket,Mini Muffins,26.55,18.36,39.06,27
+2026-05-25,Co-op,Chocolate Cake,16.61,10.72,21.03,24
+2026-05-25,Co-op,Vanilla Cake,14.77,9.53,18.54,17
+2026-05-25,Co-op,Cheese Pastry,30.46,21.9,39.92,25
+2026-05-25,Co-op,Date Cookies,23.61,13.36,30.87,17
+2026-05-25,Co-op,Butter Biscuits,30.64,24.07,40.27,22
+2026-05-25,Co-op,Mini Muffins,18.03,11.34,23.24,20
+2026-05-25,Petrol Station Shop,Chocolate Cake,8.55,3.86,12.96,12
+2026-05-25,Petrol Station Shop,Vanilla Cake,6.27,2.28,10.76,9
+2026-05-25,Petrol Station Shop,Cheese Pastry,17.33,9.82,23.2,24
+2026-05-25,Petrol Station Shop,Date Cookies,16.3,10.04,22.92,20
+2026-05-25,Petrol Station Shop,Butter Biscuits,16.64,10.04,22.59,11
+2026-05-25,Petrol Station Shop,Mini Muffins,12.14,7.46,18.52,12
+2026-05-25,Small Grocery,Chocolate Cake,6.91,2.89,10.52,12
+2026-05-25,Small Grocery,Vanilla Cake,5.15,2.1,7.14,4
+2026-05-25,Small Grocery,Cheese Pastry,13.36,6.89,18.92,14
+2026-05-25,Small Grocery,Date Cookies,10.6,5.36,17.22,16
+2026-05-25,Small Grocery,Butter Biscuits,12.42,7.13,17.88,11
+2026-05-25,Small Grocery,Mini Muffins,9.89,5.18,15.24,5
+2026-05-26,Mall Kiosk,Chocolate Cake,12.95,7.49,17.6,12
+2026-05-26,Mall Kiosk,Vanilla Cake,10.86,5.52,17.01,10
+2026-05-26,Mall Kiosk,Cheese Pastry,23.25,16.59,36.85,24
+2026-05-26,Mall Kiosk,Date Cookies,18.21,10.25,26.18,21
+2026-05-26,Mall Kiosk,Butter Biscuits,22.16,12.32,34.26,30
+2026-05-26,Mall Kiosk,Mini Muffins,16.55,10.53,23.18,18
+2026-05-26,Supermarket,Chocolate Cake,17.83,10.35,22.18,6
+2026-05-26,Supermarket,Vanilla Cake,16.94,11.05,21.31,20
+2026-05-26,Supermarket,Cheese Pastry,44.61,34.11,56.9,38
+2026-05-26,Supermarket,Date Cookies,30.5,17.31,37.36,39
+2026-05-26,Supermarket,Butter Biscuits,40.66,31.66,47.85,17
+2026-05-26,Supermarket,Mini Muffins,26.41,19.12,39.44,12
+2026-05-26,Co-op,Chocolate Cake,15.67,10.48,19.81,8
+2026-05-26,Co-op,Vanilla Cake,14.11,8.93,18.45,16
+2026-05-26,Co-op,Cheese Pastry,29.23,21.63,40.11,36
+2026-05-26,Co-op,Date Cookies,23.28,13.09,31.71,10
+2026-05-26,Co-op,Butter Biscuits,29.88,23.83,40.27,35
+2026-05-26,Co-op,Mini Muffins,17.48,11.01,23.3,15
+2026-05-26,Petrol Station Shop,Chocolate Cake,6.91,0.3,12.96,0
+2026-05-26,Petrol Station Shop,Vanilla Cake,5.91,0.94,10.84,10
+2026-05-26,Petrol Station Shop,Cheese Pastry,16.4,9.48,23.2,21
+2026-05-26,Petrol Station Shop,Date Cookies,15.93,10.22,22.68,10
+2026-05-26,Petrol Station Shop,Butter Biscuits,15.88,9.48,23.2,13
+2026-05-26,Petrol Station Shop,Mini Muffins,11.0,6.31,18.45,9
+2026-05-26,Small Grocery,Chocolate Cake,5.3,0.69,10.55,4
+2026-05-26,Small Grocery,Vanilla Cake,5.04,2.29,7.22,2
+2026-05-26,Small Grocery,Cheese Pastry,13.11,7.46,18.83,13
+2026-05-26,Small Grocery,Date Cookies,9.57,4.35,17.05,11
+2026-05-26,Small Grocery,Butter Biscuits,11.61,6.63,17.91,7
+2026-05-26,Small Grocery,Mini Muffins,8.18,3.76,14.96,4
+2026-05-27,Mall Kiosk,Chocolate Cake,15.74,10.71,18.17,18
+2026-05-27,Mall Kiosk,Vanilla Cake,12.61,8.57,17.3,12
+2026-05-27,Mall Kiosk,Cheese Pastry,29.57,21.52,43.76,36
+2026-05-27,Mall Kiosk,Date Cookies,22.16,13.41,31.18,30
+2026-05-27,Mall Kiosk,Butter Biscuits,30.59,19.89,40.25,44
+2026-05-27,Mall Kiosk,Mini Muffins,18.36,11.96,24.53,24
+2026-05-27,Supermarket,Chocolate Cake,19.97,12.55,24.25,24
+2026-05-27,Supermarket,Vanilla Cake,18.37,12.62,22.74,18
+2026-05-27,Supermarket,Cheese Pastry,52.45,38.29,60.75,48
+2026-05-27,Supermarket,Date Cookies,32.86,19.74,41.8,24
+2026-05-27,Supermarket,Butter Biscuits,45.19,34.24,52.33,54
+2026-05-27,Supermarket,Mini Muffins,31.39,21.91,42.53,26
+2026-05-27,Co-op,Chocolate Cake,17.86,12.51,21.0,18
+2026-05-27,Co-op,Vanilla Cake,16.84,11.58,20.08,18
+2026-05-27,Co-op,Cheese Pastry,34.45,24.94,47.4,48
+2026-05-27,Co-op,Date Cookies,28.14,17.7,40.58,21
+2026-05-27,Co-op,Butter Biscuits,34.02,24.03,45.81,20
+2026-05-27,Co-op,Mini Muffins,19.98,12.91,25.71,19
+2026-05-27,Petrol Station Shop,Chocolate Cake,10.01,7.34,13.28,12
+2026-05-27,Petrol Station Shop,Vanilla Cake,8.06,6.2,11.38,7
+2026-05-27,Petrol Station Shop,Cheese Pastry,18.17,12.34,25.26,36
+2026-05-27,Petrol Station Shop,Date Cookies,17.89,12.38,25.38,18
+2026-05-27,Petrol Station Shop,Butter Biscuits,18.74,12.43,25.34,20
+2026-05-27,Petrol Station Shop,Mini Muffins,13.64,10.43,20.32,20
+2026-05-27,Small Grocery,Chocolate Cake,8.58,5.89,11.8,12
+2026-05-27,Small Grocery,Vanilla Cake,6.64,5.52,7.29,6
+2026-05-27,Small Grocery,Cheese Pastry,15.9,10.13,20.54,12
+2026-05-27,Small Grocery,Date Cookies,12.06,7.71,19.74,20
+2026-05-27,Small Grocery,Butter Biscuits,12.7,7.96,19.49,7
+2026-05-27,Small Grocery,Mini Muffins,10.49,7.13,15.26,16
+2026-05-28,Mall Kiosk,Chocolate Cake,19.1,14.36,21.82,21
+2026-05-28,Mall Kiosk,Vanilla Cake,17.79,13.61,22.47,10
+2026-05-28,Mall Kiosk,Cheese Pastry,40.71,25.96,54.73,48
+2026-05-28,Mall Kiosk,Date Cookies,29.49,19.87,38.33,36
+2026-05-28,Mall Kiosk,Butter Biscuits,38.33,25.63,51.45,51
+2026-05-28,Mall Kiosk,Mini Muffins,24.79,17.44,32.32,39
+2026-05-28,Supermarket,Chocolate Cake,28.16,20.44,32.73,30
+2026-05-28,Supermarket,Vanilla Cake,25.5,19.03,28.52,21
+2026-05-28,Supermarket,Cheese Pastry,71.29,43.38,84.67,72
+2026-05-28,Supermarket,Date Cookies,48.46,27.56,57.2,48
+2026-05-28,Supermarket,Butter Biscuits,65.07,41.03,74.68,69
+2026-05-28,Supermarket,Mini Muffins,40.78,28.43,55.79,54
+2026-05-28,Co-op,Chocolate Cake,22.9,17.1,27.27,30
+2026-05-28,Co-op,Vanilla Cake,22.48,16.49,25.79,24
+2026-05-28,Co-op,Cheese Pastry,45.92,30.18,57.88,48
+2026-05-28,Co-op,Date Cookies,35.78,24.57,43.23,47
+2026-05-28,Co-op,Butter Biscuits,47.51,31.03,62.1,47
+2026-05-28,Co-op,Mini Muffins,27.75,19.16,35.65,32
+2026-05-28,Petrol Station Shop,Chocolate Cake,12.53,10.37,14.95,18
+2026-05-28,Petrol Station Shop,Vanilla Cake,10.17,8.01,13.6,12
+2026-05-28,Petrol Station Shop,Cheese Pastry,23.72,17.0,33.0,36
+2026-05-28,Petrol Station Shop,Date Cookies,23.43,17.09,32.75,19
+2026-05-28,Petrol Station Shop,Butter Biscuits,24.96,16.48,33.05,19
+2026-05-28,Petrol Station Shop,Mini Muffins,18.08,13.82,23.7,24
+2026-05-28,Small Grocery,Chocolate Cake,11.59,9.0,14.28,12
+2026-05-28,Small Grocery,Vanilla Cake,8.88,7.49,12.05,9
+2026-05-28,Small Grocery,Cheese Pastry,18.86,12.44,23.32,24
+2026-05-28,Small Grocery,Date Cookies,16.04,10.63,22.2,13
+2026-05-28,Small Grocery,Butter Biscuits,16.22,10.36,22.0,18
+2026-05-28,Small Grocery,Mini Muffins,13.97,10.52,17.16,10
+2026-05-29,Mall Kiosk,Chocolate Cake,21.94,16.42,25.07,24
+2026-05-29,Mall Kiosk,Vanilla Cake,18.75,12.4,23.73,24
+2026-05-29,Mall Kiosk,Cheese Pastry,46.96,31.32,62.78,42
+2026-05-29,Mall Kiosk,Date Cookies,34.89,21.28,48.03,37
+2026-05-29,Mall Kiosk,Butter Biscuits,44.59,27.64,57.96,54
+2026-05-29,Mall Kiosk,Mini Muffins,27.37,17.95,36.34,44
+2026-05-29,Supermarket,Chocolate Cake,30.93,21.2,39.43,48
+2026-05-29,Supermarket,Vanilla Cake,30.96,19.71,38.34,36
+2026-05-29,Supermarket,Cheese Pastry,76.16,45.39,88.16,70
+2026-05-29,Supermarket,Date Cookies,51.34,31.98,65.02,71
+2026-05-29,Supermarket,Butter Biscuits,66.76,44.01,78.89,49
+2026-05-29,Supermarket,Mini Muffins,45.51,31.87,61.66,55
+2026-05-29,Co-op,Chocolate Cake,25.54,18.54,32.95,30
+2026-05-29,Co-op,Vanilla Cake,25.49,17.75,31.59,36
+2026-05-29,Co-op,Cheese Pastry,47.05,33.34,63.69,60
+2026-05-29,Co-op,Date Cookies,44.38,29.5,63.7,49
+2026-05-29,Co-op,Butter Biscuits,51.82,31.91,65.72,54
+2026-05-29,Co-op,Mini Muffins,31.0,20.79,38.87,44
+2026-05-29,Petrol Station Shop,Chocolate Cake,14.18,10.8,17.4,18
+2026-05-29,Petrol Station Shop,Vanilla Cake,11.06,8.75,13.24,12
+2026-05-29,Petrol Station Shop,Cheese Pastry,30.97,18.43,41.36,48
+2026-05-29,Petrol Station Shop,Date Cookies,30.81,18.81,41.71,29
+2026-05-29,Petrol Station Shop,Butter Biscuits,27.86,17.21,39.99,47
+2026-05-29,Petrol Station Shop,Mini Muffins,21.11,14.71,25.79,19
+2026-05-29,Small Grocery,Chocolate Cake,12.03,9.61,15.78,12
+2026-05-29,Small Grocery,Vanilla Cake,8.72,7.08,12.08,12
+2026-05-29,Small Grocery,Cheese Pastry,19.58,13.74,27.3,18
+2026-05-29,Small Grocery,Date Cookies,16.82,11.18,24.6,19
+2026-05-29,Small Grocery,Butter Biscuits,16.75,11.13,24.41,18
+2026-05-29,Small Grocery,Mini Muffins,12.74,10.55,16.16,20
+2026-05-30,Mall Kiosk,Chocolate Cake,16.22,11.23,18.62,10
+2026-05-30,Mall Kiosk,Vanilla Cake,14.37,10.45,18.23,12
+2026-05-30,Mall Kiosk,Cheese Pastry,30.34,18.68,45.03,24
+2026-05-30,Mall Kiosk,Date Cookies,23.45,14.66,32.71,34
+2026-05-30,Mall Kiosk,Butter Biscuits,29.83,18.71,43.19,48
+2026-05-30,Mall Kiosk,Mini Muffins,19.97,13.53,24.71,15
+2026-05-30,Supermarket,Chocolate Cake,22.22,15.66,25.93,24
+2026-05-30,Supermarket,Vanilla Cake,22.46,15.06,25.92,18
+2026-05-30,Supermarket,Cheese Pastry,52.55,34.46,62.96,60
+2026-05-30,Supermarket,Date Cookies,34.53,22.85,49.52,32
+2026-05-30,Supermarket,Butter Biscuits,47.84,35.91,61.14,52
+2026-05-30,Supermarket,Mini Muffins,32.42,23.61,45.06,29
+2026-05-30,Co-op,Chocolate Cake,19.67,14.8,23.32,20
+2026-05-30,Co-op,Vanilla Cake,18.89,13.96,23.99,14
+2026-05-30,Co-op,Cheese Pastry,33.79,23.94,48.51,48
+2026-05-30,Co-op,Date Cookies,29.84,21.43,46.82,46
+2026-05-30,Co-op,Butter Biscuits,32.09,21.76,45.22,36
+2026-05-30,Co-op,Mini Muffins,22.19,14.46,26.23,28
+2026-05-30,Petrol Station Shop,Chocolate Cake,11.29,8.33,13.8,11
+2026-05-30,Petrol Station Shop,Vanilla Cake,8.3,7.21,11.8,12
+2026-05-30,Petrol Station Shop,Cheese Pastry,20.3,12.71,26.83,24
+2026-05-30,Petrol Station Shop,Date Cookies,20.02,13.73,26.16,11
+2026-05-30,Petrol Station Shop,Butter Biscuits,19.4,12.92,26.89,30
+2026-05-30,Petrol Station Shop,Mini Muffins,15.36,11.01,20.1,13
+2026-05-30,Small Grocery,Chocolate Cake,9.65,6.93,13.27,3
+2026-05-30,Small Grocery,Vanilla Cake,6.93,6.03,9.9,6
+2026-05-30,Small Grocery,Cheese Pastry,14.93,9.63,20.7,14
+2026-05-30,Small Grocery,Date Cookies,12.88,9.09,20.06,21
+2026-05-30,Small Grocery,Butter Biscuits,13.1,8.88,19.86,19
+2026-05-30,Small Grocery,Mini Muffins,10.03,8.37,14.84,15
+2026-05-31,Mall Kiosk,Chocolate Cake,13.32,9.56,16.46,12
+2026-05-31,Mall Kiosk,Vanilla Cake,11.54,8.38,16.05,9
+2026-05-31,Mall Kiosk,Cheese Pastry,24.5,16.52,35.65,30
+2026-05-31,Mall Kiosk,Date Cookies,21.12,13.3,27.77,24
+2026-05-31,Mall Kiosk,Butter Biscuits,26.67,18.12,36.81,19
+2026-05-31,Mall Kiosk,Mini Muffins,16.82,11.75,21.73,17
+2026-05-31,Supermarket,Chocolate Cake,19.11,15.07,23.65,24
+2026-05-31,Supermarket,Vanilla Cake,18.29,13.31,23.11,20
+2026-05-31,Supermarket,Cheese Pastry,41.53,32.45,55.7,48
+2026-05-31,Supermarket,Date Cookies,29.01,20.53,41.32,40
+2026-05-31,Supermarket,Butter Biscuits,43.34,35.02,50.3,46
+2026-05-31,Supermarket,Mini Muffins,27.1,18.79,37.01,17
+2026-05-31,Co-op,Chocolate Cake,16.84,13.1,21.83,14
+2026-05-31,Co-op,Vanilla Cake,15.35,11.85,21.24,9
+2026-05-31,Co-op,Cheese Pastry,29.53,20.44,39.8,27
+2026-05-31,Co-op,Date Cookies,28.14,20.33,39.76,34
+2026-05-31,Co-op,Butter Biscuits,30.09,22.82,39.98,30
+2026-05-31,Co-op,Mini Muffins,18.75,13.01,23.41,20
+2026-05-31,Petrol Station Shop,Chocolate Cake,9.9,6.15,12.49,9
+2026-05-31,Petrol Station Shop,Vanilla Cake,7.0,4.97,10.83,12
+2026-05-31,Petrol Station Shop,Cheese Pastry,17.14,11.07,23.93,15
+2026-05-31,Petrol Station Shop,Date Cookies,18.18,12.33,25.36,17
+2026-05-31,Petrol Station Shop,Butter Biscuits,18.09,11.86,23.54,12
+2026-05-31,Petrol Station Shop,Mini Muffins,12.63,8.05,17.49,14
+2026-05-31,Small Grocery,Chocolate Cake,8.58,4.54,11.8,7
+2026-05-31,Small Grocery,Vanilla Cake,5.69,3.25,8.96,7
+2026-05-31,Small Grocery,Cheese Pastry,12.92,8.01,17.58,11
+2026-05-31,Small Grocery,Date Cookies,11.38,6.16,18.04,6
+2026-05-31,Small Grocery,Butter Biscuits,10.97,6.21,17.07,11
+2026-05-31,Small Grocery,Mini Muffins,8.32,5.54,12.05,12
+2026-06-01,Mall Kiosk,Chocolate Cake,14.09,8.59,17.57,15
+2026-06-01,Mall Kiosk,Vanilla Cake,12.05,7.58,17.64,11
+2026-06-01,Mall Kiosk,Cheese Pastry,26.49,16.49,34.23,24
+2026-06-01,Mall Kiosk,Date Cookies,19.88,10.37,26.52,22
+2026-06-01,Mall Kiosk,Butter Biscuits,24.31,15.23,34.26,29
+2026-06-01,Mall Kiosk,Mini Muffins,17.41,10.38,23.19,19
+2026-06-01,Supermarket,Chocolate Cake,19.03,11.82,23.37,21
+2026-06-01,Supermarket,Vanilla Cake,17.54,11.65,22.75,20
+2026-06-01,Supermarket,Cheese Pastry,45.16,32.89,57.63,38
+2026-06-01,Supermarket,Date Cookies,29.46,18.87,41.38,34
+2026-06-01,Supermarket,Butter Biscuits,45.35,34.01,55.15,50
+2026-06-01,Supermarket,Mini Muffins,26.4,17.45,35.44,25
+2026-06-01,Co-op,Chocolate Cake,15.95,10.59,19.5,15
+2026-06-01,Co-op,Vanilla Cake,15.53,10.54,19.19,15
+2026-06-01,Co-op,Cheese Pastry,29.38,19.65,37.44,36
+2026-06-01,Co-op,Date Cookies,25.8,16.67,35.94,23
+2026-06-01,Co-op,Butter Biscuits,30.09,21.43,39.14,22
+2026-06-01,Co-op,Mini Muffins,17.79,11.15,23.93,13
+2026-06-01,Petrol Station Shop,Chocolate Cake,8.18,3.96,12.67,7
+2026-06-01,Petrol Station Shop,Vanilla Cake,6.07,2.86,10.46,10
+2026-06-01,Petrol Station Shop,Cheese Pastry,16.86,8.97,23.13,16
+2026-06-01,Petrol Station Shop,Date Cookies,16.75,10.04,22.74,16
+2026-06-01,Petrol Station Shop,Butter Biscuits,15.99,8.86,21.12,15
+2026-06-01,Petrol Station Shop,Mini Muffins,12.54,6.89,18.56,8
+2026-06-01,Small Grocery,Chocolate Cake,7.98,4.27,11.98,4
+2026-06-01,Small Grocery,Vanilla Cake,5.12,2.28,7.15,6
+2026-06-01,Small Grocery,Cheese Pastry,14.51,7.52,19.11,14
+2026-06-01,Small Grocery,Date Cookies,10.43,4.54,16.95,11
+2026-06-01,Small Grocery,Butter Biscuits,10.81,4.97,15.97,14
+2026-06-01,Small Grocery,Mini Muffins,7.97,4.02,12.52,9
+2026-06-02,Mall Kiosk,Chocolate Cake,12.6,7.36,17.96,14
+2026-06-02,Mall Kiosk,Vanilla Cake,10.46,5.43,16.8,10
+2026-06-02,Mall Kiosk,Cheese Pastry,24.52,16.67,35.16,23
+2026-06-02,Mall Kiosk,Date Cookies,18.74,9.56,26.6,22
+2026-06-02,Mall Kiosk,Butter Biscuits,21.14,13.42,34.9,17
+2026-06-02,Mall Kiosk,Mini Muffins,16.47,10.52,23.29,22
+2026-06-02,Supermarket,Chocolate Cake,18.84,12.18,23.37,16
+2026-06-02,Supermarket,Vanilla Cake,17.88,10.94,22.54,21
+2026-06-02,Supermarket,Cheese Pastry,44.46,31.99,57.56,32
+2026-06-02,Supermarket,Date Cookies,29.7,19.74,41.42,31
+2026-06-02,Supermarket,Butter Biscuits,38.71,31.58,45.92,38
+2026-06-02,Supermarket,Mini Muffins,26.05,17.16,34.49,17
+2026-06-02,Co-op,Chocolate Cake,15.58,10.48,19.56,18
+2026-06-02,Co-op,Vanilla Cake,15.78,10.35,19.46,13
+2026-06-02,Co-op,Cheese Pastry,29.0,22.21,39.89,36
+2026-06-02,Co-op,Date Cookies,22.4,14.92,34.67,24
+2026-06-02,Co-op,Butter Biscuits,29.34,21.39,39.14,37
+2026-06-02,Co-op,Mini Muffins,18.32,12.13,24.81,22
+2026-06-02,Petrol Station Shop,Chocolate Cake,6.13,0.25,12.67,0
+2026-06-02,Petrol Station Shop,Vanilla Cake,5.77,1.52,10.51,5
+2026-06-02,Petrol Station Shop,Cheese Pastry,16.07,8.79,23.33,19
+2026-06-02,Petrol Station Shop,Date Cookies,15.8,10.27,22.68,15
+2026-06-02,Petrol Station Shop,Butter Biscuits,15.29,9.07,21.12,21
+2026-06-02,Petrol Station Shop,Mini Muffins,12.01,6.92,18.63,6
+2026-06-02,Small Grocery,Chocolate Cake,6.13,1.53,11.88,12
+2026-06-02,Small Grocery,Vanilla Cake,5.0,2.02,7.24,6
+2026-06-02,Small Grocery,Cheese Pastry,13.21,6.88,19.02,15
+2026-06-02,Small Grocery,Date Cookies,10.5,5.96,17.68,10
+2026-06-02,Small Grocery,Butter Biscuits,10.03,4.67,15.97,10
+2026-06-02,Small Grocery,Mini Muffins,6.66,3.07,12.22,6
+2026-06-03,Mall Kiosk,Chocolate Cake,14.05,8.99,17.75,16
+2026-06-03,Mall Kiosk,Vanilla Cake,11.15,6.84,16.82,9
+2026-06-03,Mall Kiosk,Cheese Pastry,28.53,19.46,38.16,32
+2026-06-03,Mall Kiosk,Date Cookies,22.37,14.88,30.69,18
+2026-06-03,Mall Kiosk,Butter Biscuits,27.36,17.31,37.03,18
+2026-06-03,Mall Kiosk,Mini Muffins,18.28,12.17,25.01,22
+2026-06-03,Supermarket,Chocolate Cake,20.63,12.89,24.01,24
+2026-06-03,Supermarket,Vanilla Cake,18.74,11.22,22.96,13
+2026-06-03,Supermarket,Cheese Pastry,51.07,37.44,60.19,41
+2026-06-03,Supermarket,Date Cookies,32.84,20.3,44.34,42
+2026-06-03,Supermarket,Butter Biscuits,50.23,37.89,55.45,58
+2026-06-03,Supermarket,Mini Muffins,30.28,19.28,36.9,25
+2026-06-03,Co-op,Chocolate Cake,16.59,10.95,20.17,18
+2026-06-03,Co-op,Vanilla Cake,16.13,10.8,19.93,11
+2026-06-03,Co-op,Cheese Pastry,33.82,23.47,44.81,38
+2026-06-03,Co-op,Date Cookies,27.12,16.35,37.48,27
+2026-06-03,Co-op,Butter Biscuits,30.62,22.57,41.06,31
+2026-06-03,Co-op,Mini Muffins,20.72,13.15,26.55,26
+2026-06-03,Petrol Station Shop,Chocolate Cake,9.51,5.34,14.14,12
+2026-06-03,Petrol Station Shop,Vanilla Cake,7.32,3.92,10.98,10
+2026-06-03,Petrol Station Shop,Cheese Pastry,18.69,10.91,25.48,31
+2026-06-03,Petrol Station Shop,Date Cookies,17.59,11.34,24.13,14
+2026-06-03,Petrol Station Shop,Butter Biscuits,15.56,9.72,21.63,24
+2026-06-03,Petrol Station Shop,Mini Muffins,13.45,7.57,19.77,17
+2026-06-03,Small Grocery,Chocolate Cake,8.79,4.08,12.33,3
+2026-06-03,Small Grocery,Vanilla Cake,6.32,2.78,8.37,3
+2026-06-03,Small Grocery,Cheese Pastry,13.82,7.19,19.3,12
+2026-06-03,Small Grocery,Date Cookies,11.85,7.96,18.27,13
+2026-06-03,Small Grocery,Butter Biscuits,10.16,5.33,15.35,12
+2026-06-03,Small Grocery,Mini Muffins,8.33,4.5,12.91,8
+2026-06-04,Mall Kiosk,Chocolate Cake,17.32,13.0,21.53,22
+2026-06-04,Mall Kiosk,Vanilla Cake,15.35,9.39,20.57,14
+2026-06-04,Mall Kiosk,Cheese Pastry,39.62,26.11,51.41,48
+2026-06-04,Mall Kiosk,Date Cookies,33.13,23.14,39.5,27
+2026-06-04,Mall Kiosk,Butter Biscuits,39.02,26.42,53.25,25
+2026-06-04,Mall Kiosk,Mini Muffins,24.58,17.09,32.12,27
+2026-06-04,Supermarket,Chocolate Cake,27.02,18.55,31.43,30
+2026-06-04,Supermarket,Vanilla Cake,25.54,18.6,30.12,26
+2026-06-04,Supermarket,Cheese Pastry,69.44,42.65,83.11,61
+2026-06-04,Supermarket,Date Cookies,48.77,28.94,60.54,30
+2026-06-04,Supermarket,Butter Biscuits,65.01,42.32,75.53,65
+2026-06-04,Supermarket,Mini Muffins,39.81,25.54,48.84,40
+2026-06-04,Co-op,Chocolate Cake,23.78,16.97,28.33,9
+2026-06-04,Co-op,Vanilla Cake,23.59,16.91,27.52,24
+2026-06-04,Co-op,Cheese Pastry,47.05,30.14,58.7,47
+2026-06-04,Co-op,Date Cookies,38.19,23.59,47.29,47
+2026-06-04,Co-op,Butter Biscuits,44.31,28.01,54.73,48
+2026-06-04,Co-op,Mini Muffins,27.42,18.04,33.54,30
+2026-06-04,Petrol Station Shop,Chocolate Cake,13.04,8.08,17.33,18
+2026-06-04,Petrol Station Shop,Vanilla Cake,9.56,6.06,13.43,9
+2026-06-04,Petrol Station Shop,Cheese Pastry,26.01,18.28,35.76,36
+2026-06-04,Petrol Station Shop,Date Cookies,23.75,16.75,31.78,19
+2026-06-04,Petrol Station Shop,Butter Biscuits,20.15,13.83,28.44,24
+2026-06-04,Petrol Station Shop,Mini Muffins,16.5,10.55,24.35,18
+2026-06-04,Small Grocery,Chocolate Cake,12.08,7.91,14.66,11
+2026-06-04,Small Grocery,Vanilla Cake,8.27,5.37,11.83,8
+2026-06-04,Small Grocery,Cheese Pastry,16.68,9.79,22.22,22
+2026-06-04,Small Grocery,Date Cookies,15.59,10.58,22.24,25
+2026-06-04,Small Grocery,Butter Biscuits,14.33,8.35,20.36,21
+2026-06-04,Small Grocery,Mini Muffins,10.74,7.69,14.05,12
+2026-06-05,Mall Kiosk,Chocolate Cake,20.18,14.52,26.22,18
+2026-06-05,Mall Kiosk,Vanilla Cake,16.79,10.39,22.09,7
+2026-06-05,Mall Kiosk,Cheese Pastry,42.95,28.1,56.09,53
+2026-06-05,Mall Kiosk,Date Cookies,41.21,26.41,52.33,30
+2026-06-05,Mall Kiosk,Butter Biscuits,44.82,29.98,58.96,49
+2026-06-05,Mall Kiosk,Mini Muffins,31.65,20.87,45.46,35
+2026-06-05,Supermarket,Chocolate Cake,32.75,20.98,41.85,33
+2026-06-05,Supermarket,Vanilla Cake,30.24,19.82,37.69,31
+2026-06-05,Supermarket,Cheese Pastry,74.83,44.48,86.97,93
+2026-06-05,Supermarket,Date Cookies,53.82,33.47,66.23,33
+2026-06-05,Supermarket,Butter Biscuits,62.81,42.2,76.96,69
+2026-06-05,Supermarket,Mini Muffins,41.97,27.75,57.43,46
+2026-06-05,Co-op,Chocolate Cake,27.27,19.9,34.18,36
+2026-06-05,Co-op,Vanilla Cake,27.41,19.27,34.12,14
+2026-06-05,Co-op,Cheese Pastry,53.8,33.75,63.34,60
+2026-06-05,Co-op,Date Cookies,44.39,28.41,55.76,38
+2026-06-05,Co-op,Butter Biscuits,46.88,31.76,60.8,56
+2026-06-05,Co-op,Mini Muffins,34.01,22.41,43.92,33
+2026-06-05,Petrol Station Shop,Chocolate Cake,14.74,8.91,19.16,19
+2026-06-05,Petrol Station Shop,Vanilla Cake,10.54,6.82,13.93,12
+2026-06-05,Petrol Station Shop,Cheese Pastry,35.17,24.49,49.35,24
+2026-06-05,Petrol Station Shop,Date Cookies,29.13,18.86,40.19,15
+2026-06-05,Petrol Station Shop,Butter Biscuits,27.83,16.04,36.9,30
+2026-06-05,Petrol Station Shop,Mini Muffins,20.34,13.28,27.12,16
+2026-06-05,Small Grocery,Chocolate Cake,12.78,8.76,16.33,10
+2026-06-05,Small Grocery,Vanilla Cake,8.69,5.82,12.14,10
+2026-06-05,Small Grocery,Cheese Pastry,18.23,12.28,25.19,18
+2026-06-05,Small Grocery,Date Cookies,15.86,11.23,24.83,8
+2026-06-05,Small Grocery,Butter Biscuits,15.14,8.5,22.97,18
+2026-06-05,Small Grocery,Mini Muffins,12.7,8.52,18.08,11
+2026-06-06,Mall Kiosk,Chocolate Cake,14.6,9.31,19.56,12
+2026-06-06,Mall Kiosk,Vanilla Cake,11.63,7.01,15.7,12
+2026-06-06,Mall Kiosk,Cheese Pastry,28.76,17.8,40.64,24
+2026-06-06,Mall Kiosk,Date Cookies,28.07,17.69,34.37,31
+2026-06-06,Mall Kiosk,Butter Biscuits,30.06,19.03,41.68,22
+2026-06-06,Mall Kiosk,Mini Muffins,21.6,13.4,29.15,22
+2026-06-06,Supermarket,Chocolate Cake,23.3,14.78,26.91,14
+2026-06-06,Supermarket,Vanilla Cake,21.61,14.36,25.13,7
+2026-06-06,Supermarket,Cheese Pastry,51.35,33.54,62.21,45
+2026-06-06,Supermarket,Date Cookies,36.86,23.91,50.26,44
+2026-06-06,Supermarket,Butter Biscuits,46.45,33.73,59.53,58
+2026-06-06,Supermarket,Mini Muffins,32.29,19.13,40.51,32
+2026-06-06,Co-op,Chocolate Cake,19.67,13.79,23.54,22
+2026-06-06,Co-op,Vanilla Cake,19.66,13.34,23.97,11
+2026-06-06,Co-op,Cheese Pastry,36.26,24.11,49.66,27
+2026-06-06,Co-op,Date Cookies,30.39,18.42,41.82,34
+2026-06-06,Co-op,Butter Biscuits,33.54,22.39,43.53,22
+2026-06-06,Co-op,Mini Muffins,23.88,14.27,31.54,25
+2026-06-06,Petrol Station Shop,Chocolate Cake,10.65,5.91,14.11,12
+2026-06-06,Petrol Station Shop,Vanilla Cake,8.38,5.08,12.8,11
+2026-06-06,Petrol Station Shop,Cheese Pastry,22.43,14.5,31.97,19
+2026-06-06,Petrol Station Shop,Date Cookies,19.14,12.32,24.89,10
+2026-06-06,Petrol Station Shop,Butter Biscuits,19.38,12.65,25.6,9
+2026-06-06,Petrol Station Shop,Mini Muffins,14.65,9.23,19.47,13
+2026-06-06,Small Grocery,Chocolate Cake,8.4,5.81,10.95,6
+2026-06-06,Small Grocery,Vanilla Cake,6.31,3.1,9.85,6
+2026-06-06,Small Grocery,Cheese Pastry,13.1,7.74,19.18,24
+2026-06-06,Small Grocery,Date Cookies,12.11,7.88,18.6,11
+2026-06-06,Small Grocery,Butter Biscuits,12.49,7.65,18.64,16
+2026-06-06,Small Grocery,Mini Muffins,9.43,5.9,13.95,12
+2026-06-07,Mall Kiosk,Chocolate Cake,13.45,9.2,17.57,9
+2026-06-07,Mall Kiosk,Vanilla Cake,10.79,7.31,15.42,6
+2026-06-07,Mall Kiosk,Cheese Pastry,25.76,19.8,37.41,29
+2026-06-07,Mall Kiosk,Date Cookies,25.72,17.23,32.14,11
+2026-06-07,Mall Kiosk,Butter Biscuits,26.96,19.65,37.51,21
+2026-06-07,Mall Kiosk,Mini Muffins,19.03,13.1,25.03,23
+2026-06-07,Supermarket,Chocolate Cake,21.25,14.37,27.33,17
+2026-06-07,Supermarket,Vanilla Cake,18.73,13.57,22.96,14
+2026-06-07,Supermarket,Cheese Pastry,41.53,32.33,55.62,48
+2026-06-07,Supermarket,Date Cookies,32.83,24.03,43.72,28
+2026-06-07,Supermarket,Butter Biscuits,40.86,33.47,49.56,40
+2026-06-07,Supermarket,Mini Muffins,27.88,17.78,38.17,28
+2026-06-07,Co-op,Chocolate Cake,17.3,13.3,22.43,8
+2026-06-07,Co-op,Vanilla Cake,16.85,12.59,22.17,14
+2026-06-07,Co-op,Cheese Pastry,31.98,24.1,43.63,33
+2026-06-07,Co-op,Date Cookies,26.54,17.6,38.41,22
+2026-06-07,Co-op,Butter Biscuits,29.52,22.55,38.74,26
+2026-06-07,Co-op,Mini Muffins,21.0,13.58,28.93,19
+2026-06-07,Petrol Station Shop,Chocolate Cake,11.12,6.23,15.43,5
+2026-06-07,Petrol Station Shop,Vanilla Cake,8.58,5.08,12.41,7
+2026-06-07,Petrol Station Shop,Cheese Pastry,20.53,14.05,29.75,24
+2026-06-07,Petrol Station Shop,Date Cookies,16.34,11.59,23.06,11
+2026-06-07,Petrol Station Shop,Butter Biscuits,16.88,11.95,22.53,23
+2026-06-07,Petrol Station Shop,Mini Muffins,13.77,8.79,18.15,13
+2026-06-07,Small Grocery,Chocolate Cake,8.37,5.65,10.77,7
+2026-06-07,Small Grocery,Vanilla Cake,5.85,3.22,9.52,8
+2026-06-07,Small Grocery,Cheese Pastry,12.8,7.2,17.86,7
+2026-06-07,Small Grocery,Date Cookies,11.55,7.3,18.17,6
+2026-06-07,Small Grocery,Butter Biscuits,11.51,6.97,17.72,10
+2026-06-07,Small Grocery,Mini Muffins,9.17,5.4,13.26,5
+2026-06-08,Mall Kiosk,Chocolate Cake,13.62,8.15,17.54,2
+2026-06-08,Mall Kiosk,Vanilla Cake,11.53,6.24,16.98,12
+2026-06-08,Mall Kiosk,Cheese Pastry,26.15,16.17,35.24,22
+2026-06-08,Mall Kiosk,Date Cookies,24.22,15.41,31.17,18
+2026-06-08,Mall Kiosk,Butter Biscuits,26.67,17.18,36.6,13
+2026-06-08,Mall Kiosk,Mini Muffins,18.9,10.81,25.26,8
+2026-06-08,Supermarket,Chocolate Cake,20.13,10.92,25.91,8
+2026-06-08,Supermarket,Vanilla Cake,17.93,12.1,23.29,15
+2026-06-08,Supermarket,Cheese Pastry,45.0,32.89,56.97,27
+2026-06-08,Supermarket,Date Cookies,31.58,22.18,42.73,35
+2026-06-08,Supermarket,Butter Biscuits,41.79,33.33,48.61,36
+2026-06-08,Supermarket,Mini Muffins,26.52,16.5,35.81,16
+2026-06-08,Co-op,Chocolate Cake,16.4,10.72,20.05,14
+2026-06-08,Co-op,Vanilla Cake,16.31,10.66,20.28,10
+2026-06-08,Co-op,Cheese Pastry,31.84,25.49,42.86,29
+2026-06-08,Co-op,Date Cookies,25.95,15.95,34.69,14
+2026-06-08,Co-op,Butter Biscuits,29.51,21.3,37.29,25
+2026-06-08,Co-op,Mini Muffins,19.13,11.15,25.88,7
+2026-06-08,Petrol Station Shop,Chocolate Cake,8.71,4.18,13.03,6
+2026-06-08,Petrol Station Shop,Vanilla Cake,7.6,4.13,12.36,7
+2026-06-08,Petrol Station Shop,Cheese Pastry,22.38,14.48,30.23,24
+2026-06-08,Petrol Station Shop,Date Cookies,16.16,9.58,21.2,13
+2026-06-08,Petrol Station Shop,Butter Biscuits,16.24,9.64,21.79,15
+2026-06-08,Petrol Station Shop,Mini Muffins,13.71,8.15,19.02,9
+2026-06-08,Small Grocery,Chocolate Cake,7.08,3.2,10.61,6
+2026-06-08,Small Grocery,Vanilla Cake,5.22,1.56,9.93,2
+2026-06-08,Small Grocery,Cheese Pastry,12.98,6.35,18.78,7
+2026-06-08,Small Grocery,Date Cookies,11.83,7.24,17.61,8
+2026-06-08,Small Grocery,Butter Biscuits,11.9,6.67,17.77,6
+2026-06-08,Small Grocery,Mini Muffins,8.34,4.35,14.85,4
+2026-06-09,Mall Kiosk,Chocolate Cake,12.48,7.31,17.6,6
+2026-06-09,Mall Kiosk,Vanilla Cake,11.18,5.57,16.8,10
+2026-06-09,Mall Kiosk,Cheese Pastry,24.71,16.83,35.16,23
+2026-06-09,Mall Kiosk,Date Cookies,22.88,15.02,31.46,9
+2026-06-09,Mall Kiosk,Butter Biscuits,25.54,18.27,36.59,22
+2026-06-09,Mall Kiosk,Mini Muffins,17.95,10.0,26.44,24
+2026-06-09,Supermarket,Chocolate Cake,19.41,12.22,25.51,18
+2026-06-09,Supermarket,Vanilla Cake,18.81,12.56,23.74,10
+2026-06-09,Supermarket,Cheese Pastry,44.18,31.98,56.9,44
+2026-06-09,Supermarket,Date Cookies,31.34,19.28,42.82,30
+2026-06-09,Supermarket,Butter Biscuits,39.17,28.56,47.85,41
+2026-06-09,Supermarket,Mini Muffins,25.81,16.58,36.59,28
+2026-06-09,Co-op,Chocolate Cake,16.23,10.7,21.12,18
+2026-06-09,Co-op,Vanilla Cake,15.85,10.43,20.02,18
+2026-06-09,Co-op,Cheese Pastry,28.97,24.8,40.67,21
+2026-06-09,Co-op,Date Cookies,26.81,18.61,37.44,25
+2026-06-09,Co-op,Butter Biscuits,29.34,21.67,39.14,36
+2026-06-09,Co-op,Mini Muffins,18.87,10.89,27.34,19
+2026-06-09,Petrol Station Shop,Chocolate Cake,7.05,0.63,13.03,0
+2026-06-09,Petrol Station Shop,Vanilla Cake,6.96,2.13,12.42,7
+2026-06-09,Petrol Station Shop,Cheese Pastry,20.69,13.55,30.23,23
+2026-06-09,Petrol Station Shop,Date Cookies,14.36,9.45,21.2,13
+2026-06-09,Petrol Station Shop,Butter Biscuits,15.97,9.17,22.82,7
+2026-06-09,Petrol Station Shop,Mini Muffins,12.6,7.75,18.83,10
+2026-06-09,Small Grocery,Chocolate Cake,5.56,1.19,10.48,4
+2026-06-09,Small Grocery,Vanilla Cake,5.79,3.1,10.34,3
+2026-06-09,Small Grocery,Cheese Pastry,12.25,6.21,18.8,18
+2026-06-09,Small Grocery,Date Cookies,11.15,6.68,17.37,10
+2026-06-09,Small Grocery,Butter Biscuits,11.25,6.55,17.74,11
+2026-06-09,Small Grocery,Mini Muffins,7.61,3.77,14.85,11
+2026-06-10,Mall Kiosk,Chocolate Cake,14.05,8.6,17.83,15
+2026-06-10,Mall Kiosk,Vanilla Cake,11.1,6.34,16.0,16
+2026-06-10,Mall Kiosk,Cheese Pastry,28.31,19.09,38.16,30
+2026-06-10,Mall Kiosk,Date Cookies,26.69,16.29,34.07,26
+2026-06-10,Mall Kiosk,Butter Biscuits,28.31,19.25,37.14,27
+2026-06-10,Mall Kiosk,Mini Muffins,21.05,12.32,29.83,9
+2026-06-10,Supermarket,Chocolate Cake,21.34,13.27,26.66,30
+2026-06-10,Supermarket,Vanilla Cake,19.74,11.52,24.4,18
+2026-06-10,Supermarket,Cheese Pastry,51.57,37.63,60.19,49
+2026-06-10,Supermarket,Date Cookies,35.33,24.64,46.78,41
+2026-06-10,Supermarket,Butter Biscuits,47.97,35.53,54.23,35
+2026-06-10,Supermarket,Mini Muffins,27.92,16.9,39.15,32
+2026-06-10,Co-op,Chocolate Cake,17.32,11.32,21.6,22
+2026-06-10,Co-op,Vanilla Cake,15.68,10.8,20.22,8
+2026-06-10,Co-op,Cheese Pastry,33.42,26.04,44.78,29
+2026-06-10,Co-op,Date Cookies,30.31,20.21,41.06,27
+2026-06-10,Co-op,Butter Biscuits,32.86,22.73,42.82,39
+2026-06-10,Co-op,Mini Muffins,21.44,13.56,29.72,17
+2026-06-10,Petrol Station Shop,Chocolate Cake,10.42,5.81,15.22,8
+2026-06-10,Petrol Station Shop,Vanilla Cake,8.59,5.48,12.73,5
+2026-06-10,Petrol Station Shop,Cheese Pastry,24.42,15.87,33.29,14
+2026-06-10,Petrol Station Shop,Date Cookies,16.36,10.38,22.57,6
+2026-06-10,Petrol Station Shop,Butter Biscuits,17.6,10.46,24.28,11
+2026-06-10,Petrol Station Shop,Mini Muffins,13.94,8.43,19.78,12
+2026-06-10,Small Grocery,Chocolate Cake,8.25,4.2,10.82,9
+2026-06-10,Small Grocery,Vanilla Cake,6.08,2.46,10.37,6
+2026-06-10,Small Grocery,Cheese Pastry,13.23,6.69,19.52,12
+2026-06-10,Small Grocery,Date Cookies,12.06,7.59,18.04,10
+2026-06-10,Small Grocery,Butter Biscuits,11.79,6.98,18.1,17
+2026-06-10,Small Grocery,Mini Muffins,9.42,4.72,15.82,8
+2026-06-11,Mall Kiosk,Chocolate Cake,17.6,12.61,23.22,24
+2026-06-11,Mall Kiosk,Vanilla Cake,15.99,11.44,22.06,15
+2026-06-11,Mall Kiosk,Cheese Pastry,38.72,24.96,51.18,40
+2026-06-11,Mall Kiosk,Date Cookies,33.76,23.6,40.19,24
+2026-06-11,Mall Kiosk,Butter Biscuits,36.98,24.66,47.38,34
+2026-06-11,Mall Kiosk,Mini Muffins,26.81,19.1,35.75,24
+2026-06-11,Supermarket,Chocolate Cake,28.99,22.01,34.75,30
+2026-06-11,Supermarket,Vanilla Cake,27.05,19.56,31.57,30
+2026-06-11,Supermarket,Cheese Pastry,70.08,42.85,82.77,60
+2026-06-11,Supermarket,Date Cookies,49.92,29.3,65.93,47
+2026-06-11,Supermarket,Butter Biscuits,62.96,40.32,77.64,63
+2026-06-11,Supermarket,Mini Muffins,40.29,24.49,50.01,40
+2026-06-11,Co-op,Chocolate Cake,22.38,16.04,27.45,9
+2026-06-11,Co-op,Vanilla Cake,22.2,16.47,26.57,24
+2026-06-11,Co-op,Cheese Pastry,45.8,31.48,63.26,34
+2026-06-11,Co-op,Date Cookies,41.56,26.08,54.4,45
+2026-06-11,Co-op,Butter Biscuits,45.25,28.01,56.83,50
+2026-06-11,Co-op,Mini Muffins,28.07,19.47,37.07,26
+2026-06-11,Petrol Station Shop,Chocolate Cake,15.14,8.68,20.72,13
+2026-06-11,Petrol Station Shop,Vanilla Cake,12.34,8.36,16.1,12
+2026-06-11,Petrol Station Shop,Cheese Pastry,31.43,21.53,41.59,36
+2026-06-11,Petrol Station Shop,Date Cookies,21.75,15.27,28.86,16
+2026-06-11,Petrol Station Shop,Butter Biscuits,23.55,15.78,32.29,34
+2026-06-11,Petrol Station Shop,Mini Muffins,17.09,11.91,24.53,18
+2026-06-11,Small Grocery,Chocolate Cake,10.24,6.29,12.02,9
+2026-06-11,Small Grocery,Vanilla Cake,8.05,4.31,10.52,6
+2026-06-11,Small Grocery,Cheese Pastry,16.1,10.67,22.22,20
+2026-06-11,Small Grocery,Date Cookies,15.32,9.8,21.65,17
+2026-06-11,Small Grocery,Butter Biscuits,15.02,10.15,21.39,29
+2026-06-11,Small Grocery,Mini Muffins,12.57,7.87,17.37,11
+2026-06-12,Mall Kiosk,Chocolate Cake,20.18,14.81,25.97,24
+2026-06-12,Mall Kiosk,Vanilla Cake,16.1,10.47,21.49,12
+2026-06-12,Mall Kiosk,Cheese Pastry,44.94,29.13,57.47,39
+2026-06-12,Mall Kiosk,Date Cookies,40.45,26.39,52.98,46
+2026-06-12,Mall Kiosk,Butter Biscuits,44.94,28.99,55.75,42
+2026-06-12,Mall Kiosk,Mini Muffins,34.26,21.42,45.27,30
+2026-06-12,Supermarket,Chocolate Cake,34.24,23.99,43.18,42
+2026-06-12,Supermarket,Vanilla Cake,30.59,20.0,39.28,34
+2026-06-12,Supermarket,Cheese Pastry,74.66,44.28,87.18,69
+2026-06-12,Supermarket,Date Cookies,55.01,33.08,69.1,55
+2026-06-12,Supermarket,Butter Biscuits,68.64,42.46,82.85,72
+2026-06-12,Supermarket,Mini Muffins,44.02,27.94,55.99,45
+2026-06-12,Co-op,Chocolate Cake,26.67,17.94,37.31,28
+2026-06-12,Co-op,Vanilla Cake,24.31,18.25,30.49,12
+2026-06-12,Co-op,Cheese Pastry,52.0,35.45,67.66,53
+2026-06-12,Co-op,Date Cookies,44.7,29.34,60.45,26
+2026-06-12,Co-op,Butter Biscuits,51.87,32.0,62.63,42
+2026-06-12,Co-op,Mini Muffins,33.98,23.75,45.15,44
+2026-06-12,Petrol Station Shop,Chocolate Cake,17.17,9.4,23.67,16
+2026-06-12,Petrol Station Shop,Vanilla Cake,13.75,9.0,18.04,11
+2026-06-12,Petrol Station Shop,Cheese Pastry,38.93,23.26,49.58,19
+2026-06-12,Petrol Station Shop,Date Cookies,25.08,16.89,32.78,27
+2026-06-12,Petrol Station Shop,Butter Biscuits,29.2,19.2,39.84,15
+2026-06-12,Petrol Station Shop,Mini Muffins,19.51,12.37,25.74,20
+2026-06-12,Small Grocery,Chocolate Cake,10.69,6.72,12.28,18
+2026-06-12,Small Grocery,Vanilla Cake,8.47,4.94,12.2,12
+2026-06-12,Small Grocery,Cheese Pastry,17.96,11.0,25.15,12
+2026-06-12,Small Grocery,Date Cookies,17.05,11.06,25.26,19
+2026-06-12,Small Grocery,Butter Biscuits,16.39,11.15,24.53,23
+2026-06-12,Small Grocery,Mini Muffins,13.27,8.69,19.07,20
+2026-06-13,Mall Kiosk,Chocolate Cake,14.6,9.21,18.79,11
+2026-06-13,Mall Kiosk,Vanilla Cake,10.68,6.32,15.55,18
+2026-06-13,Mall Kiosk,Cheese Pastry,28.93,18.28,40.64,24
+2026-06-13,Mall Kiosk,Date Cookies,27.06,15.91,33.9,27
+2026-06-13,Mall Kiosk,Butter Biscuits,30.49,17.39,38.95,41
+2026-06-13,Mall Kiosk,Mini Muffins,21.74,12.95,28.74,16
+2026-06-13,Supermarket,Chocolate Cake,22.93,15.01,27.25,23
+2026-06-13,Supermarket,Vanilla Cake,22.03,14.13,25.79,18
+2026-06-13,Supermarket,Cheese Pastry,51.84,33.74,60.93,58
+2026-06-13,Supermarket,Date Cookies,38.08,24.67,52.12,34
+2026-06-13,Supermarket,Butter Biscuits,48.61,33.8,61.25,61
+2026-06-13,Supermarket,Mini Muffins,33.02,19.37,41.31,33
+2026-06-13,Co-op,Chocolate Cake,20.26,14.16,25.64,14
+2026-06-13,Co-op,Vanilla Cake,17.15,12.89,21.69,17
+2026-06-13,Co-op,Cheese Pastry,33.59,23.7,48.29,43
+2026-06-13,Co-op,Date Cookies,30.68,18.97,41.88,36
+2026-06-13,Co-op,Butter Biscuits,33.8,23.17,45.77,30
+2026-06-13,Co-op,Mini Muffins,24.64,14.33,31.15,35
+2026-06-13,Petrol Station Shop,Chocolate Cake,11.85,6.71,17.45,18
+2026-06-13,Petrol Station Shop,Vanilla Cake,9.44,6.12,12.77,6
+2026-06-13,Petrol Station Shop,Cheese Pastry,23.67,13.71,32.39,24
+2026-06-13,Petrol Station Shop,Date Cookies,17.78,12.29,23.63,12
+2026-06-13,Petrol Station Shop,Butter Biscuits,19.45,11.81,26.34,20
+2026-06-13,Petrol Station Shop,Mini Muffins,13.82,8.79,19.27,16
+2026-06-13,Small Grocery,Chocolate Cake,7.52,3.99,10.44,7
+2026-06-13,Small Grocery,Vanilla Cake,6.31,3.1,9.85,6
+2026-06-13,Small Grocery,Cheese Pastry,15.17,9.01,20.39,12
+2026-06-13,Small Grocery,Date Cookies,11.94,6.5,18.08,13
+2026-06-13,Small Grocery,Butter Biscuits,12.61,7.79,18.63,18
+2026-06-13,Small Grocery,Mini Muffins,9.59,5.78,14.65,9
+2026-06-14,Mall Kiosk,Chocolate Cake,13.45,9.65,17.42,18
+2026-06-14,Mall Kiosk,Vanilla Cake,9.5,6.58,12.91,10
+2026-06-14,Mall Kiosk,Cheese Pastry,25.48,17.64,36.34,31
+2026-06-14,Mall Kiosk,Date Cookies,24.83,14.87,30.09,14
+2026-06-14,Mall Kiosk,Butter Biscuits,27.51,16.77,35.58,19
+2026-06-14,Mall Kiosk,Mini Muffins,20.17,12.66,26.17,11
+2026-06-14,Supermarket,Chocolate Cake,20.44,14.44,25.91,22
+2026-06-14,Supermarket,Vanilla Cake,18.44,13.46,23.89,18
+2026-06-14,Supermarket,Cheese Pastry,41.74,32.64,54.63,43
+2026-06-14,Supermarket,Date Cookies,33.4,24.52,45.29,24
+2026-06-14,Supermarket,Butter Biscuits,41.23,32.68,53.65,35
+2026-06-14,Supermarket,Mini Muffins,27.05,17.43,36.76,27
+2026-06-14,Co-op,Chocolate Cake,17.08,13.44,21.55,15
+2026-06-14,Co-op,Vanilla Cake,15.19,12.43,19.83,12
+2026-06-14,Co-op,Cheese Pastry,30.52,24.17,41.07,36
+2026-06-14,Co-op,Date Cookies,26.41,18.11,37.53,11
+2026-06-14,Co-op,Butter Biscuits,28.23,22.39,38.82,32
+2026-06-14,Co-op,Mini Muffins,21.25,13.68,26.68,15
+2026-06-14,Petrol Station Shop,Chocolate Cake,11.12,6.23,15.33,9
+2026-06-14,Petrol Station Shop,Vanilla Cake,8.27,6.06,11.77,11
+2026-06-14,Petrol Station Shop,Cheese Pastry,22.57,13.99,30.73,19
+2026-06-14,Petrol Station Shop,Date Cookies,15.85,10.93,21.0,22
+2026-06-14,Petrol Station Shop,Butter Biscuits,17.82,10.81,24.31,8
+2026-06-14,Petrol Station Shop,Mini Muffins,12.76,8.51,17.6,9
+2026-06-14,Small Grocery,Chocolate Cake,7.25,3.93,10.26,5
+2026-06-14,Small Grocery,Vanilla Cake,5.63,3.13,9.12,5
+2026-06-14,Small Grocery,Cheese Pastry,12.91,7.34,18.24,12
+2026-06-14,Small Grocery,Date Cookies,11.65,5.99,17.64,7
+2026-06-14,Small Grocery,Butter Biscuits,12.03,7.54,17.61,13
+2026-06-14,Small Grocery,Mini Muffins,8.67,5.47,13.24,6
+2026-06-15,Mall Kiosk,Chocolate Cake,13.71,8.14,18.23,15
+2026-06-15,Mall Kiosk,Vanilla Cake,10.48,5.82,16.46,12
+2026-06-15,Mall Kiosk,Cheese Pastry,27.01,17.35,35.24,12
+2026-06-15,Mall Kiosk,Date Cookies,22.82,12.32,28.64,18
+2026-06-15,Mall Kiosk,Butter Biscuits,25.92,13.87,32.12,21
+2026-06-15,Mall Kiosk,Mini Muffins,18.93,10.82,26.2,15
+2026-06-15,Supermarket,Chocolate Cake,19.02,12.45,23.56,15
+2026-06-15,Supermarket,Vanilla Cake,17.24,11.22,22.37,19
+2026-06-15,Supermarket,Cheese Pastry,45.44,34.91,56.97,37
+2026-06-15,Supermarket,Date Cookies,32.19,22.7,43.82,30
+2026-06-15,Supermarket,Butter Biscuits,42.5,30.77,52.25,45
+2026-06-15,Supermarket,Mini Muffins,27.1,17.17,35.09,17
+2026-06-15,Co-op,Chocolate Cake,15.95,10.59,19.43,15
+2026-06-15,Co-op,Vanilla Cake,15.17,10.42,19.4,12
+2026-06-15,Co-op,Cheese Pastry,29.94,23.05,40.95,36
+2026-06-15,Co-op,Date Cookies,27.21,16.73,33.88,25
+2026-06-15,Co-op,Butter Biscuits,29.51,21.3,37.29,24
+2026-06-15,Co-op,Mini Muffins,19.05,11.45,26.02,14
+2026-06-15,Petrol Station Shop,Chocolate Cake,8.71,4.17,12.84,12
+2026-06-15,Petrol Station Shop,Vanilla Cake,7.07,3.66,11.09,5
+2026-06-15,Petrol Station Shop,Cheese Pastry,22.17,12.7,31.64,24
+2026-06-15,Petrol Station Shop,Date Cookies,14.49,8.77,18.81,14
+2026-06-15,Petrol Station Shop,Butter Biscuits,17.03,8.88,22.95,8
+2026-06-15,Petrol Station Shop,Mini Muffins,12.76,7.67,19.04,8
+2026-06-15,Small Grocery,Chocolate Cake,6.78,2.58,10.55,2
+2026-06-15,Small Grocery,Vanilla Cake,5.44,2.33,9.51,4
+2026-06-15,Small Grocery,Cheese Pastry,13.42,7.57,18.94,15
+2026-06-15,Small Grocery,Date Cookies,10.61,5.38,17.39,13
+2026-06-15,Small Grocery,Butter Biscuits,12.3,7.15,17.65,10
+2026-06-15,Small Grocery,Mini Muffins,7.89,3.53,12.88,8
+2026-06-16,Mall Kiosk,Chocolate Cake,10.91,5.07,17.08,11
+2026-06-16,Mall Kiosk,Vanilla Cake,10.23,5.61,16.36,11
+2026-06-16,Mall Kiosk,Cheese Pastry,24.79,17.36,35.16,15
+2026-06-16,Mall Kiosk,Date Cookies,19.85,11.09,27.67,22
+2026-06-16,Mall Kiosk,Butter Biscuits,24.41,13.35,32.22,24
+2026-06-16,Mall Kiosk,Mini Muffins,18.36,10.81,26.72,9
+2026-06-16,Supermarket,Chocolate Cake,19.0,11.35,24.66,12
+2026-06-16,Supermarket,Vanilla Cake,16.65,11.0,21.09,18
+2026-06-16,Supermarket,Cheese Pastry,44.61,32.48,56.9,48
+2026-06-16,Supermarket,Date Cookies,31.45,22.21,43.01,16
+2026-06-16,Supermarket,Butter Biscuits,41.84,29.69,55.77,35
+2026-06-16,Supermarket,Mini Muffins,25.65,16.55,34.97,10
+2026-06-16,Co-op,Chocolate Cake,15.78,10.88,20.45,13
+2026-06-16,Co-op,Vanilla Cake,15.05,10.55,19.11,12
+2026-06-16,Co-op,Cheese Pastry,29.04,23.35,41.18,27
+2026-06-16,Co-op,Date Cookies,26.12,16.48,33.88,19
+2026-06-16,Co-op,Butter Biscuits,28.78,21.75,37.29,23
+2026-06-16,Co-op,Mini Muffins,19.1,11.74,25.96,8
+2026-06-16,Petrol Station Shop,Chocolate Cake,7.05,0.61,12.84,0
+2026-06-16,Petrol Station Shop,Vanilla Cake,6.81,1.42,11.7,4
+2026-06-16,Petrol Station Shop,Cheese Pastry,20.53,12.67,31.8,19
+2026-06-16,Petrol Station Shop,Date Cookies,13.15,8.17,18.98,6
+2026-06-16,Petrol Station Shop,Butter Biscuits,16.14,9.6,22.81,13
+2026-06-16,Petrol Station Shop,Mini Muffins,11.7,7.19,18.91,7
+2026-06-16,Small Grocery,Chocolate Cake,5.72,1.95,10.19,5
+2026-06-16,Small Grocery,Vanilla Cake,5.31,2.28,9.8,6
+2026-06-16,Small Grocery,Cheese Pastry,12.62,7.33,19.12,17
+2026-06-16,Small Grocery,Date Cookies,9.54,4.52,17.22,12
+2026-06-16,Small Grocery,Butter Biscuits,11.72,6.83,17.58,11
+2026-06-16,Small Grocery,Mini Muffins,8.46,4.33,14.67,10
+2026-06-17,Mall Kiosk,Chocolate Cake,12.04,6.62,16.5,8
+2026-06-17,Mall Kiosk,Vanilla Cake,10.74,6.25,16.69,10
+2026-06-17,Mall Kiosk,Cheese Pastry,28.53,19.39,38.16,24
+2026-06-17,Mall Kiosk,Date Cookies,21.99,13.12,29.02,14
+2026-06-17,Mall Kiosk,Butter Biscuits,28.33,16.53,35.68,18
+2026-06-17,Mall Kiosk,Mini Muffins,20.72,12.2,27.87,13
+2026-06-17,Supermarket,Chocolate Cake,21.42,11.89,25.71,22
+2026-06-17,Supermarket,Vanilla Cake,17.13,11.15,21.38,18
+2026-06-17,Supermarket,Cheese Pastry,51.21,37.43,60.19,39
+2026-06-17,Supermarket,Date Cookies,34.83,23.64,46.36,36
+2026-06-17,Supermarket,Butter Biscuits,51.32,37.75,58.83,27
+2026-06-17,Supermarket,Mini Muffins,27.92,17.64,39.24,27
+2026-06-17,Co-op,Chocolate Cake,17.43,11.25,22.34,17
+2026-06-17,Co-op,Vanilla Cake,14.36,9.59,18.57,11
+2026-06-17,Co-op,Cheese Pastry,34.3,25.77,45.5,22
+2026-06-17,Co-op,Date Cookies,28.52,17.53,36.28,21
+2026-06-17,Co-op,Butter Biscuits,33.4,22.73,43.63,15
+2026-06-17,Co-op,Mini Muffins,21.09,12.4,28.25,15
+2026-06-17,Petrol Station Shop,Chocolate Cake,9.43,5.27,13.24,12
+2026-06-17,Petrol Station Shop,Vanilla Cake,7.85,4.63,11.12,3
+2026-06-17,Petrol Station Shop,Cheese Pastry,23.37,13.71,31.56,27
+2026-06-17,Petrol Station Shop,Date Cookies,12.84,7.07,18.67,12
+2026-06-17,Petrol Station Shop,Butter Biscuits,17.59,11.0,23.59,12
+2026-06-17,Petrol Station Shop,Mini Muffins,12.68,8.1,19.43,7
+2026-06-17,Small Grocery,Chocolate Cake,7.96,3.44,10.69,1
+2026-06-17,Small Grocery,Vanilla Cake,6.32,3.53,9.56,6
+2026-06-17,Small Grocery,Cheese Pastry,13.44,7.38,19.81,10
+2026-06-17,Small Grocery,Date Cookies,11.02,5.97,18.12,12
+2026-06-17,Small Grocery,Butter Biscuits,12.95,7.36,18.55,13
+2026-06-17,Small Grocery,Mini Muffins,8.87,4.72,14.16,11
+2026-06-18,Mall Kiosk,Chocolate Cake,15.95,9.24,20.29,16
+2026-06-18,Mall Kiosk,Vanilla Cake,15.35,9.47,20.58,8
+2026-06-18,Mall Kiosk,Cheese Pastry,38.48,24.2,51.18,31
+2026-06-18,Mall Kiosk,Date Cookies,27.48,19.44,36.23,28
+2026-06-18,Mall Kiosk,Butter Biscuits,33.99,23.09,48.5,33
+2026-06-18,Mall Kiosk,Mini Muffins,26.58,19.43,34.19,19
+2026-06-18,Supermarket,Chocolate Cake,27.97,19.34,33.39,23
+2026-06-18,Supermarket,Vanilla Cake,24.14,17.74,29.31,23
+2026-06-18,Supermarket,Cheese Pastry,69.6,43.05,82.96,45
+2026-06-18,Supermarket,Date Cookies,51.44,30.04,63.87,56
+2026-06-18,Supermarket,Butter Biscuits,66.41,42.35,78.82,62
+2026-06-18,Supermarket,Mini Muffins,39.94,23.92,52.27,26
+2026-06-18,Co-op,Chocolate Cake,21.66,15.89,27.64,18
+2026-06-18,Co-op,Vanilla Cake,17.78,13.68,23.13,12
+2026-06-18,Co-op,Cheese Pastry,47.07,28.55,59.05,48
+2026-06-18,Co-op,Date Cookies,40.65,24.93,47.93,17
+2026-06-18,Co-op,Butter Biscuits,46.88,28.01,58.68,20
+2026-06-18,Co-op,Mini Muffins,27.48,18.71,35.34,24
+2026-06-18,Petrol Station Shop,Chocolate Cake,11.67,8.37,16.01,7
+2026-06-18,Petrol Station Shop,Vanilla Cake,10.99,8.04,14.21,9
+2026-06-18,Petrol Station Shop,Cheese Pastry,30.09,20.16,38.4,16
+2026-06-18,Petrol Station Shop,Date Cookies,16.07,9.0,20.65,15
+2026-06-18,Petrol Station Shop,Butter Biscuits,22.07,14.71,31.55,21
+2026-06-18,Petrol Station Shop,Mini Muffins,16.8,11.14,23.05,11
+2026-06-18,Small Grocery,Chocolate Cake,9.38,6.03,11.13,5
+2026-06-18,Small Grocery,Vanilla Cake,8.61,5.37,11.97,7
+2026-06-18,Small Grocery,Cheese Pastry,16.1,10.67,22.22,10
+2026-06-18,Small Grocery,Date Cookies,14.46,8.13,20.21,9
+2026-06-18,Small Grocery,Butter Biscuits,15.43,10.79,21.5,15
+2026-06-18,Small Grocery,Mini Muffins,11.15,7.7,14.72,7
+2026-06-19,Mall Kiosk,Chocolate Cake,19.68,12.95,25.09,10
+2026-06-19,Mall Kiosk,Vanilla Cake,15.92,9.96,20.98,8
+2026-06-19,Mall Kiosk,Cheese Pastry,43.19,27.78,56.25,29
+2026-06-19,Mall Kiosk,Date Cookies,34.84,22.71,46.11,23
+2026-06-19,Mall Kiosk,Butter Biscuits,42.17,26.7,54.82,40
+2026-06-19,Mall Kiosk,Mini Muffins,30.62,18.5,39.87,29
+2026-06-19,Supermarket,Chocolate Cake,32.58,20.81,42.26,38
+2026-06-19,Supermarket,Vanilla Cake,28.25,18.55,37.65,22
+2026-06-19,Supermarket,Cheese Pastry,75.74,45.02,87.23,72
+2026-06-19,Supermarket,Date Cookies,53.13,32.8,65.22,49
+2026-06-19,Supermarket,Butter Biscuits,74.87,44.0,86.37,40
+2026-06-19,Supermarket,Mini Muffins,43.16,26.65,58.29,61
+2026-06-19,Co-op,Chocolate Cake,24.34,17.25,30.86,18
+2026-06-19,Co-op,Vanilla Cake,19.24,13.74,24.72,22
+2026-06-19,Co-op,Cheese Pastry,49.18,30.67,60.3,52
+2026-06-19,Co-op,Date Cookies,44.41,26.89,55.42,34
+2026-06-19,Co-op,Butter Biscuits,49.14,31.32,62.46,22
+2026-06-19,Co-op,Mini Muffins,32.63,20.78,43.86,37
+2026-06-19,Petrol Station Shop,Chocolate Cake,12.49,8.87,15.25,19
+2026-06-19,Petrol Station Shop,Vanilla Cake,11.83,8.39,14.79,5
+2026-06-19,Petrol Station Shop,Cheese Pastry,31.73,19.23,42.0,24
+2026-06-19,Petrol Station Shop,Date Cookies,20.0,13.47,25.8,25
+2026-06-19,Petrol Station Shop,Butter Biscuits,26.83,16.63,35.3,23
+2026-06-19,Petrol Station Shop,Mini Muffins,19.4,12.46,25.47,15
+2026-06-19,Small Grocery,Chocolate Cake,9.72,6.04,12.31,5
+2026-06-19,Small Grocery,Vanilla Cake,8.69,5.71,12.2,8
+2026-06-19,Small Grocery,Cheese Pastry,18.71,11.55,25.19,24
+2026-06-19,Small Grocery,Date Cookies,15.63,9.01,23.71,15
+2026-06-19,Small Grocery,Butter Biscuits,16.77,11.65,26.44,18
+2026-06-19,Small Grocery,Mini Muffins,13.27,8.69,18.89,12
+2026-06-20,Mall Kiosk,Chocolate Cake,13.47,8.22,17.88,4
+2026-06-20,Mall Kiosk,Vanilla Cake,12.01,7.97,17.51,8
+2026-06-20,Mall Kiosk,Cheese Pastry,28.01,17.3,39.14,35
+2026-06-20,Mall Kiosk,Date Cookies,22.04,13.63,29.49,19
+2026-06-20,Mall Kiosk,Butter Biscuits,28.42,17.74,35.77,26
+2026-06-20,Mall Kiosk,Mini Muffins,20.16,12.34,24.75,30
+2026-06-20,Supermarket,Chocolate Cake,22.95,14.78,27.06,21
+2026-06-20,Supermarket,Vanilla Cake,21.13,14.2,25.44,17
+2026-06-20,Supermarket,Cheese Pastry,51.81,35.69,60.87,50
+2026-06-20,Supermarket,Date Cookies,36.59,24.07,50.74,47
+2026-06-20,Supermarket,Butter Biscuits,51.21,33.58,60.06,31
+2026-06-20,Supermarket,Mini Muffins,31.92,17.92,43.1,27
+2026-06-20,Co-op,Chocolate Cake,17.92,13.52,22.66,24
+2026-06-20,Co-op,Vanilla Cake,14.2,9.46,18.11,18
+2026-06-20,Co-op,Cheese Pastry,34.72,23.62,46.71,48
+2026-06-20,Co-op,Date Cookies,32.29,18.69,40.09,47
+2026-06-20,Co-op,Butter Biscuits,33.54,22.76,45.81,46
+2026-06-20,Co-op,Mini Muffins,23.28,14.21,28.93,34
+2026-06-20,Petrol Station Shop,Chocolate Cake,10.35,6.01,13.71,7
+2026-06-20,Petrol Station Shop,Vanilla Cake,8.18,5.71,10.87,4
+2026-06-20,Petrol Station Shop,Cheese Pastry,19.93,12.32,27.17,24
+2026-06-20,Petrol Station Shop,Date Cookies,14.41,9.34,19.73,13
+2026-06-20,Petrol Station Shop,Butter Biscuits,17.3,11.48,24.06,8
+2026-06-20,Petrol Station Shop,Mini Muffins,13.68,8.9,18.66,8
+2026-06-20,Small Grocery,Chocolate Cake,7.21,4.52,10.86,9
+2026-06-20,Small Grocery,Vanilla Cake,6.45,3.87,9.96,4
+2026-06-20,Small Grocery,Cheese Pastry,13.31,6.39,18.44,13
+2026-06-20,Small Grocery,Date Cookies,11.36,5.87,18.11,8
+2026-06-20,Small Grocery,Butter Biscuits,13.67,8.54,19.76,13
+2026-06-20,Small Grocery,Mini Muffins,9.37,5.98,13.8,7
+2026-06-21,Mall Kiosk,Chocolate Cake,12.75,8.82,16.54,17
+2026-06-21,Mall Kiosk,Vanilla Cake,11.04,8.09,16.0,9
+2026-06-21,Mall Kiosk,Cheese Pastry,24.5,16.52,35.65,31
+2026-06-21,Mall Kiosk,Date Cookies,20.41,12.98,27.34,26
+2026-06-21,Mall Kiosk,Butter Biscuits,25.21,17.26,32.88,30
+2026-06-21,Mall Kiosk,Mini Muffins,17.65,12.21,22.25,23
+2026-06-21,Supermarket,Chocolate Cake,20.35,13.95,25.76,13
+2026-06-21,Supermarket,Vanilla Cake,17.91,13.67,22.83,17
+2026-06-21,Supermarket,Cheese Pastry,41.93,34.6,53.39,48
+2026-06-21,Supermarket,Date Cookies,31.72,21.4,43.52,25
+2026-06-21,Supermarket,Butter Biscuits,43.8,32.64,54.24,37
+2026-06-21,Supermarket,Mini Muffins,27.03,16.78,37.9,26
+2026-06-21,Co-op,Chocolate Cake,16.35,13.1,21.18,11
+2026-06-21,Co-op,Vanilla Cake,12.68,9.64,16.12,9
+2026-06-21,Co-op,Cheese Pastry,30.78,24.69,41.24,36
+2026-06-21,Co-op,Date Cookies,26.97,16.79,38.68,26
+2026-06-21,Co-op,Butter Biscuits,30.09,22.3,40.06,23
+2026-06-21,Co-op,Mini Muffins,20.09,13.26,26.32,14
+2026-06-21,Petrol Station Shop,Chocolate Cake,10.07,6.04,13.15,8
+2026-06-21,Petrol Station Shop,Vanilla Cake,7.89,5.97,10.85,5
+2026-06-21,Petrol Station Shop,Cheese Pastry,18.35,11.64,26.8,7
+2026-06-21,Petrol Station Shop,Date Cookies,13.62,8.26,19.18,11
+2026-06-21,Petrol Station Shop,Butter Biscuits,16.53,11.43,22.59,21
+2026-06-21,Petrol Station Shop,Mini Muffins,12.61,8.47,17.15,12
+2026-06-21,Small Grocery,Chocolate Cake,6.95,3.8,10.68,6
+2026-06-21,Small Grocery,Vanilla Cake,5.89,3.83,9.12,10
+2026-06-21,Small Grocery,Cheese Pastry,12.95,7.19,17.76,12
+2026-06-21,Small Grocery,Date Cookies,11.09,5.34,17.67,5
+2026-06-21,Small Grocery,Butter Biscuits,13.2,7.93,18.37,13
+2026-06-21,Small Grocery,Mini Muffins,9.11,5.5,12.88,6
+2026-06-22,Mall Kiosk,Chocolate Cake,13.14,7.64,17.59,9
+2026-06-22,Mall Kiosk,Vanilla Cake,11.43,7.27,17.5,5
+2026-06-22,Mall Kiosk,Cheese Pastry,27.82,16.22,34.33,15
+2026-06-22,Mall Kiosk,Date Cookies,19.11,11.32,24.91,26
+2026-06-22,Mall Kiosk,Butter Biscuits,23.88,15.33,29.8,19
+2026-06-22,Mall Kiosk,Mini Muffins,16.99,10.25,23.14,15
+2026-06-22,Supermarket,Chocolate Cake,19.32,11.66,24.41,24
+2026-06-22,Supermarket,Vanilla Cake,17.4,10.97,22.09,9
+2026-06-22,Supermarket,Cheese Pastry,45.44,33.39,55.82,16
+2026-06-22,Supermarket,Date Cookies,31.37,19.86,41.76,19
+2026-06-22,Supermarket,Butter Biscuits,44.54,31.85,55.78,31
+2026-06-22,Supermarket,Mini Muffins,26.07,15.9,36.51,23
+2026-06-22,Co-op,Chocolate Cake,15.53,10.45,19.07,9
+2026-06-22,Co-op,Vanilla Cake,12.89,8.55,17.55,10
+2026-06-22,Co-op,Cheese Pastry,31.54,24.61,41.6,34
+2026-06-22,Co-op,Date Cookies,24.53,14.4,34.76,29
+2026-06-22,Co-op,Butter Biscuits,30.09,21.3,39.14,18
+2026-06-22,Co-op,Mini Muffins,19.13,11.26,25.88,13
+2026-06-22,Petrol Station Shop,Chocolate Cake,8.71,4.18,13.15,6
+2026-06-22,Petrol Station Shop,Vanilla Cake,6.42,2.24,10.89,8
+2026-06-22,Petrol Station Shop,Cheese Pastry,18.53,9.88,25.77,22
+2026-06-22,Petrol Station Shop,Date Cookies,13.12,7.28,18.26,10
+2026-06-22,Petrol Station Shop,Butter Biscuits,16.1,9.48,20.06,10
+2026-06-22,Petrol Station Shop,Mini Muffins,12.33,7.52,18.52,7
+2026-06-22,Small Grocery,Chocolate Cake,6.91,2.66,10.65,7
+2026-06-22,Small Grocery,Vanilla Cake,5.12,2.38,7.35,5
+2026-06-22,Small Grocery,Cheese Pastry,14.26,7.1,18.98,8
+2026-06-22,Small Grocery,Date Cookies,11.79,6.92,17.68,6
+2026-06-22,Small Grocery,Butter Biscuits,13.04,7.8,18.39,10
+2026-06-22,Small Grocery,Mini Muffins,8.32,4.3,13.32,1
+2026-06-23,Mall Kiosk,Chocolate Cake,12.25,7.0,17.57,8
+2026-06-23,Mall Kiosk,Vanilla Cake,11.29,7.18,17.32,10
+2026-06-23,Mall Kiosk,Cheese Pastry,25.38,14.87,34.25,16
+2026-06-23,Mall Kiosk,Date Cookies,18.33,10.34,26.15,18
+2026-06-23,Mall Kiosk,Butter Biscuits,21.53,14.01,31.26,33
+2026-06-23,Mall Kiosk,Mini Muffins,15.96,10.12,22.66,20
+2026-06-23,Supermarket,Chocolate Cake,18.92,11.2,23.39,11
+2026-06-23,Supermarket,Vanilla Cake,16.88,11.58,21.17,12
+2026-06-23,Supermarket,Cheese Pastry,44.61,32.48,56.9,30
+2026-06-23,Supermarket,Date Cookies,30.32,18.85,39.7,32
+2026-06-23,Supermarket,Butter Biscuits,44.14,33.24,55.98,44
+2026-06-23,Supermarket,Mini Muffins,26.83,17.25,35.08,13
+2026-06-23,Co-op,Chocolate Cake,15.17,10.47,19.28,13
+2026-06-23,Co-op,Vanilla Cake,12.83,8.76,17.68,7
+2026-06-23,Co-op,Cheese Pastry,30.23,22.88,41.21,30
+2026-06-23,Co-op,Date Cookies,23.47,14.53,34.02,19
+2026-06-23,Co-op,Butter Biscuits,27.22,21.59,37.0,30
+2026-06-23,Co-op,Mini Muffins,18.54,12.49,24.67,15
+2026-06-23,Petrol Station Shop,Chocolate Cake,7.05,0.63,13.15,0
+2026-06-23,Petrol Station Shop,Vanilla Cake,6.17,1.16,11.04,5
+2026-06-23,Petrol Station Shop,Cheese Pastry,17.27,9.78,25.81,9
+2026-06-23,Petrol Station Shop,Date Cookies,12.05,7.17,18.22,15
+2026-06-23,Petrol Station Shop,Butter Biscuits,14.59,9.12,19.83,13
+2026-06-23,Petrol Station Shop,Mini Muffins,11.34,6.2,18.02,10
+2026-06-23,Small Grocery,Chocolate Cake,5.33,0.94,10.55,7
+2026-06-23,Small Grocery,Vanilla Cake,5.0,1.35,7.43,2
+2026-06-23,Small Grocery,Cheese Pastry,13.26,6.95,18.81,8
+2026-06-23,Small Grocery,Date Cookies,10.76,6.01,17.79,4
+2026-06-23,Small Grocery,Butter Biscuits,12.52,7.74,18.3,6
+2026-06-23,Small Grocery,Mini Muffins,7.19,3.68,13.51,3
+2026-06-24,Mall Kiosk,Chocolate Cake,12.73,7.36,17.56,11
+2026-06-24,Mall Kiosk,Vanilla Cake,11.24,6.32,16.86,14
+2026-06-24,Mall Kiosk,Cheese Pastry,29.01,18.11,37.4,36
+2026-06-24,Mall Kiosk,Date Cookies,20.96,13.46,26.71,15
+2026-06-24,Mall Kiosk,Butter Biscuits,26.95,17.84,34.01,26
+2026-06-24,Mall Kiosk,Mini Muffins,17.25,10.27,23.5,12
+2026-06-24,Supermarket,Chocolate Cake,20.65,12.85,23.83,19
+2026-06-24,Supermarket,Vanilla Cake,17.77,11.98,22.35,18
+2026-06-24,Supermarket,Cheese Pastry,51.57,38.22,60.19,48
+2026-06-24,Supermarket,Date Cookies,31.31,19.95,42.53,36
+2026-06-24,Supermarket,Butter Biscuits,46.81,37.73,52.76,25
+2026-06-24,Supermarket,Mini Muffins,29.07,18.14,37.49,20
+2026-06-24,Co-op,Chocolate Cake,16.02,10.55,19.9,17
+2026-06-24,Co-op,Vanilla Cake,13.1,8.92,17.49,5
+2026-06-24,Co-op,Cheese Pastry,33.27,23.64,43.99,22
+2026-06-24,Co-op,Date Cookies,26.77,16.36,36.73,20
+2026-06-24,Co-op,Butter Biscuits,29.12,19.96,36.35,37
+2026-06-24,Co-op,Mini Muffins,19.32,11.79,25.43,23
+2026-06-24,Petrol Station Shop,Chocolate Cake,9.51,5.33,14.31,7
+2026-06-24,Petrol Station Shop,Vanilla Cake,7.53,4.2,10.96,7
+2026-06-24,Petrol Station Shop,Cheese Pastry,19.89,12.0,28.45,14
+2026-06-24,Petrol Station Shop,Date Cookies,12.73,7.38,18.77,16
+2026-06-24,Petrol Station Shop,Butter Biscuits,15.69,9.02,21.42,15
+2026-06-24,Petrol Station Shop,Mini Muffins,11.44,6.38,18.25,10
+2026-06-24,Small Grocery,Chocolate Cake,8.1,4.41,10.29,11
+2026-06-24,Small Grocery,Vanilla Cake,6.32,2.78,8.37,3
+2026-06-24,Small Grocery,Cheese Pastry,14.19,7.4,19.3,4
+2026-06-24,Small Grocery,Date Cookies,11.83,7.39,18.38,6
+2026-06-24,Small Grocery,Butter Biscuits,13.38,7.68,18.94,14
+2026-06-24,Small Grocery,Mini Muffins,9.06,4.43,14.92,4
+2026-06-25,Mall Kiosk,Chocolate Cake,17.07,12.08,21.68,24
+2026-06-25,Mall Kiosk,Vanilla Cake,15.35,9.51,20.03,13
+2026-06-25,Mall Kiosk,Cheese Pastry,34.13,23.16,48.65,32
+2026-06-25,Mall Kiosk,Date Cookies,27.24,19.74,34.27,22
+2026-06-25,Mall Kiosk,Butter Biscuits,35.48,24.56,43.1,25
+2026-06-25,Mall Kiosk,Mini Muffins,22.32,15.53,29.1,26
+2026-06-25,Supermarket,Chocolate Cake,26.33,18.9,32.07,35
+2026-06-25,Supermarket,Vanilla Cake,25.1,18.05,29.81,24
+2026-06-25,Supermarket,Cheese Pastry,67.95,43.17,79.55,69
+2026-06-25,Supermarket,Date Cookies,50.25,27.89,61.24,33
+2026-06-25,Supermarket,Butter Biscuits,59.55,41.78,72.21,28
+2026-06-25,Supermarket,Mini Muffins,37.72,24.24,50.2,41
+2026-06-25,Co-op,Chocolate Cake,21.51,16.34,25.91,24
+2026-06-25,Co-op,Vanilla Cake,16.73,10.81,20.26,14
+2026-06-25,Co-op,Cheese Pastry,45.41,29.08,57.06,48
+2026-06-25,Co-op,Date Cookies,33.36,21.92,37.5,21
+2026-06-25,Co-op,Butter Biscuits,40.03,25.42,47.06,50
+2026-06-25,Co-op,Mini Muffins,25.33,18.28,31.67,24
+2026-06-25,Petrol Station Shop,Chocolate Cake,12.93,8.59,16.45,9
+2026-06-25,Petrol Station Shop,Vanilla Cake,9.49,6.07,12.67,9
+2026-06-25,Petrol Station Shop,Cheese Pastry,25.26,17.77,33.93,21
+2026-06-25,Petrol Station Shop,Date Cookies,16.87,11.38,22.11,19
+2026-06-25,Petrol Station Shop,Butter Biscuits,20.83,14.07,26.94,31
+2026-06-25,Petrol Station Shop,Mini Muffins,15.05,8.71,20.93,16
+2026-06-25,Small Grocery,Chocolate Cake,8.82,5.97,12.04,9
+2026-06-25,Small Grocery,Vanilla Cake,8.39,4.71,11.93,7
+2026-06-25,Small Grocery,Cheese Pastry,16.65,8.46,21.11,9
+2026-06-25,Small Grocery,Date Cookies,14.0,8.02,20.56,10
+2026-06-25,Small Grocery,Butter Biscuits,16.03,10.88,21.5,18
+2026-06-25,Small Grocery,Mini Muffins,12.33,7.95,16.32,11
+2026-06-26,Mall Kiosk,Chocolate Cake,19.25,13.01,25.17,15
+2026-06-26,Mall Kiosk,Vanilla Cake,16.74,10.29,23.44,16
+2026-06-26,Mall Kiosk,Cheese Pastry,42.12,24.57,50.08,48
+2026-06-26,Mall Kiosk,Date Cookies,33.59,21.45,42.93,32
+2026-06-26,Mall Kiosk,Butter Biscuits,42.8,27.62,53.96,31
+2026-06-26,Mall Kiosk,Mini Muffins,24.93,17.24,34.87,31
+2026-06-26,Supermarket,Chocolate Cake,32.16,21.11,39.91,18
+2026-06-26,Supermarket,Vanilla Cake,28.28,18.38,34.71,17
+2026-06-26,Supermarket,Cheese Pastry,66.38,44.49,78.99,38
+2026-06-26,Supermarket,Date Cookies,55.59,33.01,68.06,37
+2026-06-26,Supermarket,Butter Biscuits,61.0,42.18,72.87,42
+2026-06-26,Supermarket,Mini Muffins,44.02,27.94,55.99,50
+2026-06-26,Co-op,Chocolate Cake,23.73,17.42,31.09,14
+2026-06-26,Co-op,Vanilla Cake,19.19,13.86,24.65,16
+2026-06-26,Co-op,Cheese Pastry,49.55,32.5,60.15,69
+2026-06-26,Co-op,Date Cookies,39.76,24.36,47.81,29
+2026-06-26,Co-op,Butter Biscuits,44.02,26.72,53.77,37
+2026-06-26,Co-op,Mini Muffins,30.38,20.25,38.31,19
+2026-06-26,Petrol Station Shop,Chocolate Cake,14.56,9.53,18.26,8
+2026-06-26,Petrol Station Shop,Vanilla Cake,11.05,6.74,14.21,12
+2026-06-26,Petrol Station Shop,Cheese Pastry,31.73,20.58,41.85,24
+2026-06-26,Petrol Station Shop,Date Cookies,19.89,13.08,25.6,24
+2026-06-26,Petrol Station Shop,Butter Biscuits,20.5,13.62,27.87,29
+2026-06-26,Petrol Station Shop,Mini Muffins,17.13,9.5,23.89,17
+2026-06-26,Small Grocery,Chocolate Cake,9.03,4.65,12.26,3
+2026-06-26,Small Grocery,Vanilla Cake,8.35,5.81,12.18,5
+2026-06-26,Small Grocery,Cheese Pastry,18.57,11.13,25.19,16
+2026-06-26,Small Grocery,Date Cookies,15.36,9.14,23.51,23
+2026-06-26,Small Grocery,Butter Biscuits,17.76,12.33,25.02,20
+2026-06-26,Small Grocery,Mini Muffins,11.55,8.29,16.92,12
+2026-06-27,Mall Kiosk,Chocolate Cake,12.11,7.0,15.72,12
+2026-06-27,Mall Kiosk,Vanilla Cake,10.71,6.86,15.46,12
+2026-06-27,Mall Kiosk,Cheese Pastry,26.57,14.8,38.82,14
+2026-06-27,Mall Kiosk,Date Cookies,20.78,13.06,26.12,10
+2026-06-27,Mall Kiosk,Butter Biscuits,27.35,15.92,35.77,18
+2026-06-27,Mall Kiosk,Mini Muffins,17.95,11.68,23.0,15
+2026-06-27,Supermarket,Chocolate Cake,22.75,15.79,25.95,30
+2026-06-27,Supermarket,Vanilla Cake,21.2,14.09,25.44,18
+2026-06-27,Supermarket,Cheese Pastry,51.36,36.24,62.1,39
+2026-06-27,Supermarket,Date Cookies,38.08,24.77,52.12,34
+2026-06-27,Supermarket,Butter Biscuits,42.25,27.31,55.31,34
+2026-06-27,Supermarket,Mini Muffins,32.88,18.3,41.31,33
+2026-06-27,Co-op,Chocolate Cake,17.26,12.97,22.26,14
+2026-06-27,Co-op,Vanilla Cake,14.2,10.01,18.01,11
+2026-06-27,Co-op,Cheese Pastry,35.26,22.23,46.38,43
+2026-06-27,Co-op,Date Cookies,27.82,16.91,33.76,31
+2026-06-27,Co-op,Butter Biscuits,32.17,18.92,39.98,30
+2026-06-27,Co-op,Mini Muffins,22.88,14.81,27.49,19
+2026-06-27,Petrol Station Shop,Chocolate Cake,10.1,6.13,13.2,6
+2026-06-27,Petrol Station Shop,Vanilla Cake,7.62,5.07,11.4,9
+2026-06-27,Petrol Station Shop,Cheese Pastry,19.98,13.27,27.09,13
+2026-06-27,Petrol Station Shop,Date Cookies,14.23,8.91,19.94,13
+2026-06-27,Petrol Station Shop,Butter Biscuits,15.7,9.82,20.28,16
+2026-06-27,Petrol Station Shop,Mini Muffins,11.93,6.95,17.85,16
+2026-06-27,Small Grocery,Chocolate Cake,6.79,3.39,10.18,6
+2026-06-27,Small Grocery,Vanilla Cake,6.19,3.89,9.53,6
+2026-06-27,Small Grocery,Cheese Pastry,13.69,8.1,18.29,18
+2026-06-27,Small Grocery,Date Cookies,11.4,6.62,18.44,6
+2026-06-27,Small Grocery,Butter Biscuits,13.17,8.17,19.0,14
+2026-06-27,Small Grocery,Mini Muffins,8.47,5.87,12.59,6
+2026-06-28,Mall Kiosk,Chocolate Cake,11.7,7.41,15.99,8
+2026-06-28,Mall Kiosk,Vanilla Cake,10.38,7.14,15.85,12
+2026-06-28,Mall Kiosk,Cheese Pastry,24.62,14.51,35.37,34
+2026-06-28,Mall Kiosk,Date Cookies,20.59,14.18,26.68,19
+2026-06-28,Mall Kiosk,Butter Biscuits,24.92,15.83,36.0,23
+2026-06-28,Mall Kiosk,Mini Muffins,16.53,11.86,21.81,22
+2026-06-28,Supermarket,Chocolate Cake,20.32,15.41,24.99,18
+2026-06-28,Supermarket,Vanilla Cake,18.29,13.46,23.5,9
+2026-06-28,Supermarket,Cheese Pastry,42.19,35.02,50.44,36
+2026-06-28,Supermarket,Date Cookies,33.82,24.2,45.09,43
+2026-06-28,Supermarket,Butter Biscuits,37.06,27.24,44.94,38
+2026-06-28,Supermarket,Mini Muffins,28.24,17.7,37.36,26
+2026-06-28,Co-op,Chocolate Cake,15.98,12.42,21.08,18
+2026-06-28,Co-op,Vanilla Cake,12.68,9.14,16.24,18
+2026-06-28,Co-op,Cheese Pastry,31.11,23.0,40.74,37
+2026-06-28,Co-op,Date Cookies,26.7,17.29,34.48,13
+2026-06-28,Co-op,Butter Biscuits,28.76,17.75,36.06,23
+2026-06-28,Co-op,Mini Muffins,19.87,13.16,25.33,22
+2026-06-28,Petrol Station Shop,Chocolate Cake,9.84,6.16,12.79,11
+2026-06-28,Petrol Station Shop,Vanilla Cake,6.42,3.28,9.99,8
+2026-06-28,Petrol Station Shop,Cheese Pastry,17.61,11.05,24.03,21
+2026-06-28,Petrol Station Shop,Date Cookies,13.8,8.85,18.97,12
+2026-06-28,Petrol Station Shop,Butter Biscuits,13.87,9.41,18.84,10
+2026-06-28,Petrol Station Shop,Mini Muffins,11.28,6.74,16.68,10
+2026-06-28,Small Grocery,Chocolate Cake,6.47,3.13,9.74,5
+2026-06-28,Small Grocery,Vanilla Cake,5.64,3.06,9.15,9
+2026-06-28,Small Grocery,Cheese Pastry,12.82,7.32,17.49,8
+2026-06-28,Small Grocery,Date Cookies,11.38,6.16,17.86,5
+2026-06-28,Small Grocery,Butter Biscuits,12.64,8.36,17.88,14
+2026-06-28,Small Grocery,Mini Muffins,8.25,5.47,11.73,9
+2026-06-29,Mall Kiosk,Chocolate Cake,11.65,6.08,16.98,12
+2026-06-29,Mall Kiosk,Vanilla Cake,8.8,5.09,13.24,12
+2026-06-29,Mall Kiosk,Cheese Pastry,24.11,13.65,32.72,18
+2026-06-29,Mall Kiosk,Date Cookies,19.22,11.63,24.94,14
+2026-06-29,Mall Kiosk,Butter Biscuits,23.66,13.89,33.52,19
+2026-06-29,Mall Kiosk,Mini Muffins,16.91,10.01,22.49,19
+2026-06-29,Supermarket,Chocolate Cake,19.25,11.41,24.63,13
+2026-06-29,Supermarket,Vanilla Cake,16.69,11.16,21.48,23
+2026-06-29,Supermarket,Cheese Pastry,40.83,33.77,47.09,36
+2026-06-29,Supermarket,Date Cookies,32.01,20.04,42.82,25
+2026-06-29,Supermarket,Butter Biscuits,35.25,23.83,44.7,22
+2026-06-29,Supermarket,Mini Muffins,27.31,17.17,35.09,12
+2026-06-29,Co-op,Chocolate Cake,15.35,10.32,19.19,6
+2026-06-29,Co-op,Vanilla Cake,12.91,8.87,17.78,15
+2026-06-29,Co-op,Cheese Pastry,31.02,24.28,41.06,20
+2026-06-29,Co-op,Date Cookies,24.67,14.75,34.02,28
+2026-06-29,Co-op,Butter Biscuits,27.17,15.67,32.98,32
+2026-06-29,Co-op,Mini Muffins,18.97,12.79,24.95,16
+2026-06-29,Petrol Station Shop,Chocolate Cake,7.07,2.94,11.33,11
+2026-06-29,Petrol Station Shop,Vanilla Cake,6.27,3.54,11.81,3
+2026-06-29,Petrol Station Shop,Cheese Pastry,17.33,9.61,23.2,9
+2026-06-29,Petrol Station Shop,Date Cookies,13.2,7.84,18.45,15
+2026-06-29,Petrol Station Shop,Butter Biscuits,13.68,7.82,18.18,7
+2026-06-29,Petrol Station Shop,Mini Muffins,10.42,5.05,16.47,6
+2026-06-29,Small Grocery,Chocolate Cake,6.38,2.85,9.93,5
+2026-06-29,Small Grocery,Vanilla Cake,5.44,1.68,8.45,4
+2026-06-29,Small Grocery,Cheese Pastry,13.27,6.82,18.46,17
+2026-06-29,Small Grocery,Date Cookies,9.96,5.21,16.1,5
+2026-06-29,Small Grocery,Butter Biscuits,13.63,7.98,18.77,11
+2026-06-29,Small Grocery,Mini Muffins,7.41,3.35,12.08,7
+2026-06-30,Mall Kiosk,Chocolate Cake,10.47,5.04,16.71,9
+2026-06-30,Mall Kiosk,Vanilla Cake,8.6,4.44,13.25,9
+2026-06-30,Mall Kiosk,Cheese Pastry,21.77,13.21,31.19,24
+2026-06-30,Mall Kiosk,Date Cookies,18.38,10.66,26.22,15
+2026-06-30,Mall Kiosk,Butter Biscuits,24.82,16.25,34.45,25
+2026-06-30,Mall Kiosk,Mini Muffins,15.75,9.61,21.54,10
+2026-06-30,Supermarket,Chocolate Cake,18.77,11.05,24.19,12
+2026-06-30,Supermarket,Vanilla Cake,17.07,10.97,21.81,18
+2026-06-30,Supermarket,Cheese Pastry,39.9,31.81,46.49,39
+2026-06-30,Supermarket,Date Cookies,30.24,19.05,42.34,25
+2026-06-30,Supermarket,Butter Biscuits,34.94,23.2,44.69,28
+2026-06-30,Supermarket,Mini Muffins,26.36,17.25,36.76,20
+2026-06-30,Co-op,Chocolate Cake,14.91,9.9,19.13,17
+2026-06-30,Co-op,Vanilla Cake,12.46,8.47,17.08,13
+2026-06-30,Co-op,Cheese Pastry,30.22,23.74,43.02,27
+2026-06-30,Co-op,Date Cookies,24.1,14.54,31.86,17
+2026-06-30,Co-op,Butter Biscuits,26.64,15.74,33.48,28
+2026-06-30,Co-op,Mini Muffins,18.57,12.74,24.81,10
+2026-06-30,Petrol Station Shop,Chocolate Cake,5.28,0.0,11.33,0
+2026-06-30,Petrol Station Shop,Vanilla Cake,5.38,1.47,10.22,1
+2026-06-30,Petrol Station Shop,Cheese Pastry,15.62,9.37,23.04,11
+2026-06-30,Petrol Station Shop,Date Cookies,12.42,7.81,18.27,13
+2026-06-30,Petrol Station Shop,Butter Biscuits,13.35,7.67,18.39,13
+2026-06-30,Petrol Station Shop,Mini Muffins,9.34,3.11,16.57,7
+2026-06-30,Small Grocery,Chocolate Cake,6.0,3.03,11.6,3
+2026-06-30,Small Grocery,Vanilla Cake,5.31,2.19,8.54,5
+2026-06-30,Small Grocery,Cheese Pastry,10.88,4.52,17.3,9
+2026-06-30,Small Grocery,Date Cookies,7.39,3.11,13.72,6
+2026-06-30,Small Grocery,Butter Biscuits,11.93,5.72,17.58,13
+2026-06-30,Small Grocery,Mini Muffins,6.43,3.16,11.69,13
+2026-07-01,Mall Kiosk,Chocolate Cake,12.0,6.47,16.97,12
+2026-07-01,Mall Kiosk,Vanilla Cake,9.05,6.35,11.58,8
+2026-07-01,Mall Kiosk,Cheese Pastry,27.05,16.84,35.4,36
+2026-07-01,Mall Kiosk,Date Cookies,20.98,13.53,26.69,17
+2026-07-01,Mall Kiosk,Butter Biscuits,26.8,18.12,37.21,22
+2026-07-01,Mall Kiosk,Mini Muffins,17.67,10.55,24.1,21
+2026-07-01,Supermarket,Chocolate Cake,20.52,12.89,24.58,17
+2026-07-01,Supermarket,Vanilla Cake,17.59,11.11,22.2,14
+2026-07-01,Supermarket,Cheese Pastry,43.63,35.83,50.97,33
+2026-07-01,Supermarket,Date Cookies,33.3,20.59,45.3,35
+2026-07-01,Supermarket,Butter Biscuits,38.55,26.17,48.92,36
+2026-07-01,Supermarket,Mini Muffins,27.03,17.58,37.6,25
+2026-07-01,Co-op,Chocolate Cake,14.65,9.2,19.01,17
+2026-07-01,Co-op,Vanilla Cake,11.34,7.25,15.38,11
+2026-07-01,Co-op,Cheese Pastry,33.27,25.68,44.56,29
+2026-07-01,Co-op,Date Cookies,27.09,16.25,34.13,29
+2026-07-01,Co-op,Butter Biscuits,30.49,19.79,36.55,22
+2026-07-01,Co-op,Mini Muffins,20.76,12.99,26.68,10
+2026-07-01,Petrol Station Shop,Chocolate Cake,8.62,4.86,11.58,5
+2026-07-01,Petrol Station Shop,Vanilla Cake,7.53,4.62,11.76,9
+2026-07-01,Petrol Station Shop,Cheese Pastry,17.71,11.01,24.26,17
+2026-07-01,Petrol Station Shop,Date Cookies,14.24,9.13,19.3,13
+2026-07-01,Petrol Station Shop,Butter Biscuits,14.62,8.18,20.6,6
+2026-07-01,Petrol Station Shop,Mini Muffins,11.1,5.87,17.93,17
+2026-07-01,Small Grocery,Chocolate Cake,7.99,4.01,10.62,2
+2026-07-01,Small Grocery,Vanilla Cake,5.93,2.94,7.25,6
+2026-07-01,Small Grocery,Cheese Pastry,11.87,5.6,18.63,12
+2026-07-01,Small Grocery,Date Cookies,8.83,4.53,14.31,9
+2026-07-01,Small Grocery,Butter Biscuits,13.22,7.54,18.74,14
+2026-07-01,Small Grocery,Mini Muffins,8.67,4.5,13.24,4
+2026-07-02,Mall Kiosk,Chocolate Cake,15.95,9.22,19.64,19
+2026-07-02,Mall Kiosk,Vanilla Cake,13.17,9.19,16.64,13
+2026-07-02,Mall Kiosk,Cheese Pastry,35.15,23.54,41.69,46
+2026-07-02,Mall Kiosk,Date Cookies,27.43,19.66,34.43,30
+2026-07-02,Mall Kiosk,Butter Biscuits,35.69,24.56,49.14,32
+2026-07-02,Mall Kiosk,Mini Muffins,23.74,16.91,30.63,16
+2026-07-02,Supermarket,Chocolate Cake,27.02,19.86,31.29,16
+2026-07-02,Supermarket,Vanilla Cake,23.21,17.06,27.51,20
+2026-07-02,Supermarket,Cheese Pastry,60.53,41.28,72.76,66
+2026-07-02,Supermarket,Date Cookies,46.07,26.76,56.29,26
+2026-07-02,Supermarket,Butter Biscuits,52.45,29.85,63.11,39
+2026-07-02,Supermarket,Mini Muffins,34.72,23.61,47.17,38
+2026-07-02,Co-op,Chocolate Cake,20.79,15.85,26.05,18
+2026-07-02,Co-op,Vanilla Cake,15.63,9.53,19.6,9
+2026-07-02,Co-op,Cheese Pastry,47.96,30.44,61.94,48
+2026-07-02,Co-op,Date Cookies,34.0,23.59,40.18,38
+2026-07-02,Co-op,Butter Biscuits,39.35,25.61,50.36,26
+2026-07-02,Co-op,Mini Muffins,26.75,19.21,33.46,28
+2026-07-02,Petrol Station Shop,Chocolate Cake,11.13,7.29,14.77,10
+2026-07-02,Petrol Station Shop,Vanilla Cake,9.05,5.82,13.5,11
+2026-07-02,Petrol Station Shop,Cheese Pastry,21.68,14.89,29.52,35
+2026-07-02,Petrol Station Shop,Date Cookies,17.39,12.32,23.17,19
+2026-07-02,Petrol Station Shop,Butter Biscuits,16.96,11.11,23.04,14
+2026-07-02,Petrol Station Shop,Mini Muffins,14.67,8.87,19.82,15
+2026-07-02,Small Grocery,Chocolate Cake,9.31,6.29,11.84,5
+2026-07-02,Small Grocery,Vanilla Cake,8.24,4.89,12.0,9
+2026-07-02,Small Grocery,Cheese Pastry,15.53,8.12,21.17,24
+2026-07-02,Small Grocery,Date Cookies,10.54,7.42,15.93,3
+2026-07-02,Small Grocery,Butter Biscuits,16.05,9.93,21.93,20
+2026-07-02,Small Grocery,Mini Muffins,10.38,6.55,14.49,12
+2026-07-03,Mall Kiosk,Chocolate Cake,18.38,11.66,23.73,12
+2026-07-03,Mall Kiosk,Vanilla Cake,16.1,10.29,21.46,18
+2026-07-03,Mall Kiosk,Cheese Pastry,40.59,26.66,55.02,32
+2026-07-03,Mall Kiosk,Date Cookies,30.53,20.05,40.27,21
+2026-07-03,Mall Kiosk,Butter Biscuits,42.11,26.43,55.14,22
+2026-07-03,Mall Kiosk,Mini Muffins,27.39,18.13,36.24,18
+2026-07-03,Supermarket,Chocolate Cake,30.47,20.56,37.99,42
+2026-07-03,Supermarket,Vanilla Cake,25.24,18.25,31.27,23
+2026-07-03,Supermarket,Cheese Pastry,62.84,41.18,73.52,68
+2026-07-03,Supermarket,Date Cookies,44.68,27.17,59.33,44
+2026-07-03,Supermarket,Butter Biscuits,55.83,32.71,65.72,39
+2026-07-03,Supermarket,Mini Muffins,42.5,26.73,57.08,30
+2026-07-03,Co-op,Chocolate Cake,22.14,16.42,27.76,20
+2026-07-03,Co-op,Vanilla Cake,17.35,10.71,23.2,18
+2026-07-03,Co-op,Cheese Pastry,49.47,33.81,62.77,52
+2026-07-03,Co-op,Date Cookies,41.3,25.57,51.45,31
+2026-07-03,Co-op,Butter Biscuits,44.4,30.8,61.05,41
+2026-07-03,Co-op,Mini Muffins,29.31,20.04,38.77,34
+2026-07-03,Petrol Station Shop,Chocolate Cake,12.87,8.45,15.28,8
+2026-07-03,Petrol Station Shop,Vanilla Cake,9.3,5.34,12.99,8
+2026-07-03,Petrol Station Shop,Cheese Pastry,27.43,16.42,38.6,24
+2026-07-03,Petrol Station Shop,Date Cookies,20.34,14.0,27.16,15
+2026-07-03,Petrol Station Shop,Butter Biscuits,22.73,14.49,33.41,30
+2026-07-03,Petrol Station Shop,Mini Muffins,16.64,9.52,22.34,14
+2026-07-03,Small Grocery,Chocolate Cake,8.48,4.87,11.39,5
+2026-07-03,Small Grocery,Vanilla Cake,8.34,4.34,12.11,6
+2026-07-03,Small Grocery,Cheese Pastry,16.66,8.73,23.32,20
+2026-07-03,Small Grocery,Date Cookies,11.82,8.27,17.74,10
+2026-07-03,Small Grocery,Butter Biscuits,17.41,11.35,24.78,25
+2026-07-03,Small Grocery,Mini Muffins,10.26,7.03,14.58,15
+2026-07-04,Mall Kiosk,Chocolate Cake,13.06,8.85,17.34,12
+2026-07-04,Mall Kiosk,Vanilla Cake,9.81,6.17,13.61,16
+2026-07-04,Mall Kiosk,Cheese Pastry,26.69,16.11,34.86,36
+2026-07-04,Mall Kiosk,Date Cookies,20.23,12.71,25.92,19
+2026-07-04,Mall Kiosk,Butter Biscuits,26.89,15.09,34.21,41
+2026-07-04,Mall Kiosk,Mini Muffins,18.94,11.68,23.5,33
+2026-07-04,Supermarket,Chocolate Cake,21.58,14.3,25.0,17
+2026-07-04,Supermarket,Vanilla Cake,18.82,13.6,22.88,18
+2026-07-04,Supermarket,Cheese Pastry,44.21,27.85,55.24,60
+2026-07-04,Supermarket,Date Cookies,32.09,18.96,42.36,35
+2026-07-04,Supermarket,Butter Biscuits,37.36,25.33,48.99,40
+2026-07-04,Supermarket,Mini Muffins,29.9,18.01,41.62,31
+2026-07-04,Co-op,Chocolate Cake,16.57,12.1,20.19,16
+2026-07-04,Co-op,Vanilla Cake,12.59,7.64,17.15,18
+2026-07-04,Co-op,Cheese Pastry,34.29,23.74,47.26,32
+2026-07-04,Co-op,Date Cookies,25.11,14.87,32.56,27
+2026-07-04,Co-op,Butter Biscuits,29.73,20.07,42.9,18
+2026-07-04,Co-op,Mini Muffins,20.01,13.36,24.92,17
+2026-07-04,Petrol Station Shop,Chocolate Cake,8.13,4.76,11.45,8
+2026-07-04,Petrol Station Shop,Vanilla Cake,7.29,4.87,10.64,1
+2026-07-04,Petrol Station Shop,Cheese Pastry,17.69,11.34,23.51,14
+2026-07-04,Petrol Station Shop,Date Cookies,15.03,9.77,20.74,14
+2026-07-04,Petrol Station Shop,Butter Biscuits,17.08,11.08,24.57,11
+2026-07-04,Petrol Station Shop,Mini Muffins,11.91,6.64,17.62,9
+2026-07-04,Small Grocery,Chocolate Cake,6.55,3.62,9.96,8
+2026-07-04,Small Grocery,Vanilla Cake,6.22,3.5,9.54,3
+2026-07-04,Small Grocery,Cheese Pastry,12.13,6.48,17.9,10
+2026-07-04,Small Grocery,Date Cookies,8.66,6.1,14.57,12
+2026-07-04,Small Grocery,Butter Biscuits,13.12,8.33,18.45,12
+2026-07-04,Small Grocery,Mini Muffins,7.53,5.07,12.75,7
+2026-07-05,Mall Kiosk,Chocolate Cake,11.03,6.28,16.18,15
+2026-07-05,Mall Kiosk,Vanilla Cake,9.22,6.41,12.77,8
+2026-07-05,Mall Kiosk,Cheese Pastry,24.3,15.47,32.13,22
+2026-07-05,Mall Kiosk,Date Cookies,19.28,13.04,24.97,16
+2026-07-05,Mall Kiosk,Butter Biscuits,24.06,14.51,29.74,22
+2026-07-05,Mall Kiosk,Mini Muffins,17.66,12.35,22.97,10
+2026-07-05,Supermarket,Chocolate Cake,19.18,14.75,23.86,11
+2026-07-05,Supermarket,Vanilla Cake,16.27,13.27,20.79,12
+2026-07-05,Supermarket,Cheese Pastry,37.27,27.1,45.4,54
+2026-07-05,Supermarket,Date Cookies,30.08,19.05,41.67,35
+2026-07-05,Supermarket,Butter Biscuits,33.33,26.28,42.97,35
+2026-07-05,Supermarket,Mini Muffins,25.7,17.16,37.87,18
+2026-07-05,Co-op,Chocolate Cake,15.89,11.82,20.83,10
+2026-07-05,Co-op,Vanilla Cake,11.5,7.53,15.49,12
+2026-07-05,Co-op,Cheese Pastry,30.24,23.65,40.97,29
+2026-07-05,Co-op,Date Cookies,23.99,14.89,30.74,23
+2026-07-05,Co-op,Butter Biscuits,24.31,18.37,38.37,32
+2026-07-05,Co-op,Mini Muffins,18.56,13.13,23.82,19
+2026-07-05,Petrol Station Shop,Chocolate Cake,7.49,4.77,10.33,9
+2026-07-05,Petrol Station Shop,Vanilla Cake,6.5,3.73,10.67,5
+2026-07-05,Petrol Station Shop,Cheese Pastry,15.55,11.12,22.13,11
+2026-07-05,Petrol Station Shop,Date Cookies,13.62,7.87,19.18,9
+2026-07-05,Petrol Station Shop,Butter Biscuits,14.65,11.1,21.92,7
+2026-07-05,Petrol Station Shop,Mini Muffins,10.73,5.66,16.02,5
+2026-07-05,Small Grocery,Chocolate Cake,6.3,3.6,9.34,8
+2026-07-05,Small Grocery,Vanilla Cake,5.64,2.72,9.09,7
+2026-07-05,Small Grocery,Cheese Pastry,11.89,6.13,16.89,11
+2026-07-05,Small Grocery,Date Cookies,8.65,5.65,14.33,7
+2026-07-05,Small Grocery,Butter Biscuits,12.15,7.71,17.53,15
+2026-07-05,Small Grocery,Mini Muffins,7.0,4.46,11.95,5
