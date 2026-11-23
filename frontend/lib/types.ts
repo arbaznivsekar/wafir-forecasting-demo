@@ -24,7 +24,15 @@ export type ShopHistoryRow = {
   days_recorded: number;
 };
 
-export type SendPlanRow = { date: string; outlet: string; product: string; forecast: number; units: number };
+export type SendPlanRow = {
+  /** Stock assumed to be in the shop at the start of the day. Only packaged items carry stock. */
+  stock_on_hand: number;
+  date: string;
+  outlet: string;
+  product: string;
+  forecast: number;
+  units: number;
+};
 
 export type DashboardData = {
   meta: { note: string; generated_on: string; currency: string };

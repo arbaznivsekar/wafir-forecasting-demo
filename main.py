@@ -13,7 +13,7 @@ WEEKS, TRAIN_WEEKS, HORIZON = 26, 20, 7
 D = WEEKS * 7  # days of history
 TRAIN_END = TRAIN_WEEKS * 7  # first test day index
 NOTES = ["units_sent is the shipment size; packaged items also sell from carried-over stock",
-         "Packaged item send plan does not subtract stock on hand",
+         "Packaged item send plan counts stock on hand, which comes from the simulation here; real stock counts should replace it",
          "All data is dummy and results are illustrative."]
 
 # --- Data-generation knobs -------------------------------------------------
@@ -42,7 +42,7 @@ SHORT = SHELF <= 4  # short-life items are written off daily; long-life carry ov
 
 FEATURES = ["weekday", "week_of_year", "holiday_flag", "promo_flag", "roll7", "roll14", "outlet", "product"]
 CATS = ["outlet", "product"]
-LGB = dict(learning_rate=0.05, num_leaves=15, min_data_in_leaf=20, feature_fraction=0.9,
+LGB = dict(learning_rate=0.05, num_leaves=7, min_data_in_leaf=40, feature_fraction=0.9,
            verbose=-1, deterministic=True, force_row_wise=True, num_threads=1)
 
 
@@ -111,7 +111,7 @@ def run(w, sender):
         out["wasted"][d] = np.where(SHORT[None, :], left, expiry)
         carry = np.where(SHORT[None, :], 0, left - expiry)
         obs[d] = np.where(w["miss"][d][:, None], np.nan, sold)
-    return out | {"obs": obs}
+    return out | {"obs": obs, "stock_end": carry}
 
 
 def baseline_sender(w):
@@ -225,6 +225,22 @@ def compare(before, after):
 
 
 
+def next_week_plan(target, point, opening):
+    """Roll next week forward day by day, ordering exactly as the replay does: top up to the target, minus stock on hand.
+
+    Adding up each day's target instead would count the same packaged stock several times over."""
+    stock = opening.astype(float)
+    send = np.zeros((HORIZON, O, P), dtype=int)
+    start = np.zeros((HORIZON, O, P))
+    for i in range(HORIZON):
+        d = D + i
+        start[i] = stock
+        send[i] = to_packs(target[d] - stock)
+        # Fresh items are written off each night; packaged items carry on what the forecast says will not sell.
+        stock = np.where(SHORT[None, :], 0, np.maximum(stock + send[i] - point[d], 0))
+    return send, start
+
+
 def pipeline(seed):
     """Everything for one seed: generate, baseline, forecast, replay, compare."""
     w = make_world(seed)
@@ -234,7 +250,10 @@ def pipeline(seed):
     X = build_grid(w, hist["obs"])
     fut = forecast(X, seed)
     target = np.zeros((D + HORIZON, O, P))
+    point = np.zeros((D + HORIZON, O, P))
     target[fut.d, fut.o, fut.p] = fut.target
+    point[fut.d, fut.o, fut.p] = fut.point
+    plan_send, plan_stock = next_week_plan(target, point, hist["stock_end"])
 
     # Replay: same demand, disruptions and opening stock; only the send rule changes after week 20.
     replay = to_frame(w, run(w, recommended_sender(w, target)))
@@ -246,7 +265,7 @@ def pipeline(seed):
     test = M[(M.d >= TRAIN_END) & (M.d < D) & M.sold.notna() & M.base4.notna()]
     err_m, err_b = (test.point - test.sold).abs(), (test.base4 - test.sold).abs()
     return dict(
-        w=w, full=full, M=M, test=test, table=compare(before, after), mb=mb, ma=ma,
+        w=w, full=full, M=M, test=test, table=compare(before, after), mb=mb, ma=ma, plan_send=plan_send, plan_stock=plan_stock,
         mae=(err_b.mean(), err_m.mean()), wape=(100 * err_b.sum() / test.sold.sum(), 100 * err_m.sum() / test.sold.sum()),
         waste_cut=100 * (mb["waste"] - ma["waste"]) / mb["waste"],
         stockout_change=ma["stockout"] - mb["stockout"],  # percentage points, + means more stockouts
@@ -284,12 +303,14 @@ def main():
         columns=["measure", "mean", "min", "max", "runs"]).round(2)
 
     plan = M[M.d >= D].sort_values(["d", "o", "p"])
-    pk = PACK[plan.p.to_numpy()]
+    day = (plan.d - D).to_numpy()
+    send = r["plan_send"][day, plan.o.to_numpy(), plan.p.to_numpy()]
+    stock = r["plan_stock"][day, plan.o.to_numpy(), plan.p.to_numpy()]
     plan = pd.DataFrame({
         "date": w["dates"][plan.d].strftime("%Y-%m-%d"), "outlet": plan.outlet.astype(str).to_numpy(),
         "product": plan["product"].astype(str).to_numpy(), "forecast": plan.point.round(1).to_numpy(),
-        # Future stock on hand is unknown, so nothing is netted off here (see the notes on the Summary tab).
-        "recommended_send_units": (np.ceil(plan.target.to_numpy() / pk - 1e-9) * pk).astype(int)})
+        "stock_on_hand": np.rint(stock).astype(int),  # stock assumed at the start of that day (packaged items)
+        "recommended_send_units": send})
 
     with pd.ExcelWriter("output.xlsx", engine="openpyxl") as xl:
         summary.to_excel(xl, sheet_name="Summary", index=False)

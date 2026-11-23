@@ -85,7 +85,7 @@ data = {
     "forecast_vs_actual": fc[["date", "outlet", "product", "forecast", "forecast_low", "forecast_high", "actual"]].to_dict("records"),
     "case_sizes": {name: int(info[1]) for name, info in PRODUCTS.items()},
     "shop_history": weekly_history(),
-    "send_plan": plan.rename(columns={"recommended_send_units": "units"})[["date", "outlet", "product", "forecast", "units"]].to_dict("records"),
+    "send_plan": plan.rename(columns={"recommended_send_units": "units"})[["date", "outlet", "product", "forecast", "stock_on_hand", "units"]].to_dict("records"),
 }
 
 out = Path("frontend/public/data.json")

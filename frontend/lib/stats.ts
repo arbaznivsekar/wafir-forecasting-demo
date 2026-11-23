@@ -20,3 +20,15 @@ export function bandCoverage(rows: ForecastRow[]): number {
   const inside = rows.filter((r) => r.actual >= r.forecast_low && r.actual <= r.forecast_high).length;
   return (100 * inside) / rows.length;
 }
+
+/** Smallest average change, in points, that we call a real move rather than noise. */
+const NOTICEABLE_POINTS = 0.5;
+
+/** One honest sentence about how stockouts changed across the simulated runs. */
+export function stockoutLead(s: Spread): string {
+  const mixed = s.min < 0 && s.max > 0;
+  const swing = `It can go either way by about ${aboutPoints(s)} points.`;
+  if (!mixed) return "Stockouts moved the same way in every run.";
+  if (Math.abs(s.mean) < NOTICEABLE_POINTS) return `No clear change on average. ${swing}`;
+  return `${s.mean < 0 ? "Slightly fewer" : "Slightly more"} stockouts on average, but not in every run. ${swing}`;
+}

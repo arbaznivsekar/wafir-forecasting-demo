@@ -56,6 +56,8 @@ export type NeedRow = {
   units: number;
   boxSize: number;
   boxes: number;
+  /** Stock already in the shop when next week starts (packaged items only). */
+  stockOnHand: number;
 };
 
 /** What one shop is expected to sell next week and how much to send, per product. */
@@ -67,7 +69,16 @@ export function nextWeekNeeds(data: ShopData, outlet: string): { dates: string[]
     const weekSales = sum(mine.map((r) => r.forecast));
     const units = sum(mine.map((r) => r.units));
     const boxSize = data.case_sizes[product];
-    return { product, weekSales, perDay: weekSales / dates.length, units, boxSize, boxes: units / boxSize };
+    const stockOnHand = mine.find((r) => r.date === dates[0])?.stock_on_hand ?? 0;
+    return {
+      product,
+      weekSales,
+      perDay: weekSales / dates.length,
+      units,
+      boxSize,
+      boxes: units / boxSize,
+      stockOnHand,
+    };
   });
   return { dates, rows };
 }

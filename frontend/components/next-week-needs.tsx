@@ -27,6 +27,9 @@ function NeedCard({ row }: { row: NeedRow }) {
           </div>
         </dl>
         <p className="mt-1 text-right text-xs text-muted-foreground">{boxes(row.boxes, row.boxSize)}</p>
+        {row.stockOnHand > 0 && (
+          <p className="text-right text-xs text-muted-foreground">Counts {int(row.stockOnHand)} already in the shop</p>
+        )}
       </div>
     </li>
   );
@@ -65,7 +68,8 @@ export function NextWeekNeeds({ data, outlet }: { data: ShopData; outlet: string
         ))}
       </ul>
       <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-        Expected sales are estimates, not promises. For packaged items, take off any stock the shop already has.
+        Expected sales are estimates, not promises. Packaged items already count the stock shown on each card; if the
+        real stock is different, adjust the amount.
       </p>
 
       <details className="group mt-5 rounded-2xl border border-border bg-card shadow-card">
@@ -77,9 +81,9 @@ export function NextWeekNeeds({ data, outlet }: { data: ShopData; outlet: string
         </summary>
         <div className="space-y-5 px-4 pb-4 sm:px-6 sm:pb-6">
           {[
-            { title: "Expected sales", pick: (p: string, d: string) => dec1(lookup(p, d)?.forecast ?? 0) },
-            { title: "Suggested to send", pick: (p: string, d: string) => int(lookup(p, d)?.units ?? 0) },
-          ].map(({ title, pick }) => (
+            { title: "Expected sales", value: (p: string, d: string) => lookup(p, d)?.forecast ?? 0, show: dec1 },
+            { title: "Suggested to send", value: (p: string, d: string) => lookup(p, d)?.units ?? 0, show: int },
+          ].map(({ title, value, show }) => (
             <div key={title}>
               <h3 className="mb-2 text-sm font-medium text-muted-foreground">{title}</h3>
               <ScrollTable label={`${title} by day for ${outlet}`}>
@@ -93,6 +97,12 @@ export function NextWeekNeeds({ data, outlet }: { data: ShopData; outlet: string
                         {longDate(d)}
                       </TableHead>
                     ))}
+                    <TableHead
+                      scope="col"
+                      className={`${headCell} whitespace-nowrap border-l border-border text-brand-ink`}
+                    >
+                      Week
+                    </TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
@@ -103,9 +113,12 @@ export function NextWeekNeeds({ data, outlet }: { data: ShopData; outlet: string
                       </TableHead>
                       {dates.map((d) => (
                         <TableCell key={d} className={numCell}>
-                          {pick(product, d)}
+                          {show(value(product, d))}
                         </TableCell>
                       ))}
+                      <TableCell className={`${numCell} border-l font-semibold text-brand-ink`}>
+                        {show(dates.reduce((total, d) => total + value(product, d), 0))}
+                      </TableCell>
                     </TableRow>
                   ))}
                 </TableBody>

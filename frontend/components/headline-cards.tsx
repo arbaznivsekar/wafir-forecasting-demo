@@ -6,7 +6,7 @@ import { useData } from "@/components/data-provider";
 import { Reveal } from "@/components/reveal";
 import { Section } from "@/components/section";
 import { SectionSkeleton } from "@/components/states";
-import { aboutPoints, testWeeks } from "@/lib/stats";
+import { stockoutLead, testWeeks } from "@/lib/stats";
 import { kwd, num, pct, pts, range } from "@/lib/format";
 import type { DashboardData } from "@/lib/types";
 
@@ -34,7 +34,6 @@ function Cards({ data }: { data: DashboardData }) {
   const { runs, waste_cut_pct: waste, stockout_change_pts: stockouts, kwd_saved: saved } = data.robustness;
   const weeks = testWeeks(data.forecast_vs_actual);
   const acrossRuns = `across ${runs} simulated runs`;
-  const crossesZero = stockouts.min < 0 && stockouts.max > 0;
 
   return (
     <div className="grid gap-4 md:grid-cols-3">
@@ -49,11 +48,7 @@ function Cards({ data }: { data: DashboardData }) {
       <Reveal>
         <StatCard
           title="Stockout change"
-          lead={
-            crossesZero
-              ? `No clear change on average. It can go either way by about ${aboutPoints(stockouts)} points.`
-              : "Stockouts moved the same way in every run."
-          }
+          lead={stockoutLead(stockouts)}
           figure={<CountUp value={stockouts.mean} format={pts} />}
           range={`Average. Range ${range(stockouts.min, stockouts.max, pts)} ${acrossRuns}.`}
           caption="Below zero means fewer stockouts. Above zero means more."
