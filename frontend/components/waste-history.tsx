@@ -1,11 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import { ProductLabel } from "@/components/product-label";
 import { ScrollTable } from "@/components/scroll-table";
 import { Section } from "@/components/section";
 import { SelectField } from "@/components/select-field";
 import { TableBody, TableCell, TableFooter, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { int, pct, shortDate } from "@/lib/format";
+import { boxLabel, int, pct, shortDate } from "@/lib/format";
 import { historyWeeks } from "@/lib/shop";
 import { headCell, labelCell, labelHead, numCell } from "@/lib/table-styles";
 import type { ShopData } from "@/lib/types";
@@ -24,7 +25,9 @@ export function WasteHistory({ data, outlet }: { data: ShopData; outlet: string 
     const rows = history.filter((r) => r.product === product && r.week_start === week);
     return {
       product,
+      boxSize: data.case_sizes[product],
       delivered: sum(rows.map((r) => r.units_delivered)),
+      sold: sum(rows.map((r) => r.units_sold)),
       wasted: sum(rows.map((r) => r.units_wasted)),
       outDays: sum(rows.map((r) => r.stockout_days)),
     };
@@ -34,6 +37,7 @@ export function WasteHistory({ data, outlet }: { data: ShopData; outlet: string 
     return {
       week: w,
       delivered: sum(rows.map((r) => r.units_delivered)),
+      sold: sum(rows.map((r) => r.units_sold)),
       wasted: sum(rows.map((r) => r.units_wasted)),
     };
   });
@@ -45,7 +49,7 @@ export function WasteHistory({ data, outlet }: { data: ShopData; outlet: string 
       id="waste"
       eyebrow="The record"
       title="Waste and deliveries"
-      intro={`What was delivered, what was wasted, and when a product ran out, over the last ${weeks.length} weeks.`}
+      intro={`What was delivered, what sold, what was wasted, and when a product ran out, over the last ${weeks.length} weeks.`}
     >
       <div className="space-y-6">
         <div className="rounded-2xl border border-border bg-card shadow-card p-4 sm:p-6">
@@ -66,7 +70,10 @@ export function WasteHistory({ data, outlet }: { data: ShopData; outlet: string 
                   Product
                 </TableHead>
                 <TableHead scope="col" className={headCell}>
-                  Delivered
+                  Sent
+                </TableHead>
+                <TableHead scope="col" className={headCell}>
+                  Sold
                 </TableHead>
                 <TableHead scope="col" className={headCell}>
                   Wasted
@@ -80,9 +87,15 @@ export function WasteHistory({ data, outlet }: { data: ShopData; outlet: string 
               {products.map((p) => (
                 <TableRow key={p.product}>
                   <TableHead scope="row" className={labelCell}>
-                    {p.product}
+                    <ProductLabel product={p.product} boxSize={p.boxSize} />
                   </TableHead>
-                  <TableCell className={numCell}>{int(p.delivered)}</TableCell>
+                  <TableCell className={numCell}>
+                    {int(p.delivered)}
+                    <span className="block whitespace-nowrap text-xs text-muted-foreground">
+                      {boxLabel(p.delivered / p.boxSize)}
+                    </span>
+                  </TableCell>
+                  <TableCell className={numCell}>{int(p.sold)}</TableCell>
                   <TableCell className={numCell}>
                     {int(p.wasted)}
                     <span className="block text-xs text-muted-foreground">{pct(share(p.wasted, p.delivered))}</span>
@@ -100,6 +113,12 @@ export function WasteHistory({ data, outlet }: { data: ShopData; outlet: string 
                 </TableHead>
                 <TableCell className={`${numCell} border-b-0 font-medium`}>
                   {int(sum(products.map((p) => p.delivered)))}
+                  <span className="block whitespace-nowrap text-xs font-normal text-muted-foreground">
+                    {boxLabel(sum(products.map((p) => p.delivered / p.boxSize)))}
+                  </span>
+                </TableCell>
+                <TableCell className={`${numCell} border-b-0 font-medium`}>
+                  {int(sum(products.map((p) => p.sold)))}
                 </TableCell>
                 <TableCell className={`${numCell} border-b-0 font-medium`}>
                   {int(sum(products.map((p) => p.wasted)))}
@@ -121,7 +140,10 @@ export function WasteHistory({ data, outlet }: { data: ShopData; outlet: string 
                   Week starting
                 </TableHead>
                 <TableHead scope="col" className={headCell}>
-                  Delivered
+                  Sent
+                </TableHead>
+                <TableHead scope="col" className={headCell}>
+                  Sold
                 </TableHead>
                 <TableHead scope="col" className={headCell}>
                   Wasted
@@ -138,6 +160,7 @@ export function WasteHistory({ data, outlet }: { data: ShopData; outlet: string 
                     {shortDate(w.week)}
                   </TableHead>
                   <TableCell className={numCell}>{int(w.delivered)}</TableCell>
+                  <TableCell className={numCell}>{int(w.sold)}</TableCell>
                   <TableCell className={numCell}>{int(w.wasted)}</TableCell>
                   <TableCell className={numCell}>
                     {pct(share(w.wasted, w.delivered))}

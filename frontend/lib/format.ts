@@ -24,6 +24,12 @@ const oneDecimal = new Intl.NumberFormat("en-US", { minimumFractionDigits: 1, ma
 /** 12.4 (forecasts are stored to one decimal). */
 export const dec1 = (n: number): string => oneDecimal.format(n);
 
+/** Boxes as a number: whole when it is a whole box count, one decimal after a short delivery. */
+export const boxCount = (n: number): string => (Number.isInteger(n) ? int(n) : dec1(n));
+
+/** "1 box" or "13 boxes". */
+export const boxLabel = (n: number): string => `${boxCount(n)} ${n === 1 ? "box" : "boxes"}`;
+
 export const pct = (n: number): string => `${num(n)}%`;
 export const pts = (n: number): string => `${signed(n)} pts`;
 export const kwd = (n: number): string => `KWD ${num(n)}`;

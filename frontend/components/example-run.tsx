@@ -164,7 +164,7 @@ function Run({ data }: { data: DashboardData }) {
             summary={describe(money, (n) => `${num(n)} KWD`)}
             caption={
               tradeOff
-                ? "Waste cost went down and lost margin went up a little. That is the trade-off: fewer thrown-away items, a few more missed sales."
+                ? "Waste cost went down and lost margin went up. That is the trade-off: fewer thrown-away items, more missed sales."
                 : "Waste cost is money spent on items thrown away. Lost margin is profit missed when stock ran out."
             }
           >

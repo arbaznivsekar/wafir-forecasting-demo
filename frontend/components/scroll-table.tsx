@@ -18,7 +18,7 @@ export function ScrollTable({ label, children, className }: Props) {
         className,
       )}
     >
-      <table className="w-full border-separate border-spacing-0 text-sm tabular-nums">
+      <table className="w-full border-separate border-spacing-0 text-[13px] tabular-nums sm:text-sm">
         <caption className="sr-only">{label}</caption>
         {children}
       </table>

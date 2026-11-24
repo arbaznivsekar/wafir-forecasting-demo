@@ -14,6 +14,8 @@ D = WEEKS * 7  # days of history
 TRAIN_END = TRAIN_WEEKS * 7  # first test day index
 NOTES = ["units_sent is the shipment size; packaged items also sell from carried-over stock",
          "Packaged item send plan counts stock on hand, which comes from the simulation here; real stock counts should replace it",
+         "Savings depend on how Wafir decides what to send today; if the current method already rounds to the nearest box, they would be much smaller",
+         "After a sudden drop in demand, such as the summer slowdown, the forecast takes about two weeks to catch up and runs high; a year of real data would let it learn seasonal dips",
          "All data is dummy and results are illustrative."]
 
 # --- Data-generation knobs -------------------------------------------------
@@ -21,6 +23,7 @@ NB_R = 25            # NegBin dispersion: smaller = noisier. Var = mu + mu^2/r
 TREND = 0.0004       # slow growth per day
 EXPIRY_RATE = 0.01   # share of carried packaged stock lost to expiry per day
 ORDER_NOISE = 0.05   # human over/under-shoot on the baseline order (sd)
+ROUND_UP_FROM = 0.35  # cakes/pastry: send the next box only once this share of it is needed
 CUSHION = 1.10       # baseline adds 10% on top of the 4-week average
 N_WEATHER, N_NEARBY, N_SUPPLIER, N_MISSING = 3, 4, 6, 4
 PROMO_START = START + pd.Timedelta(weeks=14)  # inside training so the model can learn it
@@ -94,6 +97,18 @@ def to_packs(need):
     return (np.ceil(np.maximum(need, 0) / PACK - 1e-9) * PACK).astype(int)
 
 
+def to_boxes(need):
+    """Recommended amounts in whole boxes. The current method always rounds up (see to_packs); we do not.
+
+    Cakes and pastry go bad overnight, so the next box is only sent once ROUND_UP_FROM of it is needed: a need of 13
+    with boxes of 12 is one box, not two. Packaged items still round up, because leftovers carry over and running out
+    costs more than a spare unit."""
+    boxes = np.maximum(need, 0) / PACK
+    whole = np.floor(boxes + 1e-9)
+    fresh = whole + ((boxes - whole) >= ROUND_UP_FROM)
+    return (np.where(SHORT[None, :], fresh, np.ceil(boxes - 1e-9)) * PACK).astype(int)
+
+
 def run(w, sender):
     """Day-by-day stock simulation. `sender` decides the order from info available that morning."""
     carry = np.zeros((O, P), dtype=int)
@@ -132,7 +147,7 @@ def recommended_sender(w, target):
     base = baseline_sender(w)
 
     def send(d, obs, carry):
-        return base(d, obs, carry) if d < TRAIN_END else to_packs(target[d] - carry)
+        return base(d, obs, carry) if d < TRAIN_END else to_boxes(target[d] - carry)
     return send
 
 
@@ -235,7 +250,7 @@ def next_week_plan(target, point, opening):
     for i in range(HORIZON):
         d = D + i
         start[i] = stock
-        send[i] = to_packs(target[d] - stock)
+        send[i] = to_boxes(target[d] - stock)
         # Fresh items are written off each night; packaged items carry on what the forecast says will not sell.
         stock = np.where(SHORT[None, :], 0, np.maximum(stock + send[i] - point[d], 0))
     return send, start

@@ -58,14 +58,20 @@ export type NeedRow = {
   boxes: number;
   /** Stock already in the shop when next week starts (packaged items only). */
   stockOnHand: number;
+  /** What happened in the most recent week of history. */
+  lastWeek: { sent: number; sold: number; wasted: number };
 };
 
 /** What one shop is expected to sell next week and how much to send, per product. */
 export function nextWeekNeeds(data: ShopData, outlet: string): { dates: string[]; rows: NeedRow[] } {
   const plan = data.send_plan.filter((r) => r.outlet === outlet);
   const dates = [...new Set(plan.map((r) => r.date))].sort();
+  const latestWeek = historyWeeks(data).at(-1);
   const rows = data.products.map((product) => {
     const mine = plan.filter((r) => r.product === product);
+    const last = data.shop_history.filter(
+      (r) => r.outlet === outlet && r.product === product && r.week_start === latestWeek,
+    );
     const weekSales = sum(mine.map((r) => r.forecast));
     const units = sum(mine.map((r) => r.units));
     const boxSize = data.case_sizes[product];
@@ -78,6 +84,11 @@ export function nextWeekNeeds(data: ShopData, outlet: string): { dates: string[]
       boxSize,
       boxes: units / boxSize,
       stockOnHand,
+      lastWeek: {
+        sent: sum(last.map((r) => r.units_delivered)),
+        sold: sum(last.map((r) => r.units_sold)),
+        wasted: sum(last.map((r) => r.units_wasted)),
+      },
     };
   });
   return { dates, rows };

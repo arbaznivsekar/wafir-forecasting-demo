@@ -27,7 +27,7 @@ const toStart: Need[] = [
 ];
 
 const makesItBetter: Need[] = [
-  { item: "Days a product sold out", why: "Sales only show what sold, not what customers wanted." },
+  { item: "Days a product sold out", why: "Sales only show what sold, not what shoppers wanted." },
   { item: "Stock the shop already holds on delivery day", why: "Packaged items need this to avoid over-sending." },
   { item: "Who pays for unsold stock", why: "Return and credit terms decide how much extra is worth sending." },
   { item: "Delivery days, order cut-off times and minimum order sizes, by shop" },

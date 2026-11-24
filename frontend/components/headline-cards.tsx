@@ -42,7 +42,7 @@ function Cards({ data }: { data: DashboardData }) {
           title="Waste cut"
           figure={<CountUp value={waste.mean} format={pct} />}
           range={`Average. Range ${range(waste.min, waste.max, pct)} ${acrossRuns}.`}
-          caption={`${waste.min > 0 ? "Above zero in every run. " : ""}Less food thrown away than with the current ordering rule.`}
+          caption={`${waste.min > 0 ? "Above zero in every run. " : ""}Less food thrown away than with the current sending rule.`}
         />
       </Reveal>
       <Reveal>

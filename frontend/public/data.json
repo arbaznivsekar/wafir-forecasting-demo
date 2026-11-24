@@ -22,24 +22,24 @@
   "summary": {
     "waste_pct": {
       "before": 13.66,
-      "after": 12.81
+      "after": 9.11
     },
     "stockout_pct": {
       "before": 16.98,
-      "after": 14.6
+      "after": 20.63
     },
-    "kwd_saved": 514.24,
+    "kwd_saved": 933.42,
     "margin_kwd": {
       "before": 16284.0,
-      "after": 16798.24
+      "after": 17217.42
     },
     "waste_cost_kwd": {
       "before": 3663.18,
-      "after": 3134.89
+      "after": 2158.98
     },
     "lost_margin_kwd": {
       "before": 1361.03,
-      "after": 1375.08
+      "after": 1931.81
     },
     "mae": {
       "baseline": 5.25,
@@ -49,83 +49,85 @@
   "robustness": {
     "runs": 20,
     "waste_cut_pct": {
-      "mean": 9.61,
-      "min": 1.09,
-      "max": 16.57
+      "mean": 33.85,
+      "min": 30.08,
+      "max": 37.7
     },
     "stockout_change_pts": {
-      "mean": -0.79,
-      "min": -2.94,
-      "max": 0.96
+      "mean": 5.45,
+      "min": 3.51,
+      "max": 7.29
     },
     "kwd_saved": {
-      "mean": 348.85,
-      "min": 44.29,
-      "max": 622.43
+      "mean": 786.67,
+      "min": 550.13,
+      "max": 986.19
     }
   },
   "notes": [
     "units_sent is the shipment size; packaged items also sell from carried-over stock",
     "Packaged item send plan counts stock on hand, which comes from the simulation here; real stock counts should replace it",
+    "Savings depend on how Wafir decides what to send today; if the current method already rounds to the nearest box, they would be much smaller",
+    "After a sudden drop in demand, such as the summer slowdown, the forecast takes about two weeks to catch up and runs high; a year of real data would let it learn seasonal dips",
     "All data is dummy and results are illustrative"
   ],
   "by_outlet": [
     {
       "outlet": "Mall Kiosk",
       "waste_pct_before": 13.05,
-      "waste_pct_after": 11.74
+      "waste_pct_after": 9.17
     },
     {
       "outlet": "Supermarket",
       "waste_pct_before": 11.11,
-      "waste_pct_after": 10.21
+      "waste_pct_after": 7.52
     },
     {
       "outlet": "Co-op",
       "waste_pct_before": 11.97,
-      "waste_pct_after": 9.72
+      "waste_pct_after": 7.91
     },
     {
       "outlet": "Petrol Station Shop",
       "waste_pct_before": 17.42,
-      "waste_pct_after": 15.76
+      "waste_pct_after": 11.52
     },
     {
       "outlet": "Small Grocery",
       "waste_pct_before": 21.05,
-      "waste_pct_after": 24.21
+      "waste_pct_after": 13.44
     }
   ],
   "by_product": [
     {
       "product": "Chocolate Cake",
       "waste_pct_before": 27.79,
-      "waste_pct_after": 23.94
+      "waste_pct_after": 19.87
     },
     {
       "product": "Vanilla Cake",
       "waste_pct_before": 29.42,
-      "waste_pct_after": 26.52
+      "waste_pct_after": 18.88
     },
     {
       "product": "Cheese Pastry",
       "waste_pct_before": 22.71,
-      "waste_pct_after": 23.53
+      "waste_pct_after": 17.0
     },
     {
       "product": "Date Cookies",
       "waste_pct_before": 0.48,
-      "waste_pct_after": 0.79
+      "waste_pct_after": 0.75
     },
     {
       "product": "Butter Biscuits",
       "waste_pct_before": 0.56,
-      "waste_pct_after": 0.65
+      "waste_pct_after": 0.7
     },
     {
       "product": "Mini Muffins",
       "waste_pct_before": 1.23,
-      "waste_pct_after": 0.75
+      "waste_pct_after": 0.9
     }
   ],
   "forecast_vs_actual": [
@@ -11484,6 +11486,7 @@
       "product": "Butter Biscuits",
       "week_start": "2026-05-25",
       "units_delivered": 264,
+      "units_sold": 244,
       "units_wasted": 2,
       "waste_cost_kwd": 0.9,
       "stockout_days": 1,
@@ -11494,6 +11497,7 @@
       "product": "Butter Biscuits",
       "week_start": "2026-06-01",
       "units_delivered": 240,
+      "units_sold": 242,
       "units_wasted": 0,
       "waste_cost_kwd": 0.0,
       "stockout_days": 2,
@@ -11504,6 +11508,7 @@
       "product": "Butter Biscuits",
       "week_start": "2026-06-08",
       "units_delivered": 264,
+      "units_sold": 254,
       "units_wasted": 1,
       "waste_cost_kwd": 0.45,
       "stockout_days": 0,
@@ -11514,6 +11519,7 @@
       "product": "Butter Biscuits",
       "week_start": "2026-06-15",
       "units_delivered": 168,
+      "units_sold": 173,
       "units_wasted": 3,
       "waste_cost_kwd": 1.35,
       "stockout_days": 0,
@@ -11524,6 +11530,7 @@
       "product": "Butter Biscuits",
       "week_start": "2026-06-22",
       "units_delivered": 216,
+      "units_sold": 225,
       "units_wasted": 0,
       "waste_cost_kwd": 0.0,
       "stockout_days": 0,
@@ -11534,6 +11541,7 @@
       "product": "Butter Biscuits",
       "week_start": "2026-06-29",
       "units_delivered": 192,
+      "units_sold": 199,
       "units_wasted": 1,
       "waste_cost_kwd": 0.45,
       "stockout_days": 2,
@@ -11544,6 +11552,7 @@
       "product": "Cheese Pastry",
       "week_start": "2026-05-25",
       "units_delivered": 312,
+      "units_sold": 292,
       "units_wasted": 20,
       "waste_cost_kwd": 4.4,
       "stockout_days": 4,
@@ -11554,6 +11563,7 @@
       "product": "Cheese Pastry",
       "week_start": "2026-06-01",
       "units_delivered": 324,
+      "units_sold": 277,
       "units_wasted": 47,
       "waste_cost_kwd": 10.34,
       "stockout_days": 3,
@@ -11564,6 +11574,7 @@
       "product": "Cheese Pastry",
       "week_start": "2026-06-08",
       "units_delivered": 324,
+      "units_sold": 245,
       "units_wasted": 79,
       "waste_cost_kwd": 17.38,
       "stockout_days": 1,
@@ -11574,6 +11585,7 @@
       "product": "Cheese Pastry",
       "week_start": "2026-06-15",
       "units_delivered": 312,
+      "units_sold": 269,
       "units_wasted": 43,
       "waste_cost_kwd": 9.46,
       "stockout_days": 4,
@@ -11584,6 +11596,7 @@
       "product": "Cheese Pastry",
       "week_start": "2026-06-22",
       "units_delivered": 324,
+      "units_sold": 283,
       "units_wasted": 41,
       "waste_cost_kwd": 9.02,
       "stockout_days": 1,
@@ -11594,6 +11607,7 @@
       "product": "Cheese Pastry",
       "week_start": "2026-06-29",
       "units_delivered": 336,
+      "units_sold": 237,
       "units_wasted": 99,
       "waste_cost_kwd": 21.78,
       "stockout_days": 0,
@@ -11604,6 +11618,7 @@
       "product": "Chocolate Cake",
       "week_start": "2026-05-25",
       "units_delivered": 162,
+      "units_sold": 144,
       "units_wasted": 18,
       "waste_cost_kwd": 28.8,
       "stockout_days": 4,
@@ -11614,6 +11629,7 @@
       "product": "Chocolate Cake",
       "week_start": "2026-06-01",
       "units_delivered": 168,
+      "units_sold": 126,
       "units_wasted": 42,
       "waste_cost_kwd": 67.2,
       "stockout_days": 3,
@@ -11624,6 +11640,7 @@
       "product": "Chocolate Cake",
       "week_start": "2026-06-08",
       "units_delivered": 159,
+      "units_sold": 120,
       "units_wasted": 39,
       "waste_cost_kwd": 62.4,
       "stockout_days": 1,
@@ -11634,6 +11651,7 @@
       "product": "Chocolate Cake",
       "week_start": "2026-06-15",
       "units_delivered": 162,
+      "units_sold": 116,
       "units_wasted": 46,
       "waste_cost_kwd": 73.6,
       "stockout_days": 2,
@@ -11644,6 +11662,7 @@
       "product": "Chocolate Cake",
       "week_start": "2026-06-22",
       "units_delivered": 162,
+      "units_sold": 109,
       "units_wasted": 53,
       "waste_cost_kwd": 84.8,
       "stockout_days": 1,
@@ -11654,6 +11673,7 @@
       "product": "Chocolate Cake",
       "week_start": "2026-06-29",
       "units_delivered": 150,
+      "units_sold": 104,
       "units_wasted": 46,
       "waste_cost_kwd": 73.6,
       "stockout_days": 1,
@@ -11664,6 +11684,7 @@
       "product": "Date Cookies",
       "week_start": "2026-05-25",
       "units_delivered": 240,
+      "units_sold": 224,
       "units_wasted": 2,
       "waste_cost_kwd": 1.3,
       "stockout_days": 1,
@@ -11674,6 +11695,7 @@
       "product": "Date Cookies",
       "week_start": "2026-06-01",
       "units_delivered": 216,
+      "units_sold": 215,
       "units_wasted": 0,
       "waste_cost_kwd": 0.0,
       "stockout_days": 0,
@@ -11684,6 +11706,7 @@
       "product": "Date Cookies",
       "week_start": "2026-06-08",
       "units_delivered": 216,
+      "units_sold": 184,
       "units_wasted": 2,
       "waste_cost_kwd": 1.3,
       "stockout_days": 2,
@@ -11694,6 +11717,7 @@
       "product": "Date Cookies",
       "week_start": "2026-06-15",
       "units_delivered": 168,
+      "units_sold": 189,
       "units_wasted": 2,
       "waste_cost_kwd": 1.3,
       "stockout_days": 0,
@@ -11704,6 +11728,7 @@
       "product": "Date Cookies",
       "week_start": "2026-06-22",
       "units_delivered": 168,
+      "units_sold": 162,
       "units_wasted": 0,
       "waste_cost_kwd": 0.0,
       "stockout_days": 0,
@@ -11714,6 +11739,7 @@
       "product": "Date Cookies",
       "week_start": "2026-06-29",
       "units_delivered": 168,
+      "units_sold": 193,
       "units_wasted": 3,
       "waste_cost_kwd": 1.95,
       "stockout_days": 2,
@@ -11724,6 +11750,7 @@
       "product": "Mini Muffins",
       "week_start": "2026-05-25",
       "units_delivered": 168,
+      "units_sold": 178,
       "units_wasted": 1,
       "waste_cost_kwd": 0.8,
       "stockout_days": 2,
@@ -11734,6 +11761,7 @@
       "product": "Mini Muffins",
       "week_start": "2026-06-01",
       "units_delivered": 168,
+      "units_sold": 168,
       "units_wasted": 0,
       "waste_cost_kwd": 0.0,
       "stockout_days": 0,
@@ -11744,6 +11772,7 @@
       "product": "Mini Muffins",
       "week_start": "2026-06-08",
       "units_delivered": 168,
+      "units_sold": 163,
       "units_wasted": 0,
       "waste_cost_kwd": 0.0,
       "stockout_days": 1,
@@ -11754,6 +11783,7 @@
       "product": "Mini Muffins",
       "week_start": "2026-06-15",
       "units_delivered": 168,
+      "units_sold": 146,
       "units_wasted": 4,
       "waste_cost_kwd": 3.2,
       "stockout_days": 0,
@@ -11764,6 +11794,7 @@
       "product": "Mini Muffins",
       "week_start": "2026-06-22",
       "units_delivered": 120,
+      "units_sold": 135,
       "units_wasted": 1,
       "waste_cost_kwd": 0.8,
       "stockout_days": 1,
@@ -11774,6 +11805,7 @@
       "product": "Mini Muffins",
       "week_start": "2026-06-29",
       "units_delivered": 144,
+      "units_sold": 134,
       "units_wasted": 4,
       "waste_cost_kwd": 3.2,
       "stockout_days": 0,
@@ -11784,6 +11816,7 @@
       "product": "Vanilla Cake",
       "week_start": "2026-05-25",
       "units_delivered": 150,
+      "units_sold": 134,
       "units_wasted": 16,
       "waste_cost_kwd": 21.6,
       "stockout_days": 3,
@@ -11794,6 +11827,7 @@
       "product": "Vanilla Cake",
       "week_start": "2026-06-01",
       "units_delivered": 162,
+      "units_sold": 102,
       "units_wasted": 60,
       "waste_cost_kwd": 81.0,
       "stockout_days": 1,
@@ -11804,6 +11838,7 @@
       "product": "Vanilla Cake",
       "week_start": "2026-06-08",
       "units_delivered": 150,
+      "units_sold": 101,
       "units_wasted": 49,
       "waste_cost_kwd": 66.15,
       "stockout_days": 2,
@@ -11814,6 +11849,7 @@
       "product": "Vanilla Cake",
       "week_start": "2026-06-15",
       "units_delivered": 144,
+      "units_sold": 96,
       "units_wasted": 48,
       "waste_cost_kwd": 64.8,
       "stockout_days": 1,
@@ -11824,6 +11860,7 @@
       "product": "Vanilla Cake",
       "week_start": "2026-06-22",
       "units_delivered": 144,
+      "units_sold": 81,
       "units_wasted": 63,
       "waste_cost_kwd": 85.05,
       "stockout_days": 1,
@@ -11834,6 +11871,7 @@
       "product": "Vanilla Cake",
       "week_start": "2026-06-29",
       "units_delivered": 126,
+      "units_sold": 96,
       "units_wasted": 30,
       "waste_cost_kwd": 40.5,
       "stockout_days": 2,
@@ -11844,6 +11882,7 @@
       "product": "Butter Biscuits",
       "week_start": "2026-05-25",
       "units_delivered": 288,
+      "units_sold": 258,
       "units_wasted": 1,
       "waste_cost_kwd": 0.45,
       "stockout_days": 2,
@@ -11854,6 +11893,7 @@
       "product": "Butter Biscuits",
       "week_start": "2026-06-01",
       "units_delivered": 168,
+      "units_sold": 181,
       "units_wasted": 2,
       "waste_cost_kwd": 0.9,
       "stockout_days": 1,
@@ -11864,6 +11904,7 @@
       "product": "Butter Biscuits",
       "week_start": "2026-06-08",
       "units_delivered": 216,
+      "units_sold": 198,
       "units_wasted": 3,
       "waste_cost_kwd": 1.35,
       "stockout_days": 1,
@@ -11874,6 +11915,7 @@
       "product": "Butter Biscuits",
       "week_start": "2026-06-15",
       "units_delivered": 168,
+      "units_sold": 192,
       "units_wasted": 0,
       "waste_cost_kwd": 0.0,
       "stockout_days": 0,
@@ -11884,6 +11926,7 @@
       "product": "Butter Biscuits",
       "week_start": "2026-06-22",
       "units_delivered": 192,
+      "units_sold": 175,
       "units_wasted": 3,
       "waste_cost_kwd": 1.35,
       "stockout_days": 0,
@@ -11894,6 +11937,7 @@
       "product": "Butter Biscuits",
       "week_start": "2026-06-29",
       "units_delivered": 192,
+      "units_sold": 183,
       "units_wasted": 2,
       "waste_cost_kwd": 0.9,
       "stockout_days": 1,
@@ -11904,6 +11948,7 @@
       "product": "Cheese Pastry",
       "week_start": "2026-05-25",
       "units_delivered": 264,
+      "units_sold": 240,
       "units_wasted": 24,
       "waste_cost_kwd": 5.28,
       "stockout_days": 5,
@@ -11914,6 +11959,7 @@
       "product": "Cheese Pastry",
       "week_start": "2026-06-01",
       "units_delivered": 276,
+      "units_sold": 233,
       "units_wasted": 43,
       "waste_cost_kwd": 9.46,
       "stockout_days": 2,
@@ -11924,6 +11970,7 @@
       "product": "Cheese Pastry",
       "week_start": "2026-06-08",
       "units_delivered": 288,
+      "units_sold": 209,
       "units_wasted": 79,
       "waste_cost_kwd": 17.38,
       "stockout_days": 1,
@@ -11934,6 +11981,7 @@
       "product": "Cheese Pastry",
       "week_start": "2026-06-15",
       "units_delivered": 288,
+      "units_sold": 177,
       "units_wasted": 111,
       "waste_cost_kwd": 24.42,
       "stockout_days": 0,
@@ -11944,6 +11992,7 @@
       "product": "Cheese Pastry",
       "week_start": "2026-06-22",
       "units_delivered": 276,
+      "units_sold": 195,
       "units_wasted": 81,
       "waste_cost_kwd": 17.82,
       "stockout_days": 2,
@@ -11954,6 +12003,7 @@
       "product": "Cheese Pastry",
       "week_start": "2026-06-29",
       "units_delivered": 264,
+      "units_sold": 214,
       "units_wasted": 50,
       "waste_cost_kwd": 11.0,
       "stockout_days": 3,
@@ -11964,6 +12014,7 @@
       "product": "Chocolate Cake",
       "week_start": "2026-05-25",
       "units_delivered": 126,
+      "units_sold": 110,
       "units_wasted": 16,
       "waste_cost_kwd": 25.6,
       "stockout_days": 3,
@@ -11974,6 +12025,7 @@
       "product": "Chocolate Cake",
       "week_start": "2026-06-01",
       "units_delivered": 138,
+      "units_sold": 106,
       "units_wasted": 32,
       "waste_cost_kwd": 51.2,
       "stockout_days": 1,
@@ -11984,6 +12036,7 @@
       "product": "Chocolate Cake",
       "week_start": "2026-06-08",
       "units_delivered": 132,
+      "units_sold": 100,
       "units_wasted": 32,
       "waste_cost_kwd": 51.2,
       "stockout_days": 3,
@@ -11994,6 +12047,7 @@
       "product": "Chocolate Cake",
       "week_start": "2026-06-15",
       "units_delivered": 138,
+      "units_sold": 81,
       "units_wasted": 57,
       "waste_cost_kwd": 91.2,
       "stockout_days": 0,
@@ -12004,6 +12058,7 @@
       "product": "Chocolate Cake",
       "week_start": "2026-06-22",
       "units_delivered": 126,
+      "units_sold": 87,
       "units_wasted": 39,
       "waste_cost_kwd": 62.4,
       "stockout_days": 2,
@@ -12014,6 +12069,7 @@
       "product": "Chocolate Cake",
       "week_start": "2026-06-29",
       "units_delivered": 126,
+      "units_sold": 91,
       "units_wasted": 35,
       "waste_cost_kwd": 56.0,
       "stockout_days": 1,
@@ -12024,6 +12080,7 @@
       "product": "Date Cookies",
       "week_start": "2026-05-25",
       "units_delivered": 192,
+      "units_sold": 203,
       "units_wasted": 1,
       "waste_cost_kwd": 0.65,
       "stockout_days": 3,
@@ -12034,6 +12091,7 @@
       "product": "Date Cookies",
       "week_start": "2026-06-01",
       "units_delivered": 192,
+      "units_sold": 161,
       "units_wasted": 2,
       "waste_cost_kwd": 1.3,
       "stockout_days": 0,
@@ -12044,6 +12102,7 @@
       "product": "Date Cookies",
       "week_start": "2026-06-08",
       "units_delivered": 144,
+      "units_sold": 164,
       "units_wasted": 0,
       "waste_cost_kwd": 0.0,
       "stockout_days": 1,
@@ -12054,6 +12113,7 @@
       "product": "Date Cookies",
       "week_start": "2026-06-15",
       "units_delivered": 144,
+      "units_sold": 150,
       "units_wasted": 1,
       "waste_cost_kwd": 0.65,
       "stockout_days": 0,
@@ -12064,6 +12124,7 @@
       "product": "Date Cookies",
       "week_start": "2026-06-22",
       "units_delivered": 144,
+      "units_sold": 142,
       "units_wasted": 0,
       "waste_cost_kwd": 0.0,
       "stockout_days": 1,
@@ -12074,6 +12135,7 @@
       "product": "Date Cookies",
       "week_start": "2026-06-29",
       "units_delivered": 144,
+      "units_sold": 132,
       "units_wasted": 0,
       "waste_cost_kwd": 0.0,
       "stockout_days": 1,
@@ -12084,6 +12146,7 @@
       "product": "Mini Muffins",
       "week_start": "2026-05-25",
       "units_delivered": 192,
+      "units_sold": 176,
       "units_wasted": 2,
       "waste_cost_kwd": 1.6,
       "stockout_days": 2,
@@ -12094,6 +12157,7 @@
       "product": "Mini Muffins",
       "week_start": "2026-06-01",
       "units_delivered": 144,
+      "units_sold": 170,
       "units_wasted": 1,
       "waste_cost_kwd": 0.8,
       "stockout_days": 1,
@@ -12104,6 +12168,7 @@
       "product": "Mini Muffins",
       "week_start": "2026-06-08",
       "units_delivered": 144,
+      "units_sold": 122,
       "units_wasted": 2,
       "waste_cost_kwd": 1.6,
       "stockout_days": 0,
@@ -12114,6 +12179,7 @@
       "product": "Mini Muffins",
       "week_start": "2026-06-15",
       "units_delivered": 120,
+      "units_sold": 138,
       "units_wasted": 0,
       "waste_cost_kwd": 0.0,
       "stockout_days": 0,
@@ -12124,6 +12190,7 @@
       "product": "Mini Muffins",
       "week_start": "2026-06-22",
       "units_delivered": 144,
+      "units_sold": 141,
       "units_wasted": 1,
       "waste_cost_kwd": 0.8,
       "stockout_days": 0,
@@ -12134,6 +12201,7 @@
       "product": "Mini Muffins",
       "week_start": "2026-06-29",
       "units_delivered": 144,
+      "units_sold": 127,
       "units_wasted": 1,
       "waste_cost_kwd": 0.8,
       "stockout_days": 0,
@@ -12144,6 +12212,7 @@
       "product": "Vanilla Cake",
       "week_start": "2026-05-25",
       "units_delivered": 102,
+      "units_sold": 81,
       "units_wasted": 21,
       "waste_cost_kwd": 28.35,
       "stockout_days": 3,
@@ -12154,6 +12223,7 @@
       "product": "Vanilla Cake",
       "week_start": "2026-06-01",
       "units_delivered": 108,
+      "units_sold": 69,
       "units_wasted": 39,
       "waste_cost_kwd": 52.65,
       "stockout_days": 1,
@@ -12164,6 +12234,7 @@
       "product": "Vanilla Cake",
       "week_start": "2026-06-08",
       "units_delivered": 114,
+      "units_sold": 93,
       "units_wasted": 21,
       "waste_cost_kwd": 28.35,
       "stockout_days": 1,
@@ -12174,6 +12245,7 @@
       "product": "Vanilla Cake",
       "week_start": "2026-06-15",
       "units_delivered": 114,
+      "units_sold": 66,
       "units_wasted": 48,
       "waste_cost_kwd": 64.8,
       "stockout_days": 1,
@@ -12184,6 +12256,7 @@
       "product": "Vanilla Cake",
       "week_start": "2026-06-22",
       "units_delivered": 114,
+      "units_sold": 82,
       "units_wasted": 32,
       "waste_cost_kwd": 43.2,
       "stockout_days": 1,
@@ -12194,6 +12267,7 @@
       "product": "Vanilla Cake",
       "week_start": "2026-06-29",
       "units_delivered": 108,
+      "units_sold": 84,
       "units_wasted": 24,
       "waste_cost_kwd": 32.4,
       "stockout_days": 2,
@@ -12204,6 +12278,7 @@
       "product": "Butter Biscuits",
       "week_start": "2026-05-25",
       "units_delivered": 144,
+      "units_sold": 152,
       "units_wasted": 0,
       "waste_cost_kwd": 0.0,
       "stockout_days": 1,
@@ -12214,6 +12289,7 @@
       "product": "Butter Biscuits",
       "week_start": "2026-06-01",
       "units_delivered": 144,
+      "units_sold": 146,
       "units_wasted": 1,
       "waste_cost_kwd": 0.45,
       "stockout_days": 3,
@@ -12224,6 +12300,7 @@
       "product": "Butter Biscuits",
       "week_start": "2026-06-08",
       "units_delivered": 120,
+      "units_sold": 110,
       "units_wasted": 2,
       "waste_cost_kwd": 0.9,
       "stockout_days": 0,
@@ -12234,6 +12311,7 @@
       "product": "Butter Biscuits",
       "week_start": "2026-06-15",
       "units_delivered": 96,
+      "units_sold": 106,
       "units_wasted": 1,
       "waste_cost_kwd": 0.45,
       "stockout_days": 0,
@@ -12244,6 +12322,7 @@
       "product": "Butter Biscuits",
       "week_start": "2026-06-22",
       "units_delivered": 144,
+      "units_sold": 124,
       "units_wasted": 1,
       "waste_cost_kwd": 0.45,
       "stockout_days": 0,
@@ -12254,6 +12333,7 @@
       "product": "Butter Biscuits",
       "week_start": "2026-06-29",
       "units_delivered": 96,
+      "units_sold": 88,
       "units_wasted": 1,
       "waste_cost_kwd": 0.45,
       "stockout_days": 0,
@@ -12264,6 +12344,7 @@
       "product": "Cheese Pastry",
       "week_start": "2026-05-25",
       "units_delivered": 216,
+      "units_sold": 204,
       "units_wasted": 12,
       "waste_cost_kwd": 2.64,
       "stockout_days": 4,
@@ -12274,6 +12355,7 @@
       "product": "Cheese Pastry",
       "week_start": "2026-06-01",
       "units_delivered": 216,
+      "units_sold": 169,
       "units_wasted": 47,
       "waste_cost_kwd": 10.34,
       "stockout_days": 2,
@@ -12284,6 +12366,7 @@
       "product": "Cheese Pastry",
       "week_start": "2026-06-08",
       "units_delivered": 216,
+      "units_sold": 159,
       "units_wasted": 57,
       "waste_cost_kwd": 12.54,
       "stockout_days": 3,
@@ -12294,6 +12377,7 @@
       "product": "Cheese Pastry",
       "week_start": "2026-06-15",
       "units_delivered": 228,
+      "units_sold": 141,
       "units_wasted": 87,
       "waste_cost_kwd": 19.14,
       "stockout_days": 1,
@@ -12304,6 +12388,7 @@
       "product": "Cheese Pastry",
       "week_start": "2026-06-22",
       "units_delivered": 228,
+      "units_sold": 124,
       "units_wasted": 104,
       "waste_cost_kwd": 22.88,
       "stockout_days": 0,
@@ -12314,6 +12399,7 @@
       "product": "Cheese Pastry",
       "week_start": "2026-06-29",
       "units_delivered": 192,
+      "units_sold": 121,
       "units_wasted": 71,
       "waste_cost_kwd": 15.62,
       "stockout_days": 1,
@@ -12324,6 +12410,7 @@
       "product": "Chocolate Cake",
       "week_start": "2026-05-25",
       "units_delivered": 90,
+      "units_sold": 80,
       "units_wasted": 10,
       "waste_cost_kwd": 16.0,
       "stockout_days": 5,
@@ -12334,6 +12421,7 @@
       "product": "Chocolate Cake",
       "week_start": "2026-06-01",
       "units_delivered": 90,
+      "units_sold": 73,
       "units_wasted": 17,
       "waste_cost_kwd": 27.2,
       "stockout_days": 3,
@@ -12344,6 +12432,7 @@
       "product": "Chocolate Cake",
       "week_start": "2026-06-08",
       "units_delivered": 96,
+      "units_sold": 70,
       "units_wasted": 26,
       "waste_cost_kwd": 41.6,
       "stockout_days": 2,
@@ -12354,6 +12443,7 @@
       "product": "Chocolate Cake",
       "week_start": "2026-06-15",
       "units_delivered": 96,
+      "units_sold": 65,
       "units_wasted": 31,
       "waste_cost_kwd": 49.6,
       "stockout_days": 2,
@@ -12364,6 +12454,7 @@
       "product": "Chocolate Cake",
       "week_start": "2026-06-22",
       "units_delivered": 90,
+      "units_sold": 47,
       "units_wasted": 43,
       "waste_cost_kwd": 68.8,
       "stockout_days": 1,
@@ -12374,6 +12465,7 @@
       "product": "Chocolate Cake",
       "week_start": "2026-06-29",
       "units_delivered": 84,
+      "units_sold": 51,
       "units_wasted": 33,
       "waste_cost_kwd": 52.8,
       "stockout_days": 1,
@@ -12384,6 +12476,7 @@
       "product": "Date Cookies",
       "week_start": "2026-05-25",
       "units_delivered": 144,
+      "units_sold": 124,
       "units_wasted": 0,
       "waste_cost_kwd": 0.0,
       "stockout_days": 2,
@@ -12394,6 +12487,7 @@
       "product": "Date Cookies",
       "week_start": "2026-06-01",
       "units_delivered": 96,
+      "units_sold": 100,
       "units_wasted": 0,
       "waste_cost_kwd": 0.0,
       "stockout_days": 0,
@@ -12404,6 +12498,7 @@
       "product": "Date Cookies",
       "week_start": "2026-06-08",
       "units_delivered": 96,
+      "units_sold": 109,
       "units_wasted": 2,
       "waste_cost_kwd": 1.3,
       "stockout_days": 0,
@@ -12414,6 +12509,7 @@
       "product": "Date Cookies",
       "week_start": "2026-06-15",
       "units_delivered": 120,
+      "units_sold": 96,
       "units_wasted": 0,
       "waste_cost_kwd": 0.0,
       "stockout_days": 0,
@@ -12424,6 +12520,7 @@
       "product": "Date Cookies",
       "week_start": "2026-06-22",
       "units_delivered": 96,
+      "units_sold": 109,
       "units_wasted": 0,
       "waste_cost_kwd": 0.0,
       "stockout_days": 1,
@@ -12434,6 +12531,7 @@
       "product": "Date Cookies",
       "week_start": "2026-06-29",
       "units_delivered": 96,
+      "units_sold": 98,
       "units_wasted": 1,
       "waste_cost_kwd": 0.65,
       "stockout_days": 1,
@@ -12444,6 +12542,7 @@
       "product": "Mini Muffins",
       "week_start": "2026-05-25",
       "units_delivered": 105,
+      "units_sold": 111,
       "units_wasted": 2,
       "waste_cost_kwd": 1.6,
       "stockout_days": 2,
@@ -12454,6 +12553,7 @@
       "product": "Mini Muffins",
       "week_start": "2026-06-01",
       "units_delivered": 96,
+      "units_sold": 91,
       "units_wasted": 1,
       "waste_cost_kwd": 0.8,
       "stockout_days": 0,
@@ -12464,6 +12564,7 @@
       "product": "Mini Muffins",
       "week_start": "2026-06-08",
       "units_delivered": 120,
+      "units_sold": 94,
       "units_wasted": 4,
       "waste_cost_kwd": 3.2,
       "stockout_days": 0,
@@ -12474,6 +12575,7 @@
       "product": "Mini Muffins",
       "week_start": "2026-06-15",
       "units_delivered": 48,
+      "units_sold": 68,
       "units_wasted": 3,
       "waste_cost_kwd": 2.4,
       "stockout_days": 0,
@@ -12484,6 +12586,7 @@
       "product": "Mini Muffins",
       "week_start": "2026-06-22",
       "units_delivered": 96,
+      "units_sold": 86,
       "units_wasted": 1,
       "waste_cost_kwd": 0.8,
       "stockout_days": 1,
@@ -12494,6 +12597,7 @@
       "product": "Mini Muffins",
       "week_start": "2026-06-29",
       "units_delivered": 72,
+      "units_sold": 73,
       "units_wasted": 1,
       "waste_cost_kwd": 0.8,
       "stockout_days": 0,
@@ -12504,6 +12608,7 @@
       "product": "Vanilla Cake",
       "week_start": "2026-05-25",
       "units_delivered": 84,
+      "units_sold": 74,
       "units_wasted": 10,
       "waste_cost_kwd": 13.5,
       "stockout_days": 4,
@@ -12514,6 +12619,7 @@
       "product": "Vanilla Cake",
       "week_start": "2026-06-01",
       "units_delivered": 84,
+      "units_sold": 64,
       "units_wasted": 20,
       "waste_cost_kwd": 27.0,
       "stockout_days": 1,
@@ -12524,6 +12630,7 @@
       "product": "Vanilla Cake",
       "week_start": "2026-06-08",
       "units_delivered": 84,
+      "units_sold": 59,
       "units_wasted": 25,
       "waste_cost_kwd": 33.75,
       "stockout_days": 1,
@@ -12534,6 +12641,7 @@
       "product": "Vanilla Cake",
       "week_start": "2026-06-15",
       "units_delivered": 90,
+      "units_sold": 35,
       "units_wasted": 55,
       "waste_cost_kwd": 74.25,
       "stockout_days": 0,
@@ -12544,6 +12652,7 @@
       "product": "Vanilla Cake",
       "week_start": "2026-06-22",
       "units_delivered": 90,
+      "units_sold": 58,
       "units_wasted": 32,
       "waste_cost_kwd": 43.2,
       "stockout_days": 1,
@@ -12554,6 +12663,7 @@
       "product": "Vanilla Cake",
       "week_start": "2026-06-29",
       "units_delivered": 84,
+      "units_sold": 38,
       "units_wasted": 46,
       "waste_cost_kwd": 62.1,
       "stockout_days": 0,
@@ -12564,6 +12674,7 @@
       "product": "Butter Biscuits",
       "week_start": "2026-05-25",
       "units_delivered": 96,
+      "units_sold": 91,
       "units_wasted": 0,
       "waste_cost_kwd": 0.0,
       "stockout_days": 1,
@@ -12574,6 +12685,7 @@
       "product": "Butter Biscuits",
       "week_start": "2026-06-01",
       "units_delivered": 96,
+      "units_sold": 101,
       "units_wasted": 1,
       "waste_cost_kwd": 0.45,
       "stockout_days": 1,
@@ -12584,6 +12696,7 @@
       "product": "Butter Biscuits",
       "week_start": "2026-06-08",
       "units_delivered": 120,
+      "units_sold": 117,
       "units_wasted": 0,
       "waste_cost_kwd": 0.0,
       "stockout_days": 0,
@@ -12594,6 +12707,7 @@
       "product": "Butter Biscuits",
       "week_start": "2026-06-15",
       "units_delivered": 72,
+      "units_sold": 93,
       "units_wasted": 0,
       "waste_cost_kwd": 0.0,
       "stockout_days": 1,
@@ -12604,6 +12718,7 @@
       "product": "Butter Biscuits",
       "week_start": "2026-06-22",
       "units_delivered": 96,
+      "units_sold": 96,
       "units_wasted": 0,
       "waste_cost_kwd": 0.0,
       "stockout_days": 0,
@@ -12614,6 +12729,7 @@
       "product": "Butter Biscuits",
       "week_start": "2026-06-29",
       "units_delivered": 120,
+      "units_sold": 110,
       "units_wasted": 1,
       "waste_cost_kwd": 0.45,
       "stockout_days": 1,
@@ -12624,6 +12740,7 @@
       "product": "Cheese Pastry",
       "week_start": "2026-05-25",
       "units_delivered": 144,
+      "units_sold": 106,
       "units_wasted": 38,
       "waste_cost_kwd": 8.36,
       "stockout_days": 2,
@@ -12634,6 +12751,7 @@
       "product": "Cheese Pastry",
       "week_start": "2026-06-01",
       "units_delivered": 144,
+      "units_sold": 112,
       "units_wasted": 32,
       "waste_cost_kwd": 7.04,
       "stockout_days": 2,
@@ -12644,6 +12762,7 @@
       "product": "Cheese Pastry",
       "week_start": "2026-06-08",
       "units_delivered": 144,
+      "units_sold": 93,
       "units_wasted": 51,
       "waste_cost_kwd": 11.22,
       "stockout_days": 2,
@@ -12654,6 +12773,7 @@
       "product": "Cheese Pastry",
       "week_start": "2026-06-15",
       "units_delivered": 144,
+      "units_sold": 101,
       "units_wasted": 43,
       "waste_cost_kwd": 9.46,
       "stockout_days": 2,
@@ -12664,6 +12784,7 @@
       "product": "Cheese Pastry",
       "week_start": "2026-06-22",
       "units_delivered": 156,
+      "units_sold": 71,
       "units_wasted": 85,
       "waste_cost_kwd": 18.7,
       "stockout_days": 0,
@@ -12674,6 +12795,7 @@
       "product": "Cheese Pastry",
       "week_start": "2026-06-29",
       "units_delivered": 144,
+      "units_sold": 103,
       "units_wasted": 41,
       "waste_cost_kwd": 9.02,
       "stockout_days": 1,
@@ -12684,6 +12806,7 @@
       "product": "Chocolate Cake",
       "week_start": "2026-05-25",
       "units_delivered": 84,
+      "units_sold": 62,
       "units_wasted": 22,
       "waste_cost_kwd": 35.2,
       "stockout_days": 4,
@@ -12694,6 +12817,7 @@
       "product": "Chocolate Cake",
       "week_start": "2026-06-01",
       "units_delivered": 84,
+      "units_sold": 53,
       "units_wasted": 31,
       "waste_cost_kwd": 49.6,
       "stockout_days": 0,
@@ -12704,6 +12828,7 @@
       "product": "Chocolate Cake",
       "week_start": "2026-06-08",
       "units_delivered": 96,
+      "units_sold": 58,
       "units_wasted": 38,
       "waste_cost_kwd": 60.8,
       "stockout_days": 1,
@@ -12714,6 +12839,7 @@
       "product": "Chocolate Cake",
       "week_start": "2026-06-15",
       "units_delivered": 90,
+      "units_sold": 33,
       "units_wasted": 57,
       "waste_cost_kwd": 91.2,
       "stockout_days": 0,
@@ -12724,6 +12850,7 @@
       "product": "Chocolate Cake",
       "week_start": "2026-06-22",
       "units_delivered": 90,
+      "units_sold": 48,
       "units_wasted": 42,
       "waste_cost_kwd": 67.2,
       "stockout_days": 0,
@@ -12734,6 +12861,7 @@
       "product": "Chocolate Cake",
       "week_start": "2026-06-29",
       "units_delivered": 78,
+      "units_sold": 36,
       "units_wasted": 42,
       "waste_cost_kwd": 67.2,
       "stockout_days": 0,
@@ -12744,6 +12872,7 @@
       "product": "Date Cookies",
       "week_start": "2026-05-25",
       "units_delivered": 120,
+      "units_sold": 106,
       "units_wasted": 0,
       "waste_cost_kwd": 0.0,
       "stockout_days": 1,
@@ -12754,6 +12883,7 @@
       "product": "Date Cookies",
       "week_start": "2026-06-01",
       "units_delivered": 72,
+      "units_sold": 84,
       "units_wasted": 1,
       "waste_cost_kwd": 0.65,
       "stockout_days": 1,
@@ -12764,6 +12894,7 @@
       "product": "Date Cookies",
       "week_start": "2026-06-08",
       "units_delivered": 96,
+      "units_sold": 84,
       "units_wasted": 1,
       "waste_cost_kwd": 0.65,
       "stockout_days": 0,
@@ -12774,6 +12905,7 @@
       "product": "Date Cookies",
       "week_start": "2026-06-15",
       "units_delivered": 72,
+      "units_sold": 74,
       "units_wasted": 0,
       "waste_cost_kwd": 0.0,
       "stockout_days": 0,
@@ -12784,6 +12916,7 @@
       "product": "Date Cookies",
       "week_start": "2026-06-22",
       "units_delivered": 72,
+      "units_sold": 60,
       "units_wasted": 1,
       "waste_cost_kwd": 0.65,
       "stockout_days": 0,
@@ -12794,6 +12927,7 @@
       "product": "Date Cookies",
       "week_start": "2026-06-29",
       "units_delivered": 24,
+      "units_sold": 52,
       "units_wasted": 0,
       "waste_cost_kwd": 0.0,
       "stockout_days": 1,
@@ -12804,6 +12938,7 @@
       "product": "Mini Muffins",
       "week_start": "2026-05-25",
       "units_delivered": 72,
+      "units_sold": 82,
       "units_wasted": 0,
       "waste_cost_kwd": 0.0,
       "stockout_days": 0,
@@ -12814,6 +12949,7 @@
       "product": "Mini Muffins",
       "week_start": "2026-06-01",
       "units_delivered": 72,
+      "units_sold": 63,
       "units_wasted": 3,
       "waste_cost_kwd": 2.4,
       "stockout_days": 0,
@@ -12824,6 +12960,7 @@
       "product": "Mini Muffins",
       "week_start": "2026-06-08",
       "units_delivered": 72,
+      "units_sold": 69,
       "units_wasted": 1,
       "waste_cost_kwd": 0.8,
       "stockout_days": 0,
@@ -12834,6 +12971,7 @@
       "product": "Mini Muffins",
       "week_start": "2026-06-15",
       "units_delivered": 72,
+      "units_sold": 61,
       "units_wasted": 2,
       "waste_cost_kwd": 1.6,
       "stockout_days": 0,
@@ -12844,6 +12982,7 @@
       "product": "Mini Muffins",
       "week_start": "2026-06-22",
       "units_delivered": 48,
+      "units_sold": 46,
       "units_wasted": 1,
       "waste_cost_kwd": 0.8,
       "stockout_days": 0,
@@ -12854,6 +12993,7 @@
       "product": "Mini Muffins",
       "week_start": "2026-06-29",
       "units_delivered": 48,
+      "units_sold": 63,
       "units_wasted": 1,
       "waste_cost_kwd": 0.8,
       "stockout_days": 1,
@@ -12864,6 +13004,7 @@
       "product": "Vanilla Cake",
       "week_start": "2026-05-25",
       "units_delivered": 66,
+      "units_sold": 46,
       "units_wasted": 20,
       "waste_cost_kwd": 27.0,
       "stockout_days": 2,
@@ -12874,6 +13015,7 @@
       "product": "Vanilla Cake",
       "week_start": "2026-06-01",
       "units_delivered": 66,
+      "units_sold": 47,
       "units_wasted": 19,
       "waste_cost_kwd": 25.65,
       "stockout_days": 3,
@@ -12884,6 +13026,7 @@
       "product": "Vanilla Cake",
       "week_start": "2026-06-08",
       "units_delivered": 66,
+      "units_sold": 40,
       "units_wasted": 26,
       "waste_cost_kwd": 35.1,
       "stockout_days": 2,
@@ -12894,6 +13037,7 @@
       "product": "Vanilla Cake",
       "week_start": "2026-06-15",
       "units_delivered": 72,
+      "units_sold": 45,
       "units_wasted": 27,
       "waste_cost_kwd": 36.45,
       "stockout_days": 2,
@@ -12904,6 +13048,7 @@
       "product": "Vanilla Cake",
       "week_start": "2026-06-22",
       "units_delivered": 66,
+      "units_sold": 37,
       "units_wasted": 29,
       "waste_cost_kwd": 39.15,
       "stockout_days": 0,
@@ -12914,6 +13059,7 @@
       "product": "Vanilla Cake",
       "week_start": "2026-06-29",
       "units_delivered": 66,
+      "units_sold": 40,
       "units_wasted": 26,
       "waste_cost_kwd": 35.1,
       "stockout_days": 1,
@@ -12924,6 +13070,7 @@
       "product": "Butter Biscuits",
       "week_start": "2026-05-25",
       "units_delivered": 336,
+      "units_sold": 334,
       "units_wasted": 0,
       "waste_cost_kwd": 0.0,
       "stockout_days": 1,
@@ -12934,6 +13081,7 @@
       "product": "Butter Biscuits",
       "week_start": "2026-06-01",
       "units_delivered": 384,
+      "units_sold": 378,
       "units_wasted": 0,
       "waste_cost_kwd": 0.0,
       "stockout_days": 3,
@@ -12944,6 +13092,7 @@
       "product": "Butter Biscuits",
       "week_start": "2026-06-08",
       "units_delivered": 360,
+      "units_sold": 343,
       "units_wasted": 1,
       "waste_cost_kwd": 0.45,
       "stockout_days": 0,
@@ -12954,6 +13103,7 @@
       "product": "Butter Biscuits",
       "week_start": "2026-06-15",
       "units_delivered": 288,
+      "units_sold": 277,
       "units_wasted": 2,
       "waste_cost_kwd": 0.9,
       "stockout_days": 0,
@@ -12964,6 +13114,7 @@
       "product": "Butter Biscuits",
       "week_start": "2026-06-22",
       "units_delivered": 235,
+      "units_sold": 242,
       "units_wasted": 3,
       "waste_cost_kwd": 1.35,
       "stockout_days": 1,
@@ -12974,6 +13125,7 @@
       "product": "Butter Biscuits",
       "week_start": "2026-06-29",
       "units_delivered": 240,
+      "units_sold": 239,
       "units_wasted": 0,
       "waste_cost_kwd": 0.0,
       "stockout_days": 0,
@@ -12984,6 +13136,7 @@
       "product": "Cheese Pastry",
       "week_start": "2026-05-25",
       "units_delivered": 420,
+      "units_sold": 392,
       "units_wasted": 28,
       "waste_cost_kwd": 6.16,
       "stockout_days": 4,
@@ -12994,6 +13147,7 @@
       "product": "Cheese Pastry",
       "week_start": "2026-06-01",
       "units_delivered": 444,
+      "units_sold": 358,
       "units_wasted": 86,
       "waste_cost_kwd": 18.92,
       "stockout_days": 1,
@@ -13004,6 +13158,7 @@
       "product": "Cheese Pastry",
       "week_start": "2026-06-08",
       "units_delivered": 432,
+      "units_sold": 350,
       "units_wasted": 82,
       "waste_cost_kwd": 18.04,
       "stockout_days": 0,
@@ -13014,6 +13169,7 @@
       "product": "Cheese Pastry",
       "week_start": "2026-06-15",
       "units_delivered": 420,
+      "units_sold": 339,
       "units_wasted": 81,
       "waste_cost_kwd": 17.82,
       "stockout_days": 2,
@@ -13024,6 +13180,7 @@
       "product": "Cheese Pastry",
       "week_start": "2026-06-22",
       "units_delivered": 444,
+      "units_sold": 276,
       "units_wasted": 168,
       "waste_cost_kwd": 36.96,
       "stockout_days": 0,
@@ -13034,6 +13191,7 @@
       "product": "Cheese Pastry",
       "week_start": "2026-06-29",
       "units_delivered": 420,
+      "units_sold": 356,
       "units_wasted": 64,
       "waste_cost_kwd": 14.08,
       "stockout_days": 2,
@@ -13044,6 +13202,7 @@
       "product": "Chocolate Cake",
       "week_start": "2026-05-25",
       "units_delivered": 198,
+      "units_sold": 180,
       "units_wasted": 18,
       "waste_cost_kwd": 28.8,
       "stockout_days": 5,
@@ -13054,6 +13213,7 @@
       "product": "Chocolate Cake",
       "week_start": "2026-06-01",
       "units_delivered": 198,
+      "units_sold": 155,
       "units_wasted": 43,
       "waste_cost_kwd": 68.8,
       "stockout_days": 2,
@@ -13064,6 +13224,7 @@
       "product": "Chocolate Cake",
       "week_start": "2026-06-08",
       "units_delivered": 198,
+      "units_sold": 173,
       "units_wasted": 25,
       "waste_cost_kwd": 40.0,
       "stockout_days": 3,
@@ -13074,6 +13235,7 @@
       "product": "Chocolate Cake",
       "week_start": "2026-06-15",
       "units_delivered": 204,
+      "units_sold": 144,
       "units_wasted": 60,
       "waste_cost_kwd": 96.0,
       "stockout_days": 0,
@@ -13084,6 +13246,7 @@
       "product": "Chocolate Cake",
       "week_start": "2026-06-22",
       "units_delivered": 210,
+      "units_sold": 155,
       "units_wasted": 55,
       "waste_cost_kwd": 88.0,
       "stockout_days": 1,
@@ -13094,6 +13257,7 @@
       "product": "Chocolate Cake",
       "week_start": "2026-06-29",
       "units_delivered": 198,
+      "units_sold": 128,
       "units_wasted": 70,
       "waste_cost_kwd": 112.0,
       "stockout_days": 1,
@@ -13104,6 +13268,7 @@
       "product": "Date Cookies",
       "week_start": "2026-05-25",
       "units_delivered": 288,
+      "units_sold": 285,
       "units_wasted": 1,
       "waste_cost_kwd": 0.65,
       "stockout_days": 2,
@@ -13114,6 +13279,7 @@
       "product": "Date Cookies",
       "week_start": "2026-06-01",
       "units_delivered": 240,
+      "units_sold": 242,
       "units_wasted": 2,
       "waste_cost_kwd": 1.3,
       "stockout_days": 0,
@@ -13124,6 +13290,7 @@
       "product": "Date Cookies",
       "week_start": "2026-06-08",
       "units_delivered": 264,
+      "units_sold": 266,
       "units_wasted": 0,
       "waste_cost_kwd": 0.0,
       "stockout_days": 0,
@@ -13134,6 +13301,7 @@
       "product": "Date Cookies",
       "week_start": "2026-06-15",
       "units_delivered": 264,
+      "units_sold": 259,
       "units_wasted": 0,
       "waste_cost_kwd": 0.0,
       "stockout_days": 2,
@@ -13144,6 +13312,7 @@
       "product": "Date Cookies",
       "week_start": "2026-06-22",
       "units_delivered": 216,
+      "units_sold": 234,
       "units_wasted": 1,
       "waste_cost_kwd": 0.65,
       "stockout_days": 0,
@@ -13154,6 +13323,7 @@
       "product": "Date Cookies",
       "week_start": "2026-06-29",
       "units_delivered": 240,
+      "units_sold": 225,
       "units_wasted": 0,
       "waste_cost_kwd": 0.0,
       "stockout_days": 0,
@@ -13164,6 +13334,7 @@
       "product": "Mini Muffins",
       "week_start": "2026-05-25",
       "units_delivered": 192,
+      "units_sold": 220,
       "units_wasted": 1,
       "waste_cost_kwd": 0.8,
       "stockout_days": 0,
@@ -13174,6 +13345,7 @@
       "product": "Mini Muffins",
       "week_start": "2026-06-01",
       "units_delivered": 216,
+      "units_sold": 213,
       "units_wasted": 1,
       "waste_cost_kwd": 0.8,
       "stockout_days": 1,
@@ -13184,6 +13356,7 @@
       "product": "Mini Muffins",
       "week_start": "2026-06-08",
       "units_delivered": 216,
+      "units_sold": 221,
       "units_wasted": 1,
       "waste_cost_kwd": 0.8,
       "stockout_days": 0,
@@ -13194,6 +13367,7 @@
       "product": "Mini Muffins",
       "week_start": "2026-06-15",
       "units_delivered": 192,
+      "units_sold": 194,
       "units_wasted": 4,
       "waste_cost_kwd": 3.2,
       "stockout_days": 1,
@@ -13204,6 +13378,7 @@
       "product": "Mini Muffins",
       "week_start": "2026-06-22",
       "units_delivered": 216,
+      "units_sold": 206,
       "units_wasted": 2,
       "waste_cost_kwd": 1.6,
       "stockout_days": 0,
@@ -13214,6 +13389,7 @@
       "product": "Mini Muffins",
       "week_start": "2026-06-29",
       "units_delivered": 192,
+      "units_sold": 174,
       "units_wasted": 3,
       "waste_cost_kwd": 2.4,
       "stockout_days": 0,
@@ -13224,6 +13400,7 @@
       "product": "Vanilla Cake",
       "week_start": "2026-05-25",
       "units_delivered": 180,
+      "units_sold": 157,
       "units_wasted": 23,
       "waste_cost_kwd": 31.05,
       "stockout_days": 3,
@@ -13234,6 +13411,7 @@
       "product": "Vanilla Cake",
       "week_start": "2026-06-01",
       "units_delivered": 180,
+      "units_sold": 132,
       "units_wasted": 48,
       "waste_cost_kwd": 64.8,
       "stockout_days": 0,
@@ -13244,6 +13422,7 @@
       "product": "Vanilla Cake",
       "week_start": "2026-06-08",
       "units_delivered": 174,
+      "units_sold": 143,
       "units_wasted": 31,
       "waste_cost_kwd": 41.85,
       "stockout_days": 4,
@@ -13254,6 +13433,7 @@
       "product": "Vanilla Cake",
       "week_start": "2026-06-15",
       "units_delivered": 174,
+      "units_sold": 134,
       "units_wasted": 40,
       "waste_cost_kwd": 54.0,
       "stockout_days": 1,
@@ -13264,6 +13444,7 @@
       "product": "Vanilla Cake",
       "week_start": "2026-06-22",
       "units_delivered": 180,
+      "units_sold": 107,
       "units_wasted": 73,
       "waste_cost_kwd": 98.55,
       "stockout_days": 2,
@@ -13274,10 +13455,1693 @@
       "product": "Vanilla Cake",
       "week_start": "2026-06-29",
       "units_delivered": 156,
+      "units_sold": 128,
       "units_wasted": 28,
       "waste_cost_kwd": 37.8,
       "stockout_days": 2,
       "days_recorded": 7
+    }
+  ],
+  "last_week_daily": [
+    {
+      "date": "2026-06-29",
+      "outlet": "Co-op",
+      "product": "Butter Biscuits",
+      "units_sent": 24,
+      "units_sold": 32,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-29",
+      "outlet": "Co-op",
+      "product": "Cheese Pastry",
+      "units_sent": 36,
+      "units_sold": 20,
+      "units_wasted": 16
+    },
+    {
+      "date": "2026-06-29",
+      "outlet": "Co-op",
+      "product": "Chocolate Cake",
+      "units_sent": 18,
+      "units_sold": 6,
+      "units_wasted": 12
+    },
+    {
+      "date": "2026-06-29",
+      "outlet": "Co-op",
+      "product": "Date Cookies",
+      "units_sent": 0,
+      "units_sold": 28,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-29",
+      "outlet": "Co-op",
+      "product": "Mini Muffins",
+      "units_sent": 24,
+      "units_sold": 16,
+      "units_wasted": 1
+    },
+    {
+      "date": "2026-06-29",
+      "outlet": "Co-op",
+      "product": "Vanilla Cake",
+      "units_sent": 18,
+      "units_sold": 15,
+      "units_wasted": 3
+    },
+    {
+      "date": "2026-06-29",
+      "outlet": "Mall Kiosk",
+      "product": "Butter Biscuits",
+      "units_sent": 24,
+      "units_sold": 19,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-29",
+      "outlet": "Mall Kiosk",
+      "product": "Cheese Pastry",
+      "units_sent": 24,
+      "units_sold": 18,
+      "units_wasted": 6
+    },
+    {
+      "date": "2026-06-29",
+      "outlet": "Mall Kiosk",
+      "product": "Chocolate Cake",
+      "units_sent": 12,
+      "units_sold": 12,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-29",
+      "outlet": "Mall Kiosk",
+      "product": "Date Cookies",
+      "units_sent": 24,
+      "units_sold": 14,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-29",
+      "outlet": "Mall Kiosk",
+      "product": "Mini Muffins",
+      "units_sent": 24,
+      "units_sold": 19,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-29",
+      "outlet": "Mall Kiosk",
+      "product": "Vanilla Cake",
+      "units_sent": 12,
+      "units_sold": 12,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-29",
+      "outlet": "Petrol Station Shop",
+      "product": "Butter Biscuits",
+      "units_sent": 0,
+      "units_sold": 7,
+      "units_wasted": 1
+    },
+    {
+      "date": "2026-06-29",
+      "outlet": "Petrol Station Shop",
+      "product": "Cheese Pastry",
+      "units_sent": 36,
+      "units_sold": 9,
+      "units_wasted": 27
+    },
+    {
+      "date": "2026-06-29",
+      "outlet": "Petrol Station Shop",
+      "product": "Chocolate Cake",
+      "units_sent": 12,
+      "units_sold": 11,
+      "units_wasted": 1
+    },
+    {
+      "date": "2026-06-29",
+      "outlet": "Petrol Station Shop",
+      "product": "Date Cookies",
+      "units_sent": 24,
+      "units_sold": 15,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-29",
+      "outlet": "Petrol Station Shop",
+      "product": "Mini Muffins",
+      "units_sent": 0,
+      "units_sold": 6,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-29",
+      "outlet": "Petrol Station Shop",
+      "product": "Vanilla Cake",
+      "units_sent": 12,
+      "units_sold": 3,
+      "units_wasted": 9
+    },
+    {
+      "date": "2026-06-29",
+      "outlet": "Small Grocery",
+      "product": "Butter Biscuits",
+      "units_sent": 24,
+      "units_sold": 11,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-29",
+      "outlet": "Small Grocery",
+      "product": "Cheese Pastry",
+      "units_sent": 24,
+      "units_sold": 17,
+      "units_wasted": 7
+    },
+    {
+      "date": "2026-06-29",
+      "outlet": "Small Grocery",
+      "product": "Chocolate Cake",
+      "units_sent": 6,
+      "units_sold": 5,
+      "units_wasted": 1
+    },
+    {
+      "date": "2026-06-29",
+      "outlet": "Small Grocery",
+      "product": "Date Cookies",
+      "units_sent": 0,
+      "units_sold": 5,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-29",
+      "outlet": "Small Grocery",
+      "product": "Mini Muffins",
+      "units_sent": 0,
+      "units_sold": 7,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-29",
+      "outlet": "Small Grocery",
+      "product": "Vanilla Cake",
+      "units_sent": 6,
+      "units_sold": 4,
+      "units_wasted": 2
+    },
+    {
+      "date": "2026-06-29",
+      "outlet": "Supermarket",
+      "product": "Butter Biscuits",
+      "units_sent": 24,
+      "units_sold": 22,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-29",
+      "outlet": "Supermarket",
+      "product": "Cheese Pastry",
+      "units_sent": 36,
+      "units_sold": 36,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-29",
+      "outlet": "Supermarket",
+      "product": "Chocolate Cake",
+      "units_sent": 24,
+      "units_sold": 13,
+      "units_wasted": 11
+    },
+    {
+      "date": "2026-06-29",
+      "outlet": "Supermarket",
+      "product": "Date Cookies",
+      "units_sent": 48,
+      "units_sold": 25,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-29",
+      "outlet": "Supermarket",
+      "product": "Mini Muffins",
+      "units_sent": 24,
+      "units_sold": 12,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-29",
+      "outlet": "Supermarket",
+      "product": "Vanilla Cake",
+      "units_sent": 24,
+      "units_sold": 23,
+      "units_wasted": 1
+    },
+    {
+      "date": "2026-06-30",
+      "outlet": "Co-op",
+      "product": "Butter Biscuits",
+      "units_sent": 48,
+      "units_sold": 28,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-30",
+      "outlet": "Co-op",
+      "product": "Cheese Pastry",
+      "units_sent": 36,
+      "units_sold": 27,
+      "units_wasted": 9
+    },
+    {
+      "date": "2026-06-30",
+      "outlet": "Co-op",
+      "product": "Chocolate Cake",
+      "units_sent": 18,
+      "units_sold": 17,
+      "units_wasted": 1
+    },
+    {
+      "date": "2026-06-30",
+      "outlet": "Co-op",
+      "product": "Date Cookies",
+      "units_sent": 48,
+      "units_sold": 17,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-30",
+      "outlet": "Co-op",
+      "product": "Mini Muffins",
+      "units_sent": 0,
+      "units_sold": 10,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-30",
+      "outlet": "Co-op",
+      "product": "Vanilla Cake",
+      "units_sent": 18,
+      "units_sold": 13,
+      "units_wasted": 5
+    },
+    {
+      "date": "2026-06-30",
+      "outlet": "Mall Kiosk",
+      "product": "Butter Biscuits",
+      "units_sent": 24,
+      "units_sold": 25,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-30",
+      "outlet": "Mall Kiosk",
+      "product": "Cheese Pastry",
+      "units_sent": 24,
+      "units_sold": 24,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-30",
+      "outlet": "Mall Kiosk",
+      "product": "Chocolate Cake",
+      "units_sent": 12,
+      "units_sold": 9,
+      "units_wasted": 3
+    },
+    {
+      "date": "2026-06-30",
+      "outlet": "Mall Kiosk",
+      "product": "Date Cookies",
+      "units_sent": 24,
+      "units_sold": 15,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-30",
+      "outlet": "Mall Kiosk",
+      "product": "Mini Muffins",
+      "units_sent": 24,
+      "units_sold": 10,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-30",
+      "outlet": "Mall Kiosk",
+      "product": "Vanilla Cake",
+      "units_sent": 12,
+      "units_sold": 9,
+      "units_wasted": 3
+    },
+    {
+      "date": "2026-06-30",
+      "outlet": "Petrol Station Shop",
+      "product": "Butter Biscuits",
+      "units_sent": 0,
+      "units_sold": 13,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-30",
+      "outlet": "Petrol Station Shop",
+      "product": "Cheese Pastry",
+      "units_sent": 24,
+      "units_sold": 11,
+      "units_wasted": 13
+    },
+    {
+      "date": "2026-06-30",
+      "outlet": "Petrol Station Shop",
+      "product": "Chocolate Cake",
+      "units_sent": 0,
+      "units_sold": 0,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-30",
+      "outlet": "Petrol Station Shop",
+      "product": "Date Cookies",
+      "units_sent": 0,
+      "units_sold": 13,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-30",
+      "outlet": "Petrol Station Shop",
+      "product": "Mini Muffins",
+      "units_sent": 24,
+      "units_sold": 7,
+      "units_wasted": 1
+    },
+    {
+      "date": "2026-06-30",
+      "outlet": "Petrol Station Shop",
+      "product": "Vanilla Cake",
+      "units_sent": 6,
+      "units_sold": 1,
+      "units_wasted": 5
+    },
+    {
+      "date": "2026-06-30",
+      "outlet": "Small Grocery",
+      "product": "Butter Biscuits",
+      "units_sent": 0,
+      "units_sold": 13,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-30",
+      "outlet": "Small Grocery",
+      "product": "Cheese Pastry",
+      "units_sent": 24,
+      "units_sold": 9,
+      "units_wasted": 15
+    },
+    {
+      "date": "2026-06-30",
+      "outlet": "Small Grocery",
+      "product": "Chocolate Cake",
+      "units_sent": 12,
+      "units_sold": 3,
+      "units_wasted": 9
+    },
+    {
+      "date": "2026-06-30",
+      "outlet": "Small Grocery",
+      "product": "Date Cookies",
+      "units_sent": 0,
+      "units_sold": 6,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-30",
+      "outlet": "Small Grocery",
+      "product": "Mini Muffins",
+      "units_sent": 0,
+      "units_sold": 13,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-30",
+      "outlet": "Small Grocery",
+      "product": "Vanilla Cake",
+      "units_sent": 6,
+      "units_sold": 5,
+      "units_wasted": 1
+    },
+    {
+      "date": "2026-06-30",
+      "outlet": "Supermarket",
+      "product": "Butter Biscuits",
+      "units_sent": 24,
+      "units_sold": 28,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-30",
+      "outlet": "Supermarket",
+      "product": "Cheese Pastry",
+      "units_sent": 48,
+      "units_sold": 39,
+      "units_wasted": 9
+    },
+    {
+      "date": "2026-06-30",
+      "outlet": "Supermarket",
+      "product": "Chocolate Cake",
+      "units_sent": 18,
+      "units_sold": 12,
+      "units_wasted": 6
+    },
+    {
+      "date": "2026-06-30",
+      "outlet": "Supermarket",
+      "product": "Date Cookies",
+      "units_sent": 24,
+      "units_sold": 25,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-30",
+      "outlet": "Supermarket",
+      "product": "Mini Muffins",
+      "units_sent": 0,
+      "units_sold": 20,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-06-30",
+      "outlet": "Supermarket",
+      "product": "Vanilla Cake",
+      "units_sent": 18,
+      "units_sold": 18,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-01",
+      "outlet": "Co-op",
+      "product": "Butter Biscuits",
+      "units_sent": 24,
+      "units_sold": 22,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-01",
+      "outlet": "Co-op",
+      "product": "Cheese Pastry",
+      "units_sent": 36,
+      "units_sold": 29,
+      "units_wasted": 7
+    },
+    {
+      "date": "2026-07-01",
+      "outlet": "Co-op",
+      "product": "Chocolate Cake",
+      "units_sent": 24,
+      "units_sold": 17,
+      "units_wasted": 7
+    },
+    {
+      "date": "2026-07-01",
+      "outlet": "Co-op",
+      "product": "Date Cookies",
+      "units_sent": 0,
+      "units_sold": 29,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-01",
+      "outlet": "Co-op",
+      "product": "Mini Muffins",
+      "units_sent": 24,
+      "units_sold": 10,
+      "units_wasted": 1
+    },
+    {
+      "date": "2026-07-01",
+      "outlet": "Co-op",
+      "product": "Vanilla Cake",
+      "units_sent": 12,
+      "units_sold": 11,
+      "units_wasted": 1
+    },
+    {
+      "date": "2026-07-01",
+      "outlet": "Mall Kiosk",
+      "product": "Butter Biscuits",
+      "units_sent": 24,
+      "units_sold": 22,
+      "units_wasted": 1
+    },
+    {
+      "date": "2026-07-01",
+      "outlet": "Mall Kiosk",
+      "product": "Cheese Pastry",
+      "units_sent": 36,
+      "units_sold": 36,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-01",
+      "outlet": "Mall Kiosk",
+      "product": "Chocolate Cake",
+      "units_sent": 18,
+      "units_sold": 12,
+      "units_wasted": 6
+    },
+    {
+      "date": "2026-07-01",
+      "outlet": "Mall Kiosk",
+      "product": "Date Cookies",
+      "units_sent": 0,
+      "units_sold": 17,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-01",
+      "outlet": "Mall Kiosk",
+      "product": "Mini Muffins",
+      "units_sent": 0,
+      "units_sold": 21,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-01",
+      "outlet": "Mall Kiosk",
+      "product": "Vanilla Cake",
+      "units_sent": 18,
+      "units_sold": 8,
+      "units_wasted": 10
+    },
+    {
+      "date": "2026-07-01",
+      "outlet": "Petrol Station Shop",
+      "product": "Butter Biscuits",
+      "units_sent": 24,
+      "units_sold": 6,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-01",
+      "outlet": "Petrol Station Shop",
+      "product": "Cheese Pastry",
+      "units_sent": 24,
+      "units_sold": 17,
+      "units_wasted": 7
+    },
+    {
+      "date": "2026-07-01",
+      "outlet": "Petrol Station Shop",
+      "product": "Chocolate Cake",
+      "units_sent": 12,
+      "units_sold": 5,
+      "units_wasted": 7
+    },
+    {
+      "date": "2026-07-01",
+      "outlet": "Petrol Station Shop",
+      "product": "Date Cookies",
+      "units_sent": 24,
+      "units_sold": 13,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-01",
+      "outlet": "Petrol Station Shop",
+      "product": "Mini Muffins",
+      "units_sent": 0,
+      "units_sold": 17,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-01",
+      "outlet": "Petrol Station Shop",
+      "product": "Vanilla Cake",
+      "units_sent": 12,
+      "units_sold": 9,
+      "units_wasted": 3
+    },
+    {
+      "date": "2026-07-01",
+      "outlet": "Small Grocery",
+      "product": "Butter Biscuits",
+      "units_sent": 24,
+      "units_sold": 14,
+      "units_wasted": 1
+    },
+    {
+      "date": "2026-07-01",
+      "outlet": "Small Grocery",
+      "product": "Cheese Pastry",
+      "units_sent": 12,
+      "units_sold": 12,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-01",
+      "outlet": "Small Grocery",
+      "product": "Chocolate Cake",
+      "units_sent": 12,
+      "units_sold": 2,
+      "units_wasted": 10
+    },
+    {
+      "date": "2026-07-01",
+      "outlet": "Small Grocery",
+      "product": "Date Cookies",
+      "units_sent": 0,
+      "units_sold": 9,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-01",
+      "outlet": "Small Grocery",
+      "product": "Mini Muffins",
+      "units_sent": 24,
+      "units_sold": 4,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-01",
+      "outlet": "Small Grocery",
+      "product": "Vanilla Cake",
+      "units_sent": 6,
+      "units_sold": 6,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-01",
+      "outlet": "Supermarket",
+      "product": "Butter Biscuits",
+      "units_sent": 24,
+      "units_sold": 36,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-01",
+      "outlet": "Supermarket",
+      "product": "Cheese Pastry",
+      "units_sent": 60,
+      "units_sold": 33,
+      "units_wasted": 27
+    },
+    {
+      "date": "2026-07-01",
+      "outlet": "Supermarket",
+      "product": "Chocolate Cake",
+      "units_sent": 30,
+      "units_sold": 17,
+      "units_wasted": 13
+    },
+    {
+      "date": "2026-07-01",
+      "outlet": "Supermarket",
+      "product": "Date Cookies",
+      "units_sent": 24,
+      "units_sold": 35,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-01",
+      "outlet": "Supermarket",
+      "product": "Mini Muffins",
+      "units_sent": 48,
+      "units_sold": 25,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-01",
+      "outlet": "Supermarket",
+      "product": "Vanilla Cake",
+      "units_sent": 18,
+      "units_sold": 14,
+      "units_wasted": 4
+    },
+    {
+      "date": "2026-07-02",
+      "outlet": "Co-op",
+      "product": "Butter Biscuits",
+      "units_sent": 48,
+      "units_sold": 26,
+      "units_wasted": 1
+    },
+    {
+      "date": "2026-07-02",
+      "outlet": "Co-op",
+      "product": "Cheese Pastry",
+      "units_sent": 60,
+      "units_sold": 48,
+      "units_wasted": 12
+    },
+    {
+      "date": "2026-07-02",
+      "outlet": "Co-op",
+      "product": "Chocolate Cake",
+      "units_sent": 18,
+      "units_sold": 18,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-02",
+      "outlet": "Co-op",
+      "product": "Date Cookies",
+      "units_sent": 48,
+      "units_sold": 38,
+      "units_wasted": 2
+    },
+    {
+      "date": "2026-07-02",
+      "outlet": "Co-op",
+      "product": "Mini Muffins",
+      "units_sent": 24,
+      "units_sold": 28,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-02",
+      "outlet": "Co-op",
+      "product": "Vanilla Cake",
+      "units_sent": 24,
+      "units_sold": 9,
+      "units_wasted": 15
+    },
+    {
+      "date": "2026-07-02",
+      "outlet": "Mall Kiosk",
+      "product": "Butter Biscuits",
+      "units_sent": 24,
+      "units_sold": 32,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-02",
+      "outlet": "Mall Kiosk",
+      "product": "Cheese Pastry",
+      "units_sent": 48,
+      "units_sold": 46,
+      "units_wasted": 2
+    },
+    {
+      "date": "2026-07-02",
+      "outlet": "Mall Kiosk",
+      "product": "Chocolate Cake",
+      "units_sent": 30,
+      "units_sold": 19,
+      "units_wasted": 11
+    },
+    {
+      "date": "2026-07-02",
+      "outlet": "Mall Kiosk",
+      "product": "Date Cookies",
+      "units_sent": 24,
+      "units_sold": 30,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-02",
+      "outlet": "Mall Kiosk",
+      "product": "Mini Muffins",
+      "units_sent": 24,
+      "units_sold": 16,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-02",
+      "outlet": "Mall Kiosk",
+      "product": "Vanilla Cake",
+      "units_sent": 18,
+      "units_sold": 13,
+      "units_wasted": 5
+    },
+    {
+      "date": "2026-07-02",
+      "outlet": "Petrol Station Shop",
+      "product": "Butter Biscuits",
+      "units_sent": 24,
+      "units_sold": 14,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-02",
+      "outlet": "Petrol Station Shop",
+      "product": "Cheese Pastry",
+      "units_sent": 36,
+      "units_sold": 35,
+      "units_wasted": 1
+    },
+    {
+      "date": "2026-07-02",
+      "outlet": "Petrol Station Shop",
+      "product": "Chocolate Cake",
+      "units_sent": 18,
+      "units_sold": 10,
+      "units_wasted": 8
+    },
+    {
+      "date": "2026-07-02",
+      "outlet": "Petrol Station Shop",
+      "product": "Date Cookies",
+      "units_sent": 0,
+      "units_sold": 19,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-02",
+      "outlet": "Petrol Station Shop",
+      "product": "Mini Muffins",
+      "units_sent": 24,
+      "units_sold": 15,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-02",
+      "outlet": "Petrol Station Shop",
+      "product": "Vanilla Cake",
+      "units_sent": 18,
+      "units_sold": 11,
+      "units_wasted": 7
+    },
+    {
+      "date": "2026-07-02",
+      "outlet": "Small Grocery",
+      "product": "Butter Biscuits",
+      "units_sent": 24,
+      "units_sold": 20,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-02",
+      "outlet": "Small Grocery",
+      "product": "Cheese Pastry",
+      "units_sent": 24,
+      "units_sold": 24,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-02",
+      "outlet": "Small Grocery",
+      "product": "Chocolate Cake",
+      "units_sent": 12,
+      "units_sold": 5,
+      "units_wasted": 7
+    },
+    {
+      "date": "2026-07-02",
+      "outlet": "Small Grocery",
+      "product": "Date Cookies",
+      "units_sent": 24,
+      "units_sold": 3,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-02",
+      "outlet": "Small Grocery",
+      "product": "Mini Muffins",
+      "units_sent": 0,
+      "units_sold": 12,
+      "units_wasted": 1
+    },
+    {
+      "date": "2026-07-02",
+      "outlet": "Small Grocery",
+      "product": "Vanilla Cake",
+      "units_sent": 12,
+      "units_sold": 9,
+      "units_wasted": 3
+    },
+    {
+      "date": "2026-07-02",
+      "outlet": "Supermarket",
+      "product": "Butter Biscuits",
+      "units_sent": 72,
+      "units_sold": 39,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-02",
+      "outlet": "Supermarket",
+      "product": "Cheese Pastry",
+      "units_sent": 72,
+      "units_sold": 66,
+      "units_wasted": 6
+    },
+    {
+      "date": "2026-07-02",
+      "outlet": "Supermarket",
+      "product": "Chocolate Cake",
+      "units_sent": 30,
+      "units_sold": 16,
+      "units_wasted": 14
+    },
+    {
+      "date": "2026-07-02",
+      "outlet": "Supermarket",
+      "product": "Date Cookies",
+      "units_sent": 48,
+      "units_sold": 26,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-02",
+      "outlet": "Supermarket",
+      "product": "Mini Muffins",
+      "units_sent": 24,
+      "units_sold": 38,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-02",
+      "outlet": "Supermarket",
+      "product": "Vanilla Cake",
+      "units_sent": 30,
+      "units_sold": 20,
+      "units_wasted": 10
+    },
+    {
+      "date": "2026-07-03",
+      "outlet": "Co-op",
+      "product": "Butter Biscuits",
+      "units_sent": 0,
+      "units_sold": 41,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-03",
+      "outlet": "Co-op",
+      "product": "Cheese Pastry",
+      "units_sent": 72,
+      "units_sold": 52,
+      "units_wasted": 20
+    },
+    {
+      "date": "2026-07-03",
+      "outlet": "Co-op",
+      "product": "Chocolate Cake",
+      "units_sent": 30,
+      "units_sold": 20,
+      "units_wasted": 10
+    },
+    {
+      "date": "2026-07-03",
+      "outlet": "Co-op",
+      "product": "Date Cookies",
+      "units_sent": 48,
+      "units_sold": 31,
+      "units_wasted": 1
+    },
+    {
+      "date": "2026-07-03",
+      "outlet": "Co-op",
+      "product": "Mini Muffins",
+      "units_sent": 24,
+      "units_sold": 34,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-03",
+      "outlet": "Co-op",
+      "product": "Vanilla Cake",
+      "units_sent": 18,
+      "units_sold": 18,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-03",
+      "outlet": "Mall Kiosk",
+      "product": "Butter Biscuits",
+      "units_sent": 48,
+      "units_sold": 22,
+      "units_wasted": 1
+    },
+    {
+      "date": "2026-07-03",
+      "outlet": "Mall Kiosk",
+      "product": "Cheese Pastry",
+      "units_sent": 60,
+      "units_sold": 32,
+      "units_wasted": 28
+    },
+    {
+      "date": "2026-07-03",
+      "outlet": "Mall Kiosk",
+      "product": "Chocolate Cake",
+      "units_sent": 24,
+      "units_sold": 12,
+      "units_wasted": 12
+    },
+    {
+      "date": "2026-07-03",
+      "outlet": "Mall Kiosk",
+      "product": "Date Cookies",
+      "units_sent": 48,
+      "units_sold": 21,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-03",
+      "outlet": "Mall Kiosk",
+      "product": "Mini Muffins",
+      "units_sent": 48,
+      "units_sold": 18,
+      "units_wasted": 1
+    },
+    {
+      "date": "2026-07-03",
+      "outlet": "Mall Kiosk",
+      "product": "Vanilla Cake",
+      "units_sent": 18,
+      "units_sold": 18,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-03",
+      "outlet": "Petrol Station Shop",
+      "product": "Butter Biscuits",
+      "units_sent": 0,
+      "units_sold": 30,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-03",
+      "outlet": "Petrol Station Shop",
+      "product": "Cheese Pastry",
+      "units_sent": 24,
+      "units_sold": 24,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-03",
+      "outlet": "Petrol Station Shop",
+      "product": "Chocolate Cake",
+      "units_sent": 18,
+      "units_sold": 8,
+      "units_wasted": 10
+    },
+    {
+      "date": "2026-07-03",
+      "outlet": "Petrol Station Shop",
+      "product": "Date Cookies",
+      "units_sent": 48,
+      "units_sold": 15,
+      "units_wasted": 1
+    },
+    {
+      "date": "2026-07-03",
+      "outlet": "Petrol Station Shop",
+      "product": "Mini Muffins",
+      "units_sent": 24,
+      "units_sold": 14,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-03",
+      "outlet": "Petrol Station Shop",
+      "product": "Vanilla Cake",
+      "units_sent": 12,
+      "units_sold": 8,
+      "units_wasted": 4
+    },
+    {
+      "date": "2026-07-03",
+      "outlet": "Small Grocery",
+      "product": "Butter Biscuits",
+      "units_sent": 24,
+      "units_sold": 25,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-03",
+      "outlet": "Small Grocery",
+      "product": "Cheese Pastry",
+      "units_sent": 24,
+      "units_sold": 20,
+      "units_wasted": 4
+    },
+    {
+      "date": "2026-07-03",
+      "outlet": "Small Grocery",
+      "product": "Chocolate Cake",
+      "units_sent": 12,
+      "units_sold": 5,
+      "units_wasted": 7
+    },
+    {
+      "date": "2026-07-03",
+      "outlet": "Small Grocery",
+      "product": "Date Cookies",
+      "units_sent": 0,
+      "units_sold": 10,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-03",
+      "outlet": "Small Grocery",
+      "product": "Mini Muffins",
+      "units_sent": 24,
+      "units_sold": 15,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-03",
+      "outlet": "Small Grocery",
+      "product": "Vanilla Cake",
+      "units_sent": 12,
+      "units_sold": 6,
+      "units_wasted": 6
+    },
+    {
+      "date": "2026-07-03",
+      "outlet": "Supermarket",
+      "product": "Butter Biscuits",
+      "units_sent": 24,
+      "units_sold": 39,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-03",
+      "outlet": "Supermarket",
+      "product": "Cheese Pastry",
+      "units_sent": 84,
+      "units_sold": 68,
+      "units_wasted": 16
+    },
+    {
+      "date": "2026-07-03",
+      "outlet": "Supermarket",
+      "product": "Chocolate Cake",
+      "units_sent": 42,
+      "units_sold": 42,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-03",
+      "outlet": "Supermarket",
+      "product": "Date Cookies",
+      "units_sent": 24,
+      "units_sold": 44,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-03",
+      "outlet": "Supermarket",
+      "product": "Mini Muffins",
+      "units_sent": 48,
+      "units_sold": 30,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-03",
+      "outlet": "Supermarket",
+      "product": "Vanilla Cake",
+      "units_sent": 30,
+      "units_sold": 23,
+      "units_wasted": 7
+    },
+    {
+      "date": "2026-07-04",
+      "outlet": "Co-op",
+      "product": "Butter Biscuits",
+      "units_sent": 48,
+      "units_sold": 18,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-04",
+      "outlet": "Co-op",
+      "product": "Cheese Pastry",
+      "units_sent": 48,
+      "units_sold": 32,
+      "units_wasted": 16
+    },
+    {
+      "date": "2026-07-04",
+      "outlet": "Co-op",
+      "product": "Chocolate Cake",
+      "units_sent": 24,
+      "units_sold": 16,
+      "units_wasted": 8
+    },
+    {
+      "date": "2026-07-04",
+      "outlet": "Co-op",
+      "product": "Date Cookies",
+      "units_sent": 24,
+      "units_sold": 27,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-04",
+      "outlet": "Co-op",
+      "product": "Mini Muffins",
+      "units_sent": 48,
+      "units_sold": 17,
+      "units_wasted": 1
+    },
+    {
+      "date": "2026-07-04",
+      "outlet": "Co-op",
+      "product": "Vanilla Cake",
+      "units_sent": 18,
+      "units_sold": 18,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-04",
+      "outlet": "Mall Kiosk",
+      "product": "Butter Biscuits",
+      "units_sent": 0,
+      "units_sold": 41,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-04",
+      "outlet": "Mall Kiosk",
+      "product": "Cheese Pastry",
+      "units_sent": 36,
+      "units_sold": 36,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-04",
+      "outlet": "Mall Kiosk",
+      "product": "Chocolate Cake",
+      "units_sent": 12,
+      "units_sold": 12,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-04",
+      "outlet": "Mall Kiosk",
+      "product": "Date Cookies",
+      "units_sent": 0,
+      "units_sold": 19,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-04",
+      "outlet": "Mall Kiosk",
+      "product": "Mini Muffins",
+      "units_sent": 0,
+      "units_sold": 33,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-04",
+      "outlet": "Mall Kiosk",
+      "product": "Vanilla Cake",
+      "units_sent": 18,
+      "units_sold": 16,
+      "units_wasted": 2
+    },
+    {
+      "date": "2026-07-04",
+      "outlet": "Petrol Station Shop",
+      "product": "Butter Biscuits",
+      "units_sent": 24,
+      "units_sold": 11,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-04",
+      "outlet": "Petrol Station Shop",
+      "product": "Cheese Pastry",
+      "units_sent": 24,
+      "units_sold": 14,
+      "units_wasted": 10
+    },
+    {
+      "date": "2026-07-04",
+      "outlet": "Petrol Station Shop",
+      "product": "Chocolate Cake",
+      "units_sent": 12,
+      "units_sold": 8,
+      "units_wasted": 4
+    },
+    {
+      "date": "2026-07-04",
+      "outlet": "Petrol Station Shop",
+      "product": "Date Cookies",
+      "units_sent": 0,
+      "units_sold": 14,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-04",
+      "outlet": "Petrol Station Shop",
+      "product": "Mini Muffins",
+      "units_sent": 0,
+      "units_sold": 9,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-04",
+      "outlet": "Petrol Station Shop",
+      "product": "Vanilla Cake",
+      "units_sent": 12,
+      "units_sold": 1,
+      "units_wasted": 11
+    },
+    {
+      "date": "2026-07-04",
+      "outlet": "Small Grocery",
+      "product": "Butter Biscuits",
+      "units_sent": 24,
+      "units_sold": 12,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-04",
+      "outlet": "Small Grocery",
+      "product": "Cheese Pastry",
+      "units_sent": 24,
+      "units_sold": 10,
+      "units_wasted": 14
+    },
+    {
+      "date": "2026-07-04",
+      "outlet": "Small Grocery",
+      "product": "Chocolate Cake",
+      "units_sent": 12,
+      "units_sold": 8,
+      "units_wasted": 4
+    },
+    {
+      "date": "2026-07-04",
+      "outlet": "Small Grocery",
+      "product": "Date Cookies",
+      "units_sent": 0,
+      "units_sold": 12,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-04",
+      "outlet": "Small Grocery",
+      "product": "Mini Muffins",
+      "units_sent": 0,
+      "units_sold": 7,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-04",
+      "outlet": "Small Grocery",
+      "product": "Vanilla Cake",
+      "units_sent": 12,
+      "units_sold": 3,
+      "units_wasted": 9
+    },
+    {
+      "date": "2026-07-04",
+      "outlet": "Supermarket",
+      "product": "Butter Biscuits",
+      "units_sent": 48,
+      "units_sold": 40,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-04",
+      "outlet": "Supermarket",
+      "product": "Cheese Pastry",
+      "units_sent": 60,
+      "units_sold": 60,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-04",
+      "outlet": "Supermarket",
+      "product": "Chocolate Cake",
+      "units_sent": 30,
+      "units_sold": 17,
+      "units_wasted": 13
+    },
+    {
+      "date": "2026-07-04",
+      "outlet": "Supermarket",
+      "product": "Date Cookies",
+      "units_sent": 48,
+      "units_sold": 35,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-04",
+      "outlet": "Supermarket",
+      "product": "Mini Muffins",
+      "units_sent": 24,
+      "units_sold": 31,
+      "units_wasted": 1
+    },
+    {
+      "date": "2026-07-04",
+      "outlet": "Supermarket",
+      "product": "Vanilla Cake",
+      "units_sent": 18,
+      "units_sold": 18,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-05",
+      "outlet": "Co-op",
+      "product": "Butter Biscuits",
+      "units_sent": 0,
+      "units_sold": 32,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-05",
+      "outlet": "Co-op",
+      "product": "Cheese Pastry",
+      "units_sent": 48,
+      "units_sold": 29,
+      "units_wasted": 19
+    },
+    {
+      "date": "2026-07-05",
+      "outlet": "Co-op",
+      "product": "Chocolate Cake",
+      "units_sent": 18,
+      "units_sold": 10,
+      "units_wasted": 8
+    },
+    {
+      "date": "2026-07-05",
+      "outlet": "Co-op",
+      "product": "Date Cookies",
+      "units_sent": 0,
+      "units_sold": 23,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-05",
+      "outlet": "Co-op",
+      "product": "Mini Muffins",
+      "units_sent": 0,
+      "units_sold": 19,
+      "units_wasted": 1
+    },
+    {
+      "date": "2026-07-05",
+      "outlet": "Co-op",
+      "product": "Vanilla Cake",
+      "units_sent": 18,
+      "units_sold": 12,
+      "units_wasted": 6
+    },
+    {
+      "date": "2026-07-05",
+      "outlet": "Mall Kiosk",
+      "product": "Butter Biscuits",
+      "units_sent": 48,
+      "units_sold": 22,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-05",
+      "outlet": "Mall Kiosk",
+      "product": "Cheese Pastry",
+      "units_sent": 36,
+      "units_sold": 22,
+      "units_wasted": 14
+    },
+    {
+      "date": "2026-07-05",
+      "outlet": "Mall Kiosk",
+      "product": "Chocolate Cake",
+      "units_sent": 18,
+      "units_sold": 15,
+      "units_wasted": 3
+    },
+    {
+      "date": "2026-07-05",
+      "outlet": "Mall Kiosk",
+      "product": "Date Cookies",
+      "units_sent": 24,
+      "units_sold": 16,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-05",
+      "outlet": "Mall Kiosk",
+      "product": "Mini Muffins",
+      "units_sent": 24,
+      "units_sold": 10,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-05",
+      "outlet": "Mall Kiosk",
+      "product": "Vanilla Cake",
+      "units_sent": 12,
+      "units_sold": 8,
+      "units_wasted": 4
+    },
+    {
+      "date": "2026-07-05",
+      "outlet": "Petrol Station Shop",
+      "product": "Butter Biscuits",
+      "units_sent": 24,
+      "units_sold": 7,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-05",
+      "outlet": "Petrol Station Shop",
+      "product": "Cheese Pastry",
+      "units_sent": 24,
+      "units_sold": 11,
+      "units_wasted": 13
+    },
+    {
+      "date": "2026-07-05",
+      "outlet": "Petrol Station Shop",
+      "product": "Chocolate Cake",
+      "units_sent": 12,
+      "units_sold": 9,
+      "units_wasted": 3
+    },
+    {
+      "date": "2026-07-05",
+      "outlet": "Petrol Station Shop",
+      "product": "Date Cookies",
+      "units_sent": 0,
+      "units_sold": 9,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-05",
+      "outlet": "Petrol Station Shop",
+      "product": "Mini Muffins",
+      "units_sent": 0,
+      "units_sold": 5,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-05",
+      "outlet": "Petrol Station Shop",
+      "product": "Vanilla Cake",
+      "units_sent": 12,
+      "units_sold": 5,
+      "units_wasted": 7
+    },
+    {
+      "date": "2026-07-05",
+      "outlet": "Small Grocery",
+      "product": "Butter Biscuits",
+      "units_sent": 0,
+      "units_sold": 15,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-05",
+      "outlet": "Small Grocery",
+      "product": "Cheese Pastry",
+      "units_sent": 12,
+      "units_sold": 11,
+      "units_wasted": 1
+    },
+    {
+      "date": "2026-07-05",
+      "outlet": "Small Grocery",
+      "product": "Chocolate Cake",
+      "units_sent": 12,
+      "units_sold": 8,
+      "units_wasted": 4
+    },
+    {
+      "date": "2026-07-05",
+      "outlet": "Small Grocery",
+      "product": "Date Cookies",
+      "units_sent": 0,
+      "units_sold": 7,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-05",
+      "outlet": "Small Grocery",
+      "product": "Mini Muffins",
+      "units_sent": 0,
+      "units_sold": 5,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-05",
+      "outlet": "Small Grocery",
+      "product": "Vanilla Cake",
+      "units_sent": 12,
+      "units_sold": 7,
+      "units_wasted": 5
+    },
+    {
+      "date": "2026-07-05",
+      "outlet": "Supermarket",
+      "product": "Butter Biscuits",
+      "units_sent": 24,
+      "units_sold": 35,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-05",
+      "outlet": "Supermarket",
+      "product": "Cheese Pastry",
+      "units_sent": 60,
+      "units_sold": 54,
+      "units_wasted": 6
+    },
+    {
+      "date": "2026-07-05",
+      "outlet": "Supermarket",
+      "product": "Chocolate Cake",
+      "units_sent": 24,
+      "units_sold": 11,
+      "units_wasted": 13
+    },
+    {
+      "date": "2026-07-05",
+      "outlet": "Supermarket",
+      "product": "Date Cookies",
+      "units_sent": 24,
+      "units_sold": 35,
+      "units_wasted": 0
+    },
+    {
+      "date": "2026-07-05",
+      "outlet": "Supermarket",
+      "product": "Mini Muffins",
+      "units_sent": 24,
+      "units_sold": 18,
+      "units_wasted": 2
+    },
+    {
+      "date": "2026-07-05",
+      "outlet": "Supermarket",
+      "product": "Vanilla Cake",
+      "units_sent": 18,
+      "units_sold": 12,
+      "units_wasted": 6
     }
   ],
   "send_plan": [
@@ -13431,7 +15295,7 @@
       "product": "Chocolate Cake",
       "forecast": 6.6,
       "stock_on_hand": 0,
-      "units": 12
+      "units": 6
     },
     {
       "date": "2026-07-06",
@@ -13439,7 +15303,7 @@
       "product": "Vanilla Cake",
       "forecast": 5.8,
       "stock_on_hand": 0,
-      "units": 12
+      "units": 6
     },
     {
       "date": "2026-07-06",
@@ -13487,7 +15351,7 @@
       "product": "Vanilla Cake",
       "forecast": 5.6,
       "stock_on_hand": 0,
-      "units": 12
+      "units": 6
     },
     {
       "date": "2026-07-06",
@@ -13527,7 +15391,7 @@
       "product": "Chocolate Cake",
       "forecast": 11.3,
       "stock_on_hand": 0,
-      "units": 12
+      "units": 6
     },
     {
       "date": "2026-07-07",
@@ -13543,7 +15407,7 @@
       "product": "Cheese Pastry",
       "forecast": 22.6,
       "stock_on_hand": 0,
-      "units": 36
+      "units": 24
     },
     {
       "date": "2026-07-07",
@@ -13575,7 +15439,7 @@
       "product": "Chocolate Cake",
       "forecast": 18.5,
       "stock_on_hand": 0,
-      "units": 24
+      "units": 18
     },
     {
       "date": "2026-07-07",
@@ -13679,7 +15543,7 @@
       "product": "Vanilla Cake",
       "forecast": 5.7,
       "stock_on_hand": 0,
-      "units": 12
+      "units": 6
     },
     {
       "date": "2026-07-07",
@@ -13687,7 +15551,7 @@
       "product": "Cheese Pastry",
       "forecast": 15.3,
       "stock_on_hand": 0,
-      "units": 24
+      "units": 12
     },
     {
       "date": "2026-07-07",
@@ -13719,7 +15583,7 @@
       "product": "Chocolate Cake",
       "forecast": 5.6,
       "stock_on_hand": 0,
-      "units": 12
+      "units": 6
     },
     {
       "date": "2026-07-07",
@@ -13727,7 +15591,7 @@
       "product": "Vanilla Cake",
       "forecast": 5.5,
       "stock_on_hand": 0,
-      "units": 12
+      "units": 6
     },
     {
       "date": "2026-07-07",
@@ -13735,7 +15599,7 @@
       "product": "Cheese Pastry",
       "forecast": 10.4,
       "stock_on_hand": 0,
-      "units": 24
+      "units": 12
     },
     {
       "date": "2026-07-07",
@@ -13831,7 +15695,7 @@
       "product": "Cheese Pastry",
       "forecast": 41.2,
       "stock_on_hand": 0,
-      "units": 48
+      "units": 36
     },
     {
       "date": "2026-07-08",
@@ -13879,7 +15743,7 @@
       "product": "Cheese Pastry",
       "forecast": 32.9,
       "stock_on_hand": 0,
-      "units": 48
+      "units": 36
     },
     {
       "date": "2026-07-08",
@@ -13919,7 +15783,7 @@
       "product": "Vanilla Cake",
       "forecast": 6.6,
       "stock_on_hand": 0,
-      "units": 12
+      "units": 6
     },
     {
       "date": "2026-07-08",
@@ -13967,7 +15831,7 @@
       "product": "Vanilla Cake",
       "forecast": 6.2,
       "stock_on_hand": 0,
-      "units": 12
+      "units": 6
     },
     {
       "date": "2026-07-08",
@@ -13975,7 +15839,7 @@
       "product": "Cheese Pastry",
       "forecast": 12.4,
       "stock_on_hand": 0,
-      "units": 24
+      "units": 12
     },
     {
       "date": "2026-07-08",
@@ -14007,7 +15871,7 @@
       "product": "Chocolate Cake",
       "forecast": 15.5,
       "stock_on_hand": 0,
-      "units": 24
+      "units": 18
     },
     {
       "date": "2026-07-09",
@@ -14015,7 +15879,7 @@
       "product": "Vanilla Cake",
       "forecast": 13.6,
       "stock_on_hand": 0,
-      "units": 18
+      "units": 12
     },
     {
       "date": "2026-07-09",
@@ -14023,7 +15887,7 @@
       "product": "Cheese Pastry",
       "forecast": 39.1,
       "stock_on_hand": 0,
-      "units": 48
+      "units": 36
     },
     {
       "date": "2026-07-09",
@@ -14063,7 +15927,7 @@
       "product": "Vanilla Cake",
       "forecast": 21.3,
       "stock_on_hand": 0,
-      "units": 24
+      "units": 18
     },
     {
       "date": "2026-07-09",
@@ -14071,7 +15935,7 @@
       "product": "Cheese Pastry",
       "forecast": 53.9,
       "stock_on_hand": 0,
-      "units": 72
+      "units": 60
     },
     {
       "date": "2026-07-09",
@@ -14119,7 +15983,7 @@
       "product": "Cheese Pastry",
       "forecast": 46.6,
       "stock_on_hand": 0,
-      "units": 60
+      "units": 48
     },
     {
       "date": "2026-07-09",
@@ -14151,7 +16015,7 @@
       "product": "Chocolate Cake",
       "forecast": 9.6,
       "stock_on_hand": 0,
-      "units": 18
+      "units": 12
     },
     {
       "date": "2026-07-09",
@@ -14247,7 +16111,7 @@
       "product": "Chocolate Cake",
       "forecast": 17.5,
       "stock_on_hand": 0,
-      "units": 24
+      "units": 18
     },
     {
       "date": "2026-07-10",
@@ -14255,7 +16119,7 @@
       "product": "Vanilla Cake",
       "forecast": 16.8,
       "stock_on_hand": 0,
-      "units": 24
+      "units": 18
     },
     {
       "date": "2026-07-10",
@@ -14295,7 +16159,7 @@
       "product": "Chocolate Cake",
       "forecast": 28.2,
       "stock_on_hand": 0,
-      "units": 36
+      "units": 30
     },
     {
       "date": "2026-07-10",
@@ -14311,7 +16175,7 @@
       "product": "Cheese Pastry",
       "forecast": 59.8,
       "stock_on_hand": 0,
-      "units": 72
+      "units": 60
     },
     {
       "date": "2026-07-10",
@@ -14351,7 +16215,7 @@
       "product": "Vanilla Cake",
       "forecast": 19.2,
       "stock_on_hand": 0,
-      "units": 24
+      "units": 18
     },
     {
       "date": "2026-07-10",
@@ -14407,7 +16271,7 @@
       "product": "Cheese Pastry",
       "forecast": 23.8,
       "stock_on_hand": 0,
-      "units": 36
+      "units": 24
     },
     {
       "date": "2026-07-10",
@@ -14487,7 +16351,7 @@
       "product": "Chocolate Cake",
       "forecast": 12.4,
       "stock_on_hand": 0,
-      "units": 18
+      "units": 12
     },
     {
       "date": "2026-07-11",
@@ -14583,7 +16447,7 @@
       "product": "Chocolate Cake",
       "forecast": 15.1,
       "stock_on_hand": 0,
-      "units": 18
+      "units": 12
     },
     {
       "date": "2026-07-11",
@@ -14591,7 +16455,7 @@
       "product": "Vanilla Cake",
       "forecast": 13.6,
       "stock_on_hand": 0,
-      "units": 18
+      "units": 12
     },
     {
       "date": "2026-07-11",
@@ -14599,7 +16463,7 @@
       "product": "Cheese Pastry",
       "forecast": 35.2,
       "stock_on_hand": 0,
-      "units": 48
+      "units": 36
     },
     {
       "date": "2026-07-11",
@@ -14639,7 +16503,7 @@
       "product": "Vanilla Cake",
       "forecast": 7.6,
       "stock_on_hand": 0,
-      "units": 12
+      "units": 6
     },
     {
       "date": "2026-07-11",
@@ -14679,7 +16543,7 @@
       "product": "Chocolate Cake",
       "forecast": 6.8,
       "stock_on_hand": 0,
-      "units": 12
+      "units": 6
     },
     {
       "date": "2026-07-11",
@@ -14687,7 +16551,7 @@
       "product": "Vanilla Cake",
       "forecast": 6.5,
       "stock_on_hand": 0,
-      "units": 12
+      "units": 6
     },
     {
       "date": "2026-07-11",
@@ -14695,7 +16559,7 @@
       "product": "Cheese Pastry",
       "forecast": 13.0,
       "stock_on_hand": 0,
-      "units": 24
+      "units": 12
     },
     {
       "date": "2026-07-11",
@@ -14727,7 +16591,7 @@
       "product": "Chocolate Cake",
       "forecast": 12.7,
       "stock_on_hand": 0,
-      "units": 18
+      "units": 12
     },
     {
       "date": "2026-07-12",
@@ -14823,7 +16687,7 @@
       "product": "Chocolate Cake",
       "forecast": 14.1,
       "stock_on_hand": 0,
-      "units": 18
+      "units": 12
     },
     {
       "date": "2026-07-12",
@@ -14879,7 +16743,7 @@
       "product": "Vanilla Cake",
       "forecast": 7.2,
       "stock_on_hand": 0,
-      "units": 12
+      "units": 6
     },
     {
       "date": "2026-07-12",
@@ -14887,7 +16751,7 @@
       "product": "Cheese Pastry",
       "forecast": 15.8,
       "stock_on_hand": 0,
-      "units": 24
+      "units": 12
     },
     {
       "date": "2026-07-12",
@@ -14919,7 +16783,7 @@
       "product": "Chocolate Cake",
       "forecast": 6.6,
       "stock_on_hand": 0,
-      "units": 12
+      "units": 6
     },
     {
       "date": "2026-07-12",
@@ -14927,7 +16791,7 @@
       "product": "Vanilla Cake",
       "forecast": 6.2,
       "stock_on_hand": 0,
-      "units": 12
+      "units": 6
     },
     {
       "date": "2026-07-12",
@@ -14935,7 +16799,7 @@
       "product": "Cheese Pastry",
       "forecast": 12.3,
       "stock_on_hand": 0,
-      "units": 24
+      "units": 12
     },
     {
       "date": "2026-07-12",

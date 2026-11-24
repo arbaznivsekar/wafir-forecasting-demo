@@ -16,6 +16,7 @@ function shopData(outlet: string): ShopData {
     case_sizes: all.case_sizes,
     notes: all.notes,
     shop_history: mine(all.shop_history),
+    last_week_daily: mine(all.last_week_daily),
     send_plan: mine(all.send_plan),
     forecast_vs_actual: mine(all.forecast_vs_actual),
   };

@@ -20,14 +20,14 @@ const steps: Step[] = [
   {
     icon: ChefHat,
     title: "It decides, like a baker",
-    like: "Bake too many and some go in the bin. Bake too few and customers leave empty-handed.",
+    like: "Bake too many and some go in the bin. Bake too few and shoppers leave empty-handed.",
     does: "Cakes spoil fast, so we send close to the forecast. Biscuits keep for weeks, so a little extra is safe. Amounts are rounded to full boxes, like eggs sold by the tray.",
   },
   {
     icon: ClipboardCheck,
     title: "It checks itself, like a practice exam",
     like: "Mark last term's paper again, using the new answers.",
-    does: "We replay recent weeks with the new amounts, against what customers really bought, and compare with what really happened.",
+    does: "We replay recent weeks with the new amounts, against what shoppers really bought, and compare with what really happened.",
   },
 ];
 

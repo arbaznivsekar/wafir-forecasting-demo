@@ -18,10 +18,20 @@ export type ShopHistoryRow = {
   product: string;
   week_start: string;
   units_delivered: number;
+  units_sold: number;
   units_wasted: number;
   waste_cost_kwd: number;
   stockout_days: number;
   days_recorded: number;
+};
+
+export type LastWeekDailyRow = {
+  date: string;
+  outlet: string;
+  product: string;
+  units_sent: number;
+  units_sold: number;
+  units_wasted: number;
 };
 
 export type SendPlanRow = {
@@ -60,11 +70,19 @@ export type DashboardData = {
   by_product: { product: string; waste_pct_before: number; waste_pct_after: number }[];
   forecast_vs_actual: ForecastRow[];
   shop_history: ShopHistoryRow[];
+  last_week_daily: LastWeekDailyRow[];
   send_plan: SendPlanRow[];
 };
 
 /** The part of the data one shop page needs. It is cut out at build time so the page ships with its content. */
 export type ShopData = Pick<
   DashboardData,
-  "outlets" | "products" | "case_sizes" | "notes" | "shop_history" | "send_plan" | "forecast_vs_actual"
+  | "outlets"
+  | "products"
+  | "case_sizes"
+  | "notes"
+  | "shop_history"
+  | "last_week_daily"
+  | "send_plan"
+  | "forecast_vs_actual"
 >;

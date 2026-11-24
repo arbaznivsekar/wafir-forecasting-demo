@@ -48,6 +48,7 @@ def weekly_history():
         recent.groupby(["outlet", "product", "week_start"])
         .agg(
             units_delivered=("units_sent", "sum"),
+            units_sold=("units_sold", "sum"),
             units_wasted=("units_wasted", "sum"),
             waste_cost_kwd=("waste_cost_kwd", "sum"),
             stockout_days=("stockout", "sum"),
@@ -57,7 +58,17 @@ def weekly_history():
     )
     weekly["waste_cost_kwd"] = weekly["waste_cost_kwd"].round(2)
     weekly["week_start"] = weekly["week_start"].dt.strftime("%Y-%m-%d")
-    return weekly.astype({"units_delivered": int, "units_wasted": int, "stockout_days": int, "days_recorded": int}).to_dict("records")
+    return weekly.astype({"units_delivered": int, "units_sold": int, "units_wasted": int, "stockout_days": int, "days_recorded": int}).to_dict("records")
+
+
+def last_week_daily():
+    """What actually happened on each of the last 7 days of history, per shop and product."""
+    days = sorted(history["date"].unique())[-7:]
+    recent = history[history["date"].isin(days)].sort_values(["date", "outlet", "product"])
+    recent = recent.assign(date=recent["date"].dt.strftime("%Y-%m-%d"))
+    return recent[["date", "outlet", "product", "units_sent", "units_sold", "units_wasted"]].astype(
+        {"units_sent": int, "units_sold": int, "units_wasted": int}
+    ).to_dict("records")
 
 
 data = {
@@ -85,6 +96,7 @@ data = {
     "forecast_vs_actual": fc[["date", "outlet", "product", "forecast", "forecast_low", "forecast_high", "actual"]].to_dict("records"),
     "case_sizes": {name: int(info[1]) for name, info in PRODUCTS.items()},
     "shop_history": weekly_history(),
+    "last_week_daily": last_week_daily(),
     "send_plan": plan.rename(columns={"recommended_send_units": "units"})[["date", "outlet", "product", "forecast", "stock_on_hand", "units"]].to_dict("records"),
 }
 
